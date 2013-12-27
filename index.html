@@ -12,6 +12,8 @@
     <h1>D&amp;D Random Character Generator</h1>
     <aside><p>Protip: For help with any option, hover your mouse over it.</p></aside>
     
+    <button id="generate" style="display:none;" title="Click this once you have all your requirements filled in">Generate Character!</button>
+    
     <section>
       <h1>Global Options</h1>
       <div class="sectionContent">
@@ -387,6 +389,68 @@
       <h1>Attack Rolls</h1>
       <div class="sectionContent">
         <table>
+          <table>
+            <tr>
+              <th>&nbsp;</th>
+              <th>Total 1</th>
+              <th>Total 2</th>
+              <th>Total 3</th>
+              <th>Total 4</th>
+              <th>Base 1</th>
+              <th>Base 2</th>
+              <th>Base 3</th>
+              <th>Base 4</th>
+              <th>Ability</th>
+              <th>Size</th>
+              <th>Misc 1</th>
+              <th>Misc 2</th>
+            </tr>
+            <tr>
+              <td>Melee</td>
+              <td><input name="attack-meleeTotal1" id="attack-meleeTotal1" type="number" /></td>
+              <td><input name="attack-meleeTotal2" id="attack-meleeTotal2" type="number" /></td>
+              <td><input name="attack-meleeTotal3" id="attack-meleeTotal3" type="number" /></td>
+              <td><input name="attack-meleeTotal4" id="attack-meleeTotal4" type="number" /></td>
+              <td><input name="attack-meleeBase1" id="attack-meleeBase1" type="number" /></td>
+              <td><input name="attack-meleeBase2" id="attack-meleeBase2" type="number" /></td>
+              <td><input name="attack-meleeBase3" id="attack-meleeBase3" type="number" /></td>
+              <td><input name="attack-meleeBase4" id="attack-meleeBase4" type="number" /></td>
+              <td><input name="attack-meleeAbility" id="attack-meleeAbility" type="number" /></td>
+              <td><input name="attack-meleeSize" id="attack-meleeSize" type="number" /></td>
+              <td><input name="attack-meleeMisc1" id="attack-meleeMisc1" type="number" /></td>
+              <td><input name="attack-meleeMisc2" id="attack-meleeMisc2" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Ranged</td>
+              <td><input name="attack-rangedTotal1" id="attack-rangedTotal1" type="number" /></td>
+              <td><input name="attack-rangedTotal2" id="attack-rangedTotal2" type="number" /></td>
+              <td><input name="attack-rangedTotal3" id="attack-rangedTotal3" type="number" /></td>
+              <td><input name="attack-rangedTotal4" id="attack-rangedTotal4" type="number" /></td>
+              <td><input name="attack-rangedBase1" id="attack-rangedBase1" type="number" /></td>
+              <td><input name="attack-rangedBase2" id="attack-rangedBase2" type="number" /></td>
+              <td><input name="attack-rangedBase3" id="attack-rangedBase3" type="number" /></td>
+              <td><input name="attack-rangedBase4" id="attack-rangedBase4" type="number" /></td>
+              <td><input name="attack-rangedAbility" id="attack-rangedAbility" type="number" /></td>
+              <td><input name="attack-rangedSize" id="attack-rangedSize" type="number" /></td>
+              <td><input name="attack-rangedMisc1" id="attack-rangedMisc1" type="number" /></td>
+              <td><input name="attack-rangedMisc2" id="attack-rangedMisc2" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Grapple</td>
+              <td><input name="attack-grappleTotal1" id="attack-grappleTotal1" type="number" /></td>
+              <td><input name="attack-grappleTotal2" id="attack-grappleTotal2" type="number" /></td>
+              <td><input name="attack-grappleTotal3" id="attack-grappleTotal3" type="number" /></td>
+              <td><input name="attack-grappleTotal4" id="attack-grappleTotal4" type="number" /></td>
+              <td><input name="attack-grappleBase1" id="attack-grappleBase1" type="number" /></td>
+              <td><input name="attack-grappleBase2" id="attack-grappleBase2" type="number" /></td>
+              <td><input name="attack-grappleBase3" id="attack-grappleBase3" type="number" /></td>
+              <td><input name="attack-grappleBase4" id="attack-grappleBase4" type="number" /></td>
+              <td><input name="attack-grappleAbility" id="attack-grappleAbility" type="number" /></td>
+              <td><input name="attack-grappleSize" id="attack-grappleSize" type="number" /></td>
+              <td><input name="attack-grappleMisc1" id="attack-grappleMisc1" type="number" /></td>
+              <td><input name="attack-grappleMisc2" id="attack-grappleMisc2" type="number" /></td>
+            </tr>
+          </table>
         </table>
       </div>
     </section>
@@ -467,6 +531,26 @@
       <h1>Movement and Lifting</h1>
       <div class="sectionContent">
         <table>
+          <tr>
+            <th>Walk</th>
+            <th>Hustle</th>
+            <th>Run</th>
+          </tr>
+          <tr>
+            <td><input name="move-walk" id="move-walk" type="number" /></td>
+            <td><input name="move-hustle" id="move-hustle" type="number" /></td>
+            <td><input name="move-run" id="move-run" type="number" /></td>
+          </tr>
+          <tr>
+            <th><label title="Lift over head">Head</label></th>
+            <th><label title="Lift off ground">Ground</label></th>
+            <th><label title="Push or Drag">Push</label></th>
+          </tr>
+          <tr>
+            <td><input name="move-head" id="move-head" type="number" /></td>
+            <td><input name="move-ground" id="move-ground" type="number" /></td>
+            <td><input name="move-push" id="move-push" type="number" /></td>
+          </tr>
         </table>
       </div>
     </section>
