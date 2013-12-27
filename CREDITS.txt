@@ -7,3 +7,7 @@ details.
 ==jQuery==
 This application makes use of jQuery which is created and distributed by the
 jQuery Foundation under the MIT License.  See COPYING.txt for more details.
+
+==Modernizr==
+This application makes use of Modernizr which is created and distributed by the
+SurveyMonkey Inc. under the MIT License.  See COPYING.txt for more details.
