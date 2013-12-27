@@ -31,6 +31,40 @@ for that matter Internet Explorer in general).  You can find Mozilla Firefox at
 the following URL:
   http://www.getfirefox.com/
 
+==Understanding Extras==
+Due to the constraints of the Open Game License there is a lot of content that
+I would like to support in this application that can not be directly distributed
+with the application.  These include things such as the gods from the Player's
+Handbook or the backstory generation from the Hero Builder's guide.
+
+The extras folder contains a number of JSON files that can be used to define
+data for this application to pull in during its initial loading.  You could use
+the dieties.json file, for example, to define all of the gods from the Player's
+Handbook or alternatively your own campaign setting.
+
+There are numerous tutorials online for how to edit JSON files.  Sample files
+are included in this distribution as well.
+
+Each of these files are described below:
+  * dieties.json:
+    Sample Licensed OGL (c) Sean K Reynolds et al.
+    Defines dieties to be used by the application.  Each diety has a name, an
+    alignment, and a power level.  The available power levels are Demi, Lesser,
+    and Major.
+  * names.json:
+    Sample Licensed CC-0
+    Defines names for every race used by the application.  Each race has its
+    own section, and each racial section is divided into given names and
+    surnames.  Given names are further divided into male and female.  Any race
+    that doesn't have a name list will use the human list.  If given names are
+    the same for both male and female members of a race, just define the male
+    names.
+  * languages.json:
+    Sample Licensed OGL (c) Wizards
+    Defines languages that are available for the Speak Languages skill.  Each
+    language has a name and an alphabet.  The sample file includes all of the
+    languages from the System Reference Document.
+  
 ==Help By Section==  
 ===Ability Scores===
 Under the options for ability scores there are two options Roll Method and

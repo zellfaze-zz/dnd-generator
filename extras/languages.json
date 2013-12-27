@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Abyssal",
+    "alphabet": "Infernal"
+  },
+  {
+    "name": "Aquan",
+    "alphabet": "Elven"
+  },
+  {
+    "name": "Auran",
+    "alphabet": "Draconic"
+  },
+  {
+    "name": "Celestial",
+    "alphabet": "Celestial"
+  },
+  {
+    "name": "Common",
+    "alphabet": "Common"
+  },
+  {
+    "name": "Draconic",
+    "alphabet": "Draconic"
+  },
+  {
+    "name": "Druidic",
+    "alphabet": "Druidic"
+  },
+  {
+    "name": "Dwarven",
+    "alphabet": "Dwarven"
+  },
+  {
+    "name": "Elven",
+    "alphabet": "Elven"
+  },
+  {
+    "name": "Giant",
+    "alphabet": "Dwarven"
+  },
+  {
+    "name": "Gnome",
+    "alphabet": "Dwarven"
+  },
+  {
+    "name": "Goblin",
+    "alphabet": "Dwarven"
+  },
+  {
+    "name": "Gnoll",
+    "alphabet": "Common"
+  },
+  {
+    "name": "Halfling",
+    "alphabet": "Common"
+  },
+  {
+    "name": "Ignan",
+    "alphabet": "Draconic"
+  },
+  {
+    "name": "Infernal",
+    "alphabet": "Infernal"
+  },
+  {
+    "name": "Orc",
+    "alphabet": "Dwarven"
+  },
+  {
+    "name": "Sylvan",
+    "alphabet": "Elven"
+  },
+  {
+    "name": "Terran",
+    "alphabet": "Dwarven"
+  },
+  {
+    "name": "Undercommon",
+    "alphabet": "Elven"
+  }
+]

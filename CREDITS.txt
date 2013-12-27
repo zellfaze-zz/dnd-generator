@@ -1,8 +1,15 @@
-==Open Game License Content==
+==Wizards Open Game License Content==
 This application makes use of content produced by Wizards of the Coast, Inc.
 and made available under the Open Game License.  See COPYING.txt for more
 details.
   Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.
+  
+==Deities of The Faithful Content==
+This application makes use of content produced by Sean K Reynolds
+and made available under the Open Game License.  See COPYING.txt for more
+details.
+  Skreyn’s Register: The Bonds of Magic and "Deities of The Faithful" Copyright
+  2002 Sean K Reynolds. All rights reserved.
   
 ==jQuery==
 This application makes use of jQuery which is created and distributed by the
