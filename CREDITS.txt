@@ -1,0 +1,4 @@
+This application makes use of content produced by Wizards of the Coast, Inc.
+and made available under the Open Game License.  See COPYING.txt for more
+details.
+  Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.

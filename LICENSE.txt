@@ -1,0 +1,17 @@
+This application's source code is made available under the Creative Commons
+Zero License.  The author of this application has waived all of their rights to
+the extent possible by law.  This means that you can copy and modify this
+application, including for commercial purposes, without attribution or payment
+to the original author (though both would be appreciated).  See COPYING.txt
+for more details.
+
+--------------------------------------------------------------------------------
+D&D Random Character Generator
+Written in 2013 by Derric Atzrott <zellfaze@zellfaze.org> 
+
+To the extent possible under law, the author(s) have dedicated all copyright
+and related and neighboring rights to this software to the public domain
+worldwide. This software is distributed without any warranty. 
+
+You should have received a copy of the CC0 Public Domain Dedication along with
+this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
