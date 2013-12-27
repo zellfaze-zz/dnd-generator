@@ -253,9 +253,252 @@
     </section>
     
     <section>
+      <h1>Hit Points</h1>
+      <div class="sectionContent">
+        <fieldset name="abilityScoreOptions" class="options">
+          <legend>Options</legend>
+          <table>
+            <tr>
+              <td><label for="hitpointsOptions-minHP" title="Lowest amount of HP allowed, leave blank for none">Minimum HP:</label></td>
+              <td><input name="hitpointsOptions-minHP" id="hitpointsOptions-minHP" type="number" /></td>
+            </tr>
+            <tr>
+              <td><label for="hitpointsOptions-bonusHP" title="After HP is determined, add this much">Bonus HP:</label></td>
+              <td><input name="hitpointsOptions-bonusHP" id="hitpointsOptions-bonusHP" type="number" /></td>
+            </tr>
+            <tr>
+              <td><label for="hitpointsOptions-bonusHPLevel" title="After HP is determined, add this much each level">Bonus HP per level:</label></td>
+              <td><input name="hitpointsOptions-bonusHPLevel" id="hitpointsOptions-bonusHPLevel" type="number" /></td>
+            </tr>
+          </table>
+        </fieldset>
+        <table>
+          <tr>
+            <td><label for="hitpoints-dieType">Die Type:</label></td>
+            <td><input name="hitpoints-dieType" id="hitpoints-dieType" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="hitpoints-max">Max HP:</label></td>
+            <td><input name="hitpoints-max" id="hitpoints-max" type="number" /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Initiative</h1>
+      <div class="sectionContent">
+        <table>
+          <tr>
+            <td><label for="init-total">Total:</label></td>
+            <td><input name="init-total" id="init-total" type="number" /></td>
+          </tr>
+          <tr>
+            <td><label for="init-dex">Dex:</label></td>
+            <td><input name="init-dex" id="init-dex" type="number" /></td>
+          </tr>
+          <tr>
+            <td><label for="init-misc">Misc:</label></td>
+            <td><input name="init-misc" id="init-misc" type="number" /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Armor Class</h1>
+      <div class="sectionContent">
+        <table>
+          <tr>
+            <th><label for="ac-total">Total</label></th>
+            <th>Base</th>
+            <th><label for="ac-armor">Armor</label></th>
+            <th><label for="ac-shield">Shield</label></th>
+            <th><label for="ac-dex">Dex</label></th>
+            <th><label for="ac-size">Size</label></th>
+            <th><label for="ac-nat">Nat</label></th>
+            <th><label for="ac-misc1">Misc1</label></th>
+            <th><label for="ac-misc2">Misc2</label></th>
+          </tr>
+          <tr>
+            <td><input name="ac-total" id="ac-total" type="number" /> = </td>
+            <td>10 + </td>
+            <td><input name="ac-armor" id="ac-armor" type="number" /> + </td>
+            <td><input name="ac-shield" id="ac-shield" type="number" /> + </td>
+            <td><input name="ac-dex" id="ac-dex" type="number" /> + </td>
+            <td><input name="ac-size" id="ac-size" type="number" /> + </td>
+            <td><input name="ac-nat" id="ac-nat" type="number" /> + </td>
+            <td><input name="ac-misc1" id="ac-misc1" type="number" /> + </td>
+            <td><input name="ac-misc2" id="ac-misc2" type="number" /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Saving Throws</h1>
+      <div class="sectionContent">
+        <table>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Total</th>
+            <th>Base 1</th>
+            <th>Base 2</th>
+            <th>Base 3</th>
+            <th>Ability</th>
+            <th>Magic</th>
+            <th>Misc</th>
+          </tr>
+          <tr>
+            <td>Fortitude:</td>
+            <td><input name="saves-fortTotal" id="saves-fortTotal" type="number" /></td>
+            <td><input name="saves-fortBase1" id="saves-fortBase1" type="number" /></td>
+            <td><input name="saves-fortBase2" id="saves-fortBase2" type="number" /></td>
+            <td><input name="saves-fortBase3" id="saves-fortBase3" type="number" /></td>
+            <td><input name="saves-fortAbility" id="saves-fortAbility" type="number" /></td>
+            <td><input name="saves-fortMagic" id="saves-fortMagic" type="number" /></td>
+            <td><input name="saves-fortMisc" id="saves-fortMisc" type="number" /></td>
+          </tr>
+          <tr>
+            <td>Reflex:</td>
+            <td><input name="saves-refTotal" id="saves-refTotal" type="number" /></td>
+            <td><input name="saves-refBase1" id="saves-refBase1" type="number" /></td>
+            <td><input name="saves-refBase2" id="saves-refBase2" type="number" /></td>
+            <td><input name="saves-refBase3" id="saves-refBase3" type="number" /></td>
+            <td><input name="saves-refAbility" id="saves-refAbility" type="number" /></td>
+            <td><input name="saves-refMagic" id="saves-refMagic" type="number" /></td>
+            <td><input name="saves-refMisc" id="saves-refMisc" type="number" /></td>
+          </tr>
+          <tr>
+            <td>Will:</td>
+            <td><input name="saves-willTotal" id="saves-willTotal" type="number" /></td>
+            <td><input name="saves-willBase1" id="saves-willBase1" type="number" /></td>
+            <td><input name="saves-willBase2" id="saves-willBase2" type="number" /></td>
+            <td><input name="saves-willBase3" id="saves-willBase3" type="number" /></td>
+            <td><input name="saves-willAbility" id="saves-willAbility" type="number" /></td>
+            <td><input name="saves-willMagic" id="saves-willMagic" type="number" /></td>
+            <td><input name="saves-willMisc" id="saves-willMisc" type="number" /></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Attack Rolls</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Racial Abilities</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Class Abilities</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Feats</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Skills</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Weapons</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Armor</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Worn Magic Items</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Inventory</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Money</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Movement and Lifting</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Languages</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Spells</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
+      <h1>Flavour</h1>
+      <div class="sectionContent">
+        <table>
+        </table>
+      </div>
+    </section>
+    
+    <section>
       <h1>Advanced Output</h1>
       <div class="sectionContent">
-        <textarea class="advancedOutput" disabled="disabled" title="Output generated as random generation is performed"></textarea>
+        <textarea id="advancedOutput" disabled="disabled" title="Output generated as random generation is performed"></textarea>
       </div>
     </section>
     

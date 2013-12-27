@@ -12,7 +12,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.advancedOutput {
+#advancedOutput {
   width: 100%;
   height: 150px;
   background-color: lightgrey;
