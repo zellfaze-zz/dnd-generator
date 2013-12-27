@@ -30,3 +30,30 @@ which is a great modern alternative to older versions of Internet Explorer (and
 for that matter Internet Explorer in general).  You can find Mozilla Firefox at
 the following URL:
   http://www.getfirefox.com/
+
+==Help By Section==  
+===Ability Scores===
+Under the options for ability scores there are two options Roll Method and
+Placement method that determine how scores are rolled and placed.  Each of these
+options are described in more detail below.
+
+Roll Method: Determines how the dice are rolled for the ability scores.
+  * 3d6 x6:
+    Three six sided dice are rolled and totaled 6 times, once for each ability
+    score.  Produces average characters.
+  * 4d6 Drop x6:
+    Four six sided dice are rolled, the lowest roll is dropped.  This is
+    repeated a total of six times, once for each ability score.  Produces
+    slightly above average characters.
+  * 4d6 Drop x7 Drop:
+    Four six sided dice are rolled, the lowest roll is dropped.  This is
+    repeated a total of seven times.  The lowest of the seven totals is dropped
+    to give six totals, one for each ability score.  Produces well above average
+    characters.
+    
+Placement Method: Determines how the rolled ability scores are alocated.
+  * Random:
+    The six rolled totals are placed into ability scores randomly.
+  * Pick:
+    The six rolled totals are placed into ability scores randomly, but weighted
+    based on the selected class and race.
