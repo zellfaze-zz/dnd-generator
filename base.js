@@ -17,7 +17,8 @@ $(document).ready( function() {
   //  done.
   var outstandingRequests = 2;
   if (appLocation == 'local') {
-    $.getJSON( "file://C:/wamp/www/dnd/extras/dieties.json", function( data ) {
+    var path = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
+    $.getJSON(path + "/extras/dieties.json", function( data ) {
       logToAdvanced('Found diety definitions');
       window.dietyDefinitions = data;
     }).fail( function() {
@@ -27,7 +28,7 @@ $(document).ready( function() {
       outstandingRequests--;
       completedRequests();
     });
-    $.getJSON( "file://C:/wamp/www/dnd/extras/languages.json", function( data ) {
+    $.getJSON(path + "/extras/languages.json", function( data ) {
       logToAdvanced('Found language definitions');
       window.languageDefinitions = data;
     }).fail( function() {
