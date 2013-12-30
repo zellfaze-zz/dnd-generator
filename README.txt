@@ -64,6 +64,14 @@ Each of these files are described below:
     Defines languages that are available for the Speak Languages skill.  Each
     language has a name and an alphabet.  The sample file includes all of the
     languages from the System Reference Document.
+  * skills.json:
+    Sample Licensed OGL (c) Wizards
+    Defines all of the skills available for the generator to use.  Each skill
+    has a name, whether or not it may be used untrained, whether or not it
+    incurs an armor check penalty, what ability score it uses, whether or not
+    magic users should favour it, whether or not psionic users should favour it,
+    and what skills it gives synergy bonuses to.  If "Speak Languages" is not in
+    this file, the Languages section will not be available.
   
 ==Help By Section==  
 ===Ability Scores===
