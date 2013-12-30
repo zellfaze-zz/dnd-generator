@@ -20,5 +20,9 @@ footer {
 }
 
 input[type="number"] {
-  width: 25px;
+  width: 40px;
+}
+
+input.small {
+  width: 40px;
 }

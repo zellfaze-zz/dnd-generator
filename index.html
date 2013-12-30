@@ -480,8 +480,30 @@
     <section>
       <h1>Skills</h1>
       <div class="sectionContent">
-        <table>
+        <fieldset name="skillsOptions" class="options">
+          <legend>Options</legend>
+          <table>
+            <tr>
+              <td><label for="skillsOptions-ignoreMagic" title="Skills important to magic users aren't weight differently">Ignore Magic:</label></td>
+              <td><input name="skillsOptions-ignoreMagic" id="skillsOptions-ignoreMagic" type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td><label for="skillsOptions-ignorePsi" title="Skills important to psionic users aren't weight differently">Ignore Psionic:</label></td>
+              <td><input name="skillsOptions-ignorePsi" id="skillsOptions-ignorePsi" type="checkbox" /></td>
+            </tr>
+          </table>
+        </fieldset>
+        <table id="skillsTable">
+          <tr>
+            <th>Skill</th>
+            <th>Total</th>
+            <th>Ability</th>
+            <th>Ranks</th>
+            <th>Misc 1</th>
+            <th>Misc 2</th>
+          </tr>
         </table>
+        <p><sup>1</sup> Trained Only</p>
       </div>
     </section>
     
