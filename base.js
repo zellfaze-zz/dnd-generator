@@ -13,27 +13,38 @@ $(document).ready( function() {
   logToAdvanced('Application is ' + appLocation);
   
   logToAdvanced('Looking for extra definitions...');
+  window.definitions = new Array();
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
-  var outstandingRequests = 2;
+  var outstandingRequests = 3;
   if (appLocation == 'local') {
     var path = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
     $.getJSON(path + "/extras/dieties.json", function( data ) {
       logToAdvanced('Found diety definitions');
-      window.dietyDefinitions = data;
+      window.definitions['diety'] = data;
     }).fail( function() {
       logToAdvanced('No diety definitions found');
-      window.dietyDefinitions = null;
+      window.definitions['diety'] = null;
     }).always( function() {
       outstandingRequests--;
       completedRequests();
     });
     $.getJSON(path + "/extras/languages.json", function( data ) {
       logToAdvanced('Found language definitions');
-      window.languageDefinitions = data;
+      window.definitions['language'] = data;
     }).fail( function() {
       logToAdvanced('No language definitions found');
-      window.languageDefinitions = null;
+      window.definitions['language'] = null;
+    }).always( function() {
+      outstandingRequests--;
+      completedRequests();
+    });
+    $.getJSON(path + "/extras/skills.json", function( data ) {
+      logToAdvanced('Found skill definitions');
+      window.definitions['skills'] = data;
+    }).fail( function() {
+      logToAdvanced('No skill definitions found');
+      window.definitions['skills'] = null;
     }).always( function() {
       outstandingRequests--;
       completedRequests();
@@ -41,20 +52,30 @@ $(document).ready( function() {
   } else {
     $.getJSON( "extras/dieties.json", function( data ) {
       logToAdvanced('Found diety definitions');
-      window.dietyDefinitions = data;
+      window.definitions['diety'] = data;
     }).fail( function() {
       logToAdvanced('No diety definitions found');
-      window.dietyDefinitions = null;
+      window.definitions['diety'] = null;
     }).always( function() {
       outstandingRequests--;
       completedRequests();
     });
     $.getJSON( "extras/languages.json", function( data ) {
       logToAdvanced('Found language definitions');
-      window.languageDefinitions = data;
+      window.definitions['language'] = data;
     }).fail( function() {
       logToAdvanced('No language definitions found');
-      window.languageDefinitions = null;
+      window.definitions['language'] = null;
+    }).always( function() {
+      outstandingRequests--;
+      completedRequests();
+    });
+    $.getJSON( "extras/skills.json", function( data ) {
+      logToAdvanced('Found skill definitions');
+      window.definitions['skills'] = data;
+    }).fail( function() {
+      logToAdvanced('No skill definitions found');
+      window.definitions['skills'] = null;
     }).always( function() {
       outstandingRequests--;
       completedRequests();
