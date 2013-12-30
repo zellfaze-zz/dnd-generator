@@ -120,6 +120,7 @@ function logToAdvanced(textToLog) {
   var oldText = $('#advancedOutput').val();
   var newText = oldText + textToLog + "\n";
   $('#advancedOutput').val(newText);
+  $('#advancedOutput').scrollTop($('#advancedOutput').get(0).scrollHeight);
 }
 
 //Given an array of items and their weights, selects a random item
