@@ -27,3 +27,48 @@ archtypes:
 	melee		:	focuses on using melee weaponary
 	stealth		:	focuses on staying out of sight
 	skill_monkey	:	focuses on buffing skills
+
+classes lay out
+  {
+    "Class": "",
+    "base": ,
+    "hitDice": "",
+    "SkillPoints": "",
+    "KeyStat": "",
+    "SecStat": "",
+    "ClassSkill": 
+     [],
+    "level1":
+     [
+       "BAB": "", "Fort": "", "Ref": "", "Will": ""
+     ],
+    "level2":
+     [
+       "BAB": "", "Fort": "", "Ref": "", "Will": ""
+     ],
+    "level3":
+     [
+       "BAB": "", "Fort": "", "Ref": "", "Will": ""
+     ],
+    (continue til end of class)
+    "CasterType": "",
+    "SLevel1":
+     [],
+    "SLevel2":
+     [],
+    "SLevel3":
+     []
+  }
+	Class: self explainitory
+	Base: is it a base class or prestige. if prestige is yes, then the requirements array will be needed
+	hitdice: the hit dice for that class, d4, d6, d8, d10, or d12
+	Skill points: the number of skill points per level (if its a new character, this will have to be multiplied by 4)
+	KeyStat: the stat that is most important to the class
+	SecStat: the second most important stat for the class
+	level 1:
+		this has 4 items in each array, BAB (base attack bonus) Fort (Fortitude), Ref (Reflex), Will (Will
+		any extra ability is also added after this.  each level will have to be compaired to the previous
+		new items will be added, old items will be overwritten.  if you add 2 classes together, do not overwrite, but merge
+		special abilities will always start at array[4] (always the 5th item in the array)
+        CasterType: if they are a caster, they will have this, specifiying caster type (Arcane, Divine, or Psionic)
+	SLevel 1: for Spell casters, SLevel(then number) will show what spells they get that level
