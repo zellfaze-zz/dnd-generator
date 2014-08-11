@@ -4,90 +4,73 @@
         "Type": "Arcane",
         "Source Book": "PHB",
         "Level 0": [
-            {
-                "Abjuration": [
-                    "Resistance"
-                ]
-            },
-            {
-                "Conjuration": [
-                    "Acid Splash"
-                ]
-            },
-            {
-                "Divination": [
-                    "Detect Poison",
-                    "Detect Magic",
-                    "Read Magic"
-                ]
-            },
-            {
-                "Enchantment": [
-                    "Daze"
-                ]
-            },
-            {
-                "Evocation": [
-                    "Dancing Lights",
-                    "Flare",
-                    "Light",
-                    "Ray of Frost"
-                ]
-            },
-            {
-                "Illusion": [
-                    "Ghost Sound"
-                ]
-            },
-            {
-                "Necromancy": [
-                    "Disrupt Undead",
-                    "Touch of Fatigue"
-                ]
-            },
-            {
-                "Transmutation": [
-                    "Mage Hand",
-                    "Mending",
-                    "Message",
-                    "Open/Close"
-                ]
-            },
-            {
-                "Universal": [
-                    "Arcane Mark",
-                    "Prestidigitation"
-                ]
-            }
+            "Resistance",
+            "Acid Splash",
+            "Detect Poison",
+            "Detect Magic",
+            "Read Magic",
+            "Daze",
+            "Dancing Lights",
+            "Flare",
+            "Light",
+            "Ray of Frost",
+            "Ghost Sound",
+            "Disrupt Undead",
+            "Touch of Fatigue",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Open/Close",
+            "Arcane Mark",
+            "Prestidigitation"
         ],
         "Level 1": [
-            {
-                "Abjuration": []
-            },
-            {
-                "Conjuration": []
-            },
-            {
-                "Divination": []
-            },
-            {
-                "Enchantment": []
-            },
-            {
-                "Evocation": []
-            },
-            {
-                "Illusion": []
-            },
-            {
-                "Necromancy": []
-            },
-            {
-                "Transmutation": []
-            },
-            {
-                "Universal": []
-            }
+            "Alarm",
+            "Endure Elements",
+            "Hold Portal",
+            "Protection from Chaos/Evil/Good/Law",
+            "Shield",
+            "Grease",
+            "Mage Armor",
+            "Mount",
+            "Obscuring Mist",
+            "Summon Monster I",
+            "Unseen Servant",
+            "Comprehend Languages",
+            "Detect Secret Doors",
+            "Detect Undead",
+            "Identify",
+            "True Strike",
+            "Charm Person",
+            "Hypnotism",
+            "Sleep",
+            "Burning Hands",
+            "Magic Missile",
+            "Shocking Grasp",
+            "Tenser's Floating Disk",
+            "Color Spray",
+            "Disguise Self",
+            "Nystul's Magic Aura",
+            "Silent Image",
+            "Ventriloquism",
+            "Cause Fear",
+            "Chill Touch",
+            "Ray of Enfeeblement",
+            "Animate Rope",
+            "Enlarge Person",
+            "Erase",
+            "Expeditious Retreat",
+            "Feather Fall",
+            "Jump",
+            "Magic Weapon",
+            "Reduce Person"
         ]
+    },
+    {
+        "Source": "",
+        "Type": "",
+        "Source Book": "",
+        "Level 0": [],
+		"Level 1": []
     }
 ]
