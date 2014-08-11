@@ -12,13 +12,6 @@
             },
             "other": []
         },
-        "Archetype": [
-            "thief",
-            "fighter",
-            "melee",
-            "stealth",
-            "skill_monkey"
-        ],
         "Short Text": "+2 Bonus on Jump and Tumble checks",
         "Long Text": "You get a +2 bonus on all Jump checks and Tumble checks.",
         "Book Source": "PHB"
@@ -33,7 +26,6 @@
             },
             "other": []
         },
-        "Archetype": [],
         "Short Text": "",
         "Long Text": "",
         "Book Source": ""
