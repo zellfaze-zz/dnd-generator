@@ -1,0 +1,93 @@
+[
+    {
+        "Source": "Sor/Wiz",
+        "Type": "Arcane",
+        "Source Book": "PHB",
+        "Level 0": [
+            {
+                "Abjuration": [
+                    "Resistance"
+                ]
+            },
+            {
+                "Conjuration": [
+                    "Acid Splash"
+                ]
+            },
+            {
+                "Divination": [
+                    "Detect Poison",
+                    "Detect Magic",
+                    "Read Magic"
+                ]
+            },
+            {
+                "Enchantment": [
+                    "Daze"
+                ]
+            },
+            {
+                "Evocation": [
+                    "Dancing Lights",
+                    "Flare",
+                    "Light",
+                    "Ray of Frost"
+                ]
+            },
+            {
+                "Illusion": [
+                    "Ghost Sound"
+                ]
+            },
+            {
+                "Necromancy": [
+                    "Disrupt Undead",
+                    "Touch of Fatigue"
+                ]
+            },
+            {
+                "Transmutation": [
+                    "Mage Hand",
+                    "Mending",
+                    "Message",
+                    "Open/Close"
+                ]
+            },
+            {
+                "Universal": [
+                    "Arcane Mark",
+                    "Prestidigitation"
+                ]
+            }
+        ],
+        "Level 1": [
+            {
+                "Abjuration": []
+            },
+            {
+                "Conjuration": []
+            },
+            {
+                "Divination": []
+            },
+            {
+                "Enchantment": []
+            },
+            {
+                "Evocation": []
+            },
+            {
+                "Illusion": []
+            },
+            {
+                "Necromancy": []
+            },
+            {
+                "Transmutation": []
+            },
+            {
+                "Universal": []
+            }
+        ]
+    }
+]
