@@ -1,92 +1,208 @@
 [
-  {
-    "Class": "barbarian",
-    "base": true,
-    "hitDice": "d12",
-    "SkillPoints": "4",
-    "KeyStat": "Strength",
-    "SecStat": "Constitution",
-    "ClassSkill": 
-     ["Climb", "Craft", "Handle Animal", "Intimidate", "Listen", "Ride", "Survival", "Swim"],
-    "level1":
-     [
-       "BAB": "1", "Fort": "2", "Ref": "0", "Will": "0", "Fast Movement", "Illiteracy, "Rage 1/day"
-     ],
-    "level2":
-     [
-       "BAB": "2", "Fort": "3", "Ref": "0", "Will": "0", "Uncanny dodge"
-     ],
-    "level3":
-     [
-       "BAB": "3", "Fort": "3", "Ref": "1", "Will": "1", "Trap sense +1"
-     ],
-    "level4":
-     [
-       "BAB": "4", "Fort": "4", "Ref": "1", "Will": "1", "Rage 2/day"
-     ],
-    "level5":
-     [
-       "BAB": "5", "Fort": "4", "Ref": "1", "Will": "1", "Improved uncanny dodge"
-     ],
-    "level6":
-     [
-       "BAB": "6", "Fort": "5", "Ref": "2", "Will": "2", "Trap Sense +2" 
-     ],
-    "level7":
-     [
-       "BAB": "7", "Fort": "5", "Ref": "2", "Will": "2", "Damage reduction 1/-"
-     ],
-    "level8":
-     [
-       "BAB": "8", "Fort": "6", "Ref": "2", "Will": "2", "Rage 3/day"
-     ],
-    "level9":
-     [
-       "BAB": "9", "Fort": "6", "Ref": "3", "Will": "3", "Trap Sense +3"
-     ],
-    "level10":
-     [
-       "BAB": "10", "Fort": "7", "Ref": "3", "Will": "3", "Damage Reduction 2/-"
-     ],
-    "level11":
-     [
-       "BAB": "11", "Fort": "7", "Ref": "3", "Will": "3", "Greater Rage"
-     ],
-    "level12":
-     [
-       "BAB": "12", "Fort": "8", "Ref": "4", "Will": "4", "Rage 4/day", "Trap Sense +4"
-     ],
-    "level13":
-     [
-       "BAB": "13", "Fort": "8", "Ref": "4", "Will": "4", "Damage Reduction 3/-"
-     ],
-    "level14":
-     [
-       "BAB": "14", "Fort": "9", "Ref": "4", "Will": "4", "Indomitable Will"
-     ],
-    "level15":
-     [
-       "BAB": "15", "Fort": "9", "Ref": "5", "Will": "5", "Trap Sense +5"
-     ],
-    "level16":
-     [
-       "BAB": "16", "Fort": "10", "Ref": "5", "Will": "5", "Damage Reduction 4/-", "Rage 5/day"
-     ],
-    "level17":
-     [
-       "BAB": "17", "Fort": "10", "Ref": "5", "Will": "5", "Timeless Rage"
-     ],
-    "level18":
-     [
-       "BAB": "18", "Fort": "11", "Ref": "6", "Will": "6", "Trap Sense +6"
-     ],
-    "level19":
-     [
-       "BAB": "19", "Fort": "11", "Ref": "6", "Will": "6", "Damage Reduction 5/-"
-     ],
-    "level20":
-     [
-       "BAB": "20", "Fort": "12", "Ref": "6", "Will": "6", "Mighty Rage", "Rage 6/day"
-     ],
-  }
+    {
+        "Class": "barbarian",
+        "Base": true,
+        "HitDice": "d12",
+        "SkillPoints": "4",
+        "KeyStat": "Strength",
+        "SecStat": "Constitution",
+        "ClassSkill": [
+            "Climb",
+            "Craft",
+            "Handle Animal",
+            "Intimidate",
+            "Listen",
+            "Ride",
+            "Survival",
+            "Swim"
+        ],
+        "ClassAbilities": {
+            "1": {
+                "BAB": 1,
+                "Fort": 2,
+                "Ref": 0,
+                "Will": 0,
+                "Abilities": [
+                    "Fast Movement",
+                    "Illiteracy",
+                    "Rage1/day"
+                ]
+            },
+            "2": {
+                "BAB": 2,
+                "Fort": 3,
+                "Ref": 0,
+                "Will": 0,
+                "Abilities": [
+                    "Uncannydodge"
+                ]
+            },
+            "3": {
+                "BAB": 3,
+                "Fort": 3,
+                "Ref": 1,
+                "Will": 1,
+                "Abilities": [
+                    "Trapsense+1"
+                ]
+            },
+            "4": {
+                "BAB": 4,
+                "Fort": 4,
+                "Ref": 1,
+                "Will": 1,
+                "Abilities": [
+                    "Rage2/day"
+                ]
+            },
+            "5": {
+                "BAB": 5,
+                "Fort": 4,
+                "Ref": 1,
+                "Will": 1,
+                "Abilities": [
+                    "Improveduncannydodge"
+                ]
+            },
+            "6": {
+                "BAB": 6,
+                "Fort": 5,
+                "Ref": 2,
+                "Will": 2,
+                "Abilities": [
+                    "TrapSense+2"
+                ]
+            },
+            "7": {
+                "BAB": 7,
+                "Fort": 5,
+                "Ref": 2,
+                "Will": 2,
+                "Abilities": [
+                    "Damagereduction1/-"
+                ]
+            },
+            "8": {
+                "BAB": 8,
+                "Fort": 6,
+                "Ref": 2,
+                "Will": 2,
+                "Abilities": [
+                    "Rage3/day"
+                ]
+            },
+            "9": {
+                "BAB": 9,
+                "Fort": 6,
+                "Ref": 3,
+                "Will": 3,
+                "Abilities": [
+                    "TrapSense+3"
+                ]
+            },
+            "10": {
+                "BAB": 10,
+                "Fort": 7,
+                "Ref": 3,
+                "Will": 3,
+                "Abilities": [
+                    "DamageReduction2/-"
+                ]
+            },
+            "11": {
+                "BAB": 11,
+                "Fort": 7,
+                "Ref": 3,
+                "Will": 3,
+                "Abilities": [
+                    "GreaterRage"
+                ]
+            },
+            "12": {
+                "BAB": 12,
+                "Fort": 8,
+                "Ref": 4,
+                "Will": 4,
+                "Abilities": [
+                    "Rage4/day",
+                    "TrapSense+4"
+                ]
+            },
+            "13": {
+                "BAB": 13,
+                "Fort": 8,
+                "Ref": 4,
+                "Will": 4,
+                "Abilities": [
+                    "DamageReduction3/-"
+                ]
+            },
+            "14": {
+                "BAB": 14,
+                "Fort": 9,
+                "Ref": 4,
+                "Will": 4,
+                "Abilities": [
+                    "IndomitableWill"
+                ]
+            },
+            "15": {
+                "BAB": 15,
+                "Fort": 9,
+                "Ref": 5,
+                "Will": 5,
+                "Abilities": [
+                    "TrapSense+5"
+                ]
+            },
+            "16": {
+                "BAB": 16,
+                "Fort": 10,
+                "Ref": 5,
+                "Will": 5,
+                "Abilities": [
+                    "DamageReduction4/-",
+                    "Rage5/day"
+                ]
+            },
+            "17": {
+                "BAB": 17,
+                "Fort": 10,
+                "Ref": 5,
+                "Will": 5,
+                "Abilities": [
+                    "TimelessRage"
+                ]
+            },
+            "18": {
+                "BAB": 18,
+                "Fort": 11,
+                "Ref": 6,
+                "Will": 6,
+                "Abilities": [
+                    "TrapSense+6"
+                ]
+            },
+            "19": {
+                "BAB": 19,
+                "Fort": 11,
+                "Ref": 6,
+                "Will": 6,
+                "Abilities": [
+                    "DamageReduction5/-"
+                ]
+            },
+            "20": {
+                "BAB": 20,
+                "Fort": 12,
+                "Ref": 6,
+                "Will": 6,
+                "Abilities": [
+                    "MightyRage",
+                    "Rage6/day"
+                ]
+            }
+        },
+        "BookSource": "PHB"
+    }
 ]
