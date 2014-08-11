@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 D&D Random Character Generator
-Written in 2013 by Derric Atzrott <zellfaze@zellfaze.org> 
+Written in 2013 by Derric Atzrott <zellfaze@zellfaze.org> and Vin
 
 To the extent possible under law, the author(s) have dedicated all copyright
 and related and neighboring rights to this software to the public domain
