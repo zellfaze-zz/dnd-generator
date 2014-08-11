@@ -1,19 +1,41 @@
 [
-  {
-    "name": "acrobatic",
-    "prerequisites": false, 
-    "benefits":
-      ["Jump": "2", "Tumble": "2"],
-    "archtype":
-      ["theif", "fighter", "melee", "stealth", "skill_monkey"]
-  },
-  {
-    "name": "",
-    "prerequisites": 
-      [],
-    "benefits":
-      [],
-    "archtype":
-      []
-  },
+    {
+        "Name": "Acrobatic",
+        "Prerequisites": false,
+        "Benefits": {
+            "numeric": {
+                "skills": {
+                    "Jump": 2,
+                    "Tumble": 2
+                },
+                "CharacterAbilities": {}
+            },
+            "other": []
+        },
+        "Archetype": [
+            "thief",
+            "fighter",
+            "melee",
+            "stealth",
+            "skill_monkey"
+        ],
+        "Short Text": "+2 Bonus on Jump and Tumble checks",
+        "Long Text": "You get a +2 bonus on all Jump checks and Tumble checks.",
+        "Book Source": "PHB"
+    },
+    {
+        "Name": "",
+        "Prerequisites": [],
+        "Benefits": {
+            "numeric": {
+                "skills": {},
+                "CharacterAbilities": {}
+            },
+            "other": []
+        },
+        "Archetype": [],
+        "Short Text": "",
+        "Long Text": "",
+        "Book Source": ""
+    }
 ]
