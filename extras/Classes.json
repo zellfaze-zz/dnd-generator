@@ -3,9 +3,11 @@
         "Class": "barbarian",
         "Base": true,
         "HitDice": "d12",
-        "SkillPoints": "4",
+        "SkillPoints": 4,
         "KeyStat": "Strength",
         "SecStat": "Constitution",
+		"SpellCaster": false,
+		"PsionicClass": false,
         "ClassSkill": [
             "Climb",
             "Craft",
@@ -26,7 +28,8 @@
                     "Fast Movement",
                     "Illiteracy",
                     "Rage1/day"
-                ]
+                ],
+				"SpellCasting": []
             },
             "2": {
                 "BAB": 2,
@@ -35,7 +38,8 @@
                 "Will": 0,
                 "Abilities": [
                     "Uncannydodge"
-                ]
+                ],
+				"SpellCasting": []
             },
             "3": {
                 "BAB": 3,
@@ -44,7 +48,8 @@
                 "Will": 1,
                 "Abilities": [
                     "Trapsense+1"
-                ]
+                ],
+				"SpellCasting": []
             },
             "4": {
                 "BAB": 4,
@@ -53,7 +58,8 @@
                 "Will": 1,
                 "Abilities": [
                     "Rage2/day"
-                ]
+                ],
+				"SpellCasting": []
             },
             "5": {
                 "BAB": 5,
@@ -62,7 +68,8 @@
                 "Will": 1,
                 "Abilities": [
                     "Improveduncannydodge"
-                ]
+                ],
+				"SpellCasting": []
             },
             "6": {
                 "BAB": 6,
@@ -71,7 +78,8 @@
                 "Will": 2,
                 "Abilities": [
                     "TrapSense+2"
-                ]
+                ],
+				"SpellCasting": []
             },
             "7": {
                 "BAB": 7,
@@ -80,7 +88,8 @@
                 "Will": 2,
                 "Abilities": [
                     "Damagereduction1/-"
-                ]
+                ],
+				"SpellCasting": []
             },
             "8": {
                 "BAB": 8,
@@ -89,7 +98,8 @@
                 "Will": 2,
                 "Abilities": [
                     "Rage3/day"
-                ]
+                ],
+				"SpellCasting": []
             },
             "9": {
                 "BAB": 9,
@@ -98,7 +108,8 @@
                 "Will": 3,
                 "Abilities": [
                     "TrapSense+3"
-                ]
+                ],
+				"SpellCasting": []
             },
             "10": {
                 "BAB": 10,
@@ -107,7 +118,8 @@
                 "Will": 3,
                 "Abilities": [
                     "DamageReduction2/-"
-                ]
+                ],
+				"SpellCasting": []
             },
             "11": {
                 "BAB": 11,
@@ -116,7 +128,8 @@
                 "Will": 3,
                 "Abilities": [
                     "GreaterRage"
-                ]
+                ],
+				"SpellCasting": []
             },
             "12": {
                 "BAB": 12,
@@ -126,7 +139,8 @@
                 "Abilities": [
                     "Rage4/day",
                     "TrapSense+4"
-                ]
+                ],
+				"SpellCasting": []
             },
             "13": {
                 "BAB": 13,
@@ -135,7 +149,8 @@
                 "Will": 4,
                 "Abilities": [
                     "DamageReduction3/-"
-                ]
+                ],
+				"SpellCasting": []
             },
             "14": {
                 "BAB": 14,
@@ -144,7 +159,8 @@
                 "Will": 4,
                 "Abilities": [
                     "IndomitableWill"
-                ]
+                ],
+				"SpellCasting": []
             },
             "15": {
                 "BAB": 15,
@@ -153,7 +169,8 @@
                 "Will": 5,
                 "Abilities": [
                     "TrapSense+5"
-                ]
+                ],
+				"SpellCasting": []
             },
             "16": {
                 "BAB": 16,
@@ -163,7 +180,8 @@
                 "Abilities": [
                     "DamageReduction4/-",
                     "Rage5/day"
-                ]
+                ],
+				"SpellCasting": []
             },
             "17": {
                 "BAB": 17,
@@ -172,7 +190,8 @@
                 "Will": 5,
                 "Abilities": [
                     "TimelessRage"
-                ]
+                ],
+				"SpellCasting": []
             },
             "18": {
                 "BAB": 18,
@@ -181,7 +200,8 @@
                 "Will": 6,
                 "Abilities": [
                     "TrapSense+6"
-                ]
+                ],
+				"SpellCasting": []
             },
             "19": {
                 "BAB": 19,
@@ -190,7 +210,8 @@
                 "Will": 6,
                 "Abilities": [
                     "DamageReduction5/-"
-                ]
+                ],
+				"SpellCasting": []
             },
             "20": {
                 "BAB": 20,
@@ -200,9 +221,51 @@
                 "Abilities": [
                     "MightyRage",
                     "Rage6/day"
-                ]
+                ],
+				"SpellCasting": []
             }
         },
         "BookSource": "PHB"
-    }
+    },
+    {
+        "Class": "",
+        "Base": true,
+        "HitDice": "",
+        "SkillPoints": 4,
+        "KeyStat": "",
+        "SecStat": "",
+		"SpellCaster": false,
+		"PsionicClass": false,
+        "ClassSkill": [],
+        "ClassAbilities": {
+			"1":
+			{
+				"BAB": 1,
+                "Fort": 1,
+                "Ref": 1,
+                "Will": 1,
+                "Abilities": [],
+				"SpellCasting": []
+			},
+			"2":
+			{
+				"BAB": 1,
+                "Fort": 1,
+                "Ref": 1,
+                "Will": 1,
+                "Abilities": [],
+				"SpellCasting": []
+			},
+			"3":
+			{
+				"BAB": 1,
+                "Fort": 1,
+                "Ref": 1,
+                "Will": 1,
+                "Abilities": [],
+				"SpellCasting": []
+			}
+		},
+		"BookSource": ""
+	}
 ]
