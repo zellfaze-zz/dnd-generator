@@ -230,9 +230,3 @@ about entries:
 	 Issues, Ideas and Idiocracy 
 +:-----------------------------------------:+
 
-Idea: have synergy (from the alignment, 
-	synergy, archetype files) handle 
-	blocking of other items basically 
-	if taking of a feat or such blocks 
-	you from another, have this 
-	information stored in synergy.
