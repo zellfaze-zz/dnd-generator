@@ -16,74 +16,17 @@ $(document).ready( function() {
   window.definitions = new Array();
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
-  var outstandingRequests = 3;
+  
   if (appLocation == 'local') {
-    var path = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
-    $.getJSON(path + "/extras/dieties.json", function( data ) {
-      logToAdvanced('Found diety definitions');
-      window.definitions['diety'] = data;
-    }).fail( function() {
-      logToAdvanced('No diety definitions found');
-      window.definitions['diety'] = null;
-    }).always( function() {
-      outstandingRequests--;
-      completedRequests();
-    });
-    $.getJSON(path + "/extras/languages.json", function( data ) {
-      logToAdvanced('Found language definitions');
-      window.definitions['language'] = data;
-    }).fail( function() {
-      logToAdvanced('No language definitions found');
-      window.definitions['language'] = null;
-    }).always( function() {
-      outstandingRequests--;
-      completedRequests();
-    });
-    $.getJSON(path + "/extras/skills.json", function( data ) {
-      logToAdvanced('Found skill definitions');
-      window.definitions['skills'] = data;
-    }).fail( function() {
-      logToAdvanced('No skill definitions found');
-      window.definitions['skills'] = null;
-    }).always( function() {
-      outstandingRequests--;
-      completedRequests();
-    });
+    var path = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
   } else {
-    $.getJSON( "extras/dieties.json", function( data ) {
-      logToAdvanced('Found diety definitions');
-      window.definitions['diety'] = data;
-    }).fail( function() {
-      logToAdvanced('No diety definitions found');
-      window.definitions['diety'] = null;
-    }).always( function() {
-      outstandingRequests--;
-      completedRequests();
-    });
-    $.getJSON( "extras/languages.json", function( data ) {
-      logToAdvanced('Found language definitions');
-      window.definitions['language'] = data;
-    }).fail( function() {
-      logToAdvanced('No language definitions found');
-      window.definitions['language'] = null;
-    }).always( function() {
-      outstandingRequests--;
-      completedRequests();
-    });
-    $.getJSON( "extras/skills.json", function( data ) {
-      logToAdvanced('Found skill definitions');
-      window.definitions['skills'] = data;
-    }).fail( function() {
-      logToAdvanced('No skill definitions found');
-      window.definitions['skills'] = null;
-    }).always( function() {
-      outstandingRequests--;
-      completedRequests();
-    });
+    var path = '';
   }
+  listOfJSON = new Array('dieties', 'languages', 'skills');
+  loadJSONFiles(path, listOfJSON, completedRequests);
   
   //This will run once all the requests are done
-  function completedRequests() {
+  function completedRequests(outstandingRequests) {
       if (outstandingRequests == 0) {
         logToAdvanced('All extra definitions loaded');
         
@@ -126,5 +69,24 @@ function logToAdvanced(textToLog) {
 //Given an array of items and their weights, selects a random item
 function weightedRandom(arrayOfWeightedData) {
   
+}
+
+function loadJSONFiles(location, listOfFiles, callback) {
+  var outstandingRequests = listOfFiles.length;
+  
+  listOfFiles.forEach(function (item) {
+    $.getJSON(location + "extras/" + item + ".json", function( data ) {
+      logToAdvanced('Found ' + item + ' definition file');
+      window.definitions[item] = data;
+    }).fail( function() {
+      logToAdvanced('Could not find ' + item + ' definition file');
+      window.definitions[item] = null;
+    }).always( function() {
+      outstandingRequests--;
+      if (typeof callback === "function") {
+        callback(outstandingRequests);
+      }
+    });
+  });
 }
 
