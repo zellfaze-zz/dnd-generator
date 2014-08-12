@@ -43,9 +43,10 @@ the dieties.json file, for example, to define all of the gods from the Player's
 Handbook or alternatively your own campaign setting.
 
 There are numerous tutorials online for how to edit JSON files.  Sample files
-are included in this distribution as well.
+are included in this distribution as well.  For more information on editting
+each of the JSON files, please see extras/jsonREADME.txt.
 
-Each of these files are described below:
+Each of the JSON files are described below:
   * dieties.json:
     Sample Licensed OGL (c) Sean K Reynolds et al.
     Defines dieties to be used by the application.  Each diety has a name, an
@@ -72,6 +73,27 @@ Each of these files are described below:
     magic users should favour it, whether or not psionic users should favour it,
     and what skills it gives synergy bonuses to.  If "Speak Languages" is not in
     this file, the Languages section will not be available.
+  * Classes.json:
+    Sample Licensed OGL (c) Wizards
+    Defines the classes and features that are available to characters.  Each
+    class is defined up to level 20.  The sample file includes all of the
+    classes from the System Reference Document.
+  * feats.json
+    Sample Licensed OGL (c) Wizards
+    Defines the feats available to characters.  Feats are defined using their
+    numeric bonuses along with their less mechanical bonuses.  The sample file
+    includes all of the feats from the System Reference Document.
+  * spell_list.json
+    Sample Licensed OGL (c) Wizards
+    Defines spell lists that are used by the various classes.  Many classes have
+    their own spells lists, but some, like Wizard and Sorcerer, share a spell
+    list.  Some spell lists are domain lists and become available to characters
+    as additional lists to their usual one.  This sample file includes all spell
+    lists from the System Reference Document.
+  * spells.json
+    Sample Licensed OGL (c) Wizards
+    Defines all spells that are referencable in the spell list file.  This
+    sample file includes all spells from the System Reference Document.
   
 ==Help By Section==  
 ===Ability Scores===
