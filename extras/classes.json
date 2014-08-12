@@ -1,13 +1,13 @@
 [
     {
-        "Class": "barbarian",
+        "Class": "Barbarian",
         "Base": true,
         "HitDice": "d12",
         "SkillPoints": 4,
         "KeyStat": "Strength",
         "SecStat": "Constitution",
-		"SpellCaster": false,
-		"PsionicClass": false,
+        "SpellCaster": false,
+        "PsionicClass": false,
         "ClassSkill": [
             "Climb",
             "Craft",
@@ -29,7 +29,8 @@
                     "Illiteracy",
                     "Rage1/day"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "2": {
                 "BAB": 2,
@@ -39,7 +40,8 @@
                 "Abilities": [
                     "Uncannydodge"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "3": {
                 "BAB": 3,
@@ -49,7 +51,8 @@
                 "Abilities": [
                     "Trapsense+1"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "4": {
                 "BAB": 4,
@@ -59,7 +62,8 @@
                 "Abilities": [
                     "Rage2/day"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "5": {
                 "BAB": 5,
@@ -69,7 +73,8 @@
                 "Abilities": [
                     "Improveduncannydodge"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "6": {
                 "BAB": 6,
@@ -79,7 +84,8 @@
                 "Abilities": [
                     "TrapSense+2"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "7": {
                 "BAB": 7,
@@ -89,7 +95,8 @@
                 "Abilities": [
                     "Damagereduction1/-"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "8": {
                 "BAB": 8,
@@ -99,7 +106,8 @@
                 "Abilities": [
                     "Rage3/day"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "9": {
                 "BAB": 9,
@@ -109,7 +117,8 @@
                 "Abilities": [
                     "TrapSense+3"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "10": {
                 "BAB": 10,
@@ -119,7 +128,8 @@
                 "Abilities": [
                     "DamageReduction2/-"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "11": {
                 "BAB": 11,
@@ -129,7 +139,8 @@
                 "Abilities": [
                     "GreaterRage"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "12": {
                 "BAB": 12,
@@ -140,7 +151,8 @@
                     "Rage4/day",
                     "TrapSense+4"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "13": {
                 "BAB": 13,
@@ -150,7 +162,8 @@
                 "Abilities": [
                     "DamageReduction3/-"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "14": {
                 "BAB": 14,
@@ -160,7 +173,8 @@
                 "Abilities": [
                     "IndomitableWill"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "15": {
                 "BAB": 15,
@@ -170,7 +184,8 @@
                 "Abilities": [
                     "TrapSense+5"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "16": {
                 "BAB": 16,
@@ -181,7 +196,8 @@
                     "DamageReduction4/-",
                     "Rage5/day"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "17": {
                 "BAB": 17,
@@ -191,7 +207,8 @@
                 "Abilities": [
                     "TimelessRage"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "18": {
                 "BAB": 18,
@@ -201,7 +218,8 @@
                 "Abilities": [
                     "TrapSense+6"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "19": {
                 "BAB": 19,
@@ -211,7 +229,8 @@
                 "Abilities": [
                     "DamageReduction5/-"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             },
             "20": {
                 "BAB": 20,
@@ -222,10 +241,886 @@
                     "MightyRage",
                     "Rage6/day"
                 ],
-				"SpellCasting": []
+                "SpellCasting": [],
+                "SpellsKnown": []
             }
         },
-        "BookSource": "PHB"
+        "BookSource": "PHB",
+        "Misc": {}
+    },
+    {
+        "Class": "Bard",
+        "Base": true,
+        "HitDice": "d6",
+        "SkillPoints": 6,
+        "KeyStat": "Charisma",
+        "SecStat": "Dexterity",
+        "SpellCaster": true,
+        "PsionicClass": false,
+        "ClassSkill": [
+            "Appraise",
+            "Balance",
+            "Bluff",
+            "Climb",
+            "Concentration",
+            "Craft",
+            "Decipher Script",
+            "Diplomacy",
+            "Disguise",
+            "Escape Artist",
+            "Gather Information",
+            "Hide",
+            "Jump",
+            "Knowledge",
+            "Listen",
+            "Move Silently",
+            "Perform",
+            "Profession",
+            "Sense Motive",
+            "Sleight of Hand",
+            "Speak Language",
+            "Spellcraft",
+            "Swim",
+            "Tumble",
+            "Use Magic Device"
+        ],
+        "ClassAbilities": {
+            "1": {
+                "BAB": 0,
+                "Fort": 0,
+                "Ref": 2,
+                "Will": 2,
+                "Abilities": [
+                    "Bardic music",
+                    "Bardic Knowledge",
+                    "Countersong",
+                    "fascinate",
+                    "Inspire courage +1"
+                ],
+                "SpellCasting": [
+                    2
+                ],
+                "SpellsKnown": [
+                    4
+                ]
+            },
+            "2": {
+                "BAB": 1,
+                "Fort": 0,
+                "Ref": 3,
+                "Will": 3,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    0
+                ],
+                "SpellsKnown": [
+                    5,
+                    2
+                ]
+            },
+            "3": {
+                "BAB": 2,
+                "Fort": 1,
+                "Ref": 3,
+                "Will": 3,
+                "Abilities": [
+                    "Inspire competence"
+                ],
+                "SpellCasting": [
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    6,
+                    3
+                ]
+            },
+            "4": {
+                "BAB": 3,
+                "Fort": 1,
+                "Ref": 4,
+                "Will": 4,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    2,
+                    0
+                ],
+                "SpellsKnown": [
+                    6,
+                    3,
+                    2
+                ]
+            },
+            "5": {
+                "BAB": 3,
+                "Fort": 1,
+                "Ref": 4,
+                "Will": 4,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    3
+                ]
+            },
+            "6": {
+                "BAB": 4,
+                "Fort": 2,
+                "Ref": 5,
+                "Will": 5,
+                "Abilities": [
+                    "Suggestion"
+                ],
+                "SpellCasting": [
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    3
+                ]
+            },
+            "7": {
+                "BAB": 5,
+                "Fort": 2,
+                "Ref": 5,
+                "Will": 5,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    3,
+                    2,
+                    0
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    2
+                ]
+            },
+            "8": {
+                "BAB": 6,
+                "Fort": 2,
+                "Ref": 6,
+                "Will": 6,
+                "Abilities": [
+                    "Inspire courage +2"
+                ],
+                "SpellCasting": [
+                    3,
+                    3,
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "9": {
+                "BAB": 6,
+                "Fort": 3,
+                "Ref": 6,
+                "Will": 6,
+                "Abilities": [
+                    "Inspire greatness"
+                ],
+                "SpellCasting": [
+                    3,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "10": {
+                "BAB": 7,
+                "Fort": 3,
+                "Ref": 7,
+                "Will": 7,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    4,
+                    2
+                ]
+            },
+            "11": {
+                "BAB": 8,
+                "Fort": 3,
+                "Ref": 7,
+                "Will": 7,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "12": {
+                "BAB": 9,
+                "Fort": 4,
+                "Ref": 8,
+                "Will": 8,
+                "Abilities": [
+                    "Song of freedom"
+                ],
+                "SpellCasting": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "13": {
+                "BAB": 9,
+                "Fort": 4,
+                "Ref": 8,
+                "Will": 8,
+                "Abilities": [],
+                "SpellCasting": [
+                    3,
+                    3,
+                    3,
+                    3,
+                    2,
+                    0
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    4,
+                    4,
+                    2
+                ]
+            },
+            "14": {
+                "BAB": 10,
+                "Fort": 4,
+                "Ref": 9,
+                "Will": 9,
+                "Abilities": [
+                    "Inspire courage +3"
+                ],
+                "SpellCasting": [
+                    4,
+                    3,
+                    3,
+                    3,
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "15": {
+                "BAB": 11,
+                "Fort": 5,
+                "Ref": 9,
+                "Will": 9,
+                "Abilities": [
+                    "Inspire heroics"
+                ],
+                "SpellCasting": [
+                    4,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    6,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "16": {
+                "BAB": 12,
+                "Fort": 5,
+                "Ref": 10,
+                "Will": 10,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2,
+                    0
+                ],
+                "SpellsKnown": [
+                    6,
+                    5,
+                    4,
+                    4,
+                    4,
+                    4,
+                    2
+                ]
+            },
+            "17": {
+                "BAB": 12,
+                "Fort": 5,
+                "Ref": 10,
+                "Will": 10,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    6,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "18": {
+                "BAB": 13,
+                "Fort": 6,
+                "Ref": 11,
+                "Will": 11,
+                "Abilities": [
+                    "Mass suggestion"
+                ],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    6,
+                    5,
+                    5,
+                    5,
+                    4,
+                    4,
+                    3
+                ]
+            },
+            "19": {
+                "BAB": 14,
+                "Fort": 6,
+                "Ref": 11,
+                "Will": 11,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3
+                ],
+                "SpellsKnown": [
+                    6,
+                    5,
+                    5,
+                    5,
+                    5,
+                    4,
+                    4
+                ]
+            },
+            "20": {
+                "BAB": 15,
+                "Fort": 6,
+                "Ref": 12,
+                "Will": 12,
+                "Abilities": [
+                    "Inspire courage +4"
+                ],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "SpellsKnown": [
+                    6,
+                    5,
+                    5,
+                    5,
+                    5,
+                    5,
+                    4
+                ]
+            }
+        },
+        "BookSource": "PHB",
+        "Misc": {}
+    },
+    {
+        "Class": "Wizard",
+        "Base": true,
+        "HitDice": "d4",
+        "SkillPoints": 2,
+        "KeyStat": "Int",
+        "SecStat": "Dex",
+        "SpellCaster": true,
+        "PsionicClass": false,
+        "ClassSkill": [
+            "Concentration",
+            "Craft",
+            "Decipher Script",
+            "Knowledge",
+            "Profession",
+            "Spellcraft"
+        ],
+        "ClassAbilities": {
+            "1": {
+                "BAB": 0,
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 2,
+                "Abilities": [
+                    "Summon familiar",
+                    "Scribe scroll"
+                ],
+                "SpellCasting": [
+                    3,
+                    1
+                ],
+                "SpellsKnown": [
+                    3
+                ]
+            },
+            "2": {
+                "BAB": 1,
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 3,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    2
+                ],
+                "SpellsKnown": [
+                    5
+                ]
+            },
+            "3": {
+                "BAB": 1,
+                "Fort": 1,
+                "Ref": 1,
+                "Will": 3,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    7
+                ]
+            },
+            "4": {
+                "BAB": 2,
+                "Fort": 1,
+                "Ref": 1,
+                "Will": 4,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    9
+                ]
+            },
+            "5": {
+                "BAB": 2,
+                "Fort": 1,
+                "Ref": 1,
+                "Will": 4,
+                "Abilities": [
+                    "bonus feat"
+                ],
+                "SpellCasting": [
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    11
+                ]
+            },
+            "6": {
+                "BAB": 3,
+                "Fort": 2,
+                "Ref": 2,
+                "Will": 5,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    13
+                ]
+            },
+            "7": {
+                "BAB": 3,
+                "Fort": 2,
+                "Ref": 2,
+                "Will": 5,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    15
+                ]
+            },
+            "8": {
+                "BAB": 4,
+                "Fort": 2,
+                "Ref": 2,
+                "Will": 6,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    17
+                ]
+            },
+            "9": {
+                "BAB": 4,
+                "Fort": 3,
+                "Ref": 3,
+                "Will": 6,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    19
+                ]
+            },
+            "10": {
+                "BAB": 5,
+                "Fort": 3,
+                "Ref": 3,
+                "Will": 7,
+                "Abilities": [
+                    "bonus feat"
+                ],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    21
+                ]
+            },
+            "11": {
+                "BAB": 5,
+                "Fort": 3,
+                "Ref": 3,
+                "Will": 7,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    23
+                ]
+            },
+            "12": {
+                "BAB": 6,
+                "Fort": 4,
+                "Ref": 4,
+                "Will": 8,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    25
+                ]
+            },
+            "13": {
+                "BAB": 6,
+                "Fort": 4,
+                "Ref": 4,
+                "Will": 8,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    27
+                ]
+            },
+            "14": {
+                "BAB": 7,
+                "Fort": 4,
+                "Ref": 4,
+                "Will": 8,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    29
+                ]
+            },
+            "15": {
+                "BAB": 7,
+                "Fort": 5,
+                "Ref": 5,
+                "Will": 9,
+                "Abilities": [
+                    "bonus feat"
+                ],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    31
+                ]
+            },
+            "16": {
+                "BAB": 8,
+                "Fort": 5,
+                "Ref": 5,
+                "Will": 10,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    33
+                ]
+            },
+            "17": {
+                "BAB": 8,
+                "Fort": 5,
+                "Ref": 5,
+                "Will": 10,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "SpellsKnown": [
+                    35
+                ]
+            },
+            "18": {
+                "BAB": 9,
+                "Fort": 6,
+                "Ref": 6,
+                "Will": 11,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
+                ],
+                "SpellsKnown": [
+                    37
+                ]
+            },
+            "19": {
+                "BAB": 9,
+                "Fort": 6,
+                "Ref": 6,
+                "Will": 11,
+                "Abilities": [],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3
+                ],
+                "SpellsKnown": [
+                    39
+                ]
+            },
+            "20": {
+                "BAB": 10,
+                "Fort": 6,
+                "Ref": 6,
+                "Will": 12,
+                "Abilities": [
+                    "bonus feat"
+                ],
+                "SpellCasting": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "SpellsKnown": [
+                    41
+                ]
+            }
+        },
+        "BookSource": "PHB",
+        "Misc": {}
     },
     {
         "Class": "",
@@ -234,38 +1129,39 @@
         "SkillPoints": 4,
         "KeyStat": "",
         "SecStat": "",
-		"SpellCaster": false,
-		"PsionicClass": false,
+        "SpellCaster": false,
+        "PsionicClass": false,
         "ClassSkill": [],
         "ClassAbilities": {
-			"1":
-			{
-				"BAB": 1,
+            "1": {
+                "BAB": 1,
                 "Fort": 1,
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [],
-				"SpellCasting": []
-			},
-			"2":
-			{
-				"BAB": 1,
+                "SpellCasting": [],
+                "SpellsKnown": []
+            },
+            "2": {
+                "BAB": 1,
                 "Fort": 1,
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [],
-				"SpellCasting": []
-			},
-			"3":
-			{
-				"BAB": 1,
+                "SpellCasting": [],
+                "SpellsKnown": []
+            },
+            "3": {
+                "BAB": 1,
                 "Fort": 1,
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [],
-				"SpellCasting": []
-			}
-		},
-		"BookSource": ""
-	}
+                "SpellCasting": [],
+                "SpellsKnown": []
+            }
+        },
+        "BookSource": "",
+        "Misc": {}
+    }
 ]

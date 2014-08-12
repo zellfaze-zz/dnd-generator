@@ -1,0 +1,20 @@
+[
+    {
+        "Name": "Backpack",
+        "Type": "Adventuring Gear",
+        "Weight": 2,
+        "Cost": "2 gp",
+        "damage": "n/a",
+        "Text": "A backpack is a leather pack carried on the back, typically with straps to secure it.",
+        "Source Book": "PHB"
+    },
+    {
+        "Name": "",
+        "Type": "",
+        "Weight": 1,
+        "Cost": "",
+        "Damage": "",
+        "Text": "",
+        "Source Book": ""
+    }
+]

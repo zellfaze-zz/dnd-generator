@@ -1,0 +1,34 @@
+[
+    {
+        "Name": "Amulet of Health +2",
+        "Cost": "4000gp",
+        "Location": "neck",
+        "Description": "This amulet is a golden disk on a chain.  It usually bears the image of a lion or other powerful animal.  The amulet grants the wearer an enhancement bonus to Constitution of +2",
+        "Benefits": {
+            "numeric": {
+                "skills": {},
+                "CharacterAbilities": {
+                    "Constitution": 2
+                }
+            },
+            "other": []
+        },
+        "Source Book": "DMG",
+        "Weight": "n/a"
+    },
+    {
+        "Name": "",
+        "Cost": "",
+        "Location": "",
+        "Description": "",
+        "Benefits": {
+            "numeric": {
+                "skills": {},
+                "CharacterAbilities": {}
+            },
+            "other": []
+        },
+        "Source Book": "",
+        "Weight": ""
+    }
+]
