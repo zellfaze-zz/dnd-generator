@@ -23,7 +23,8 @@ classes layout:
         		        "Ref": 1,
              			"Will": 1,
        			        "Abilities": [],
-				"SpellCasting": []
+				"SpellCasting": [],
+				"SpellsKnown": []
 			},
 			"2":
 			{
@@ -32,7 +33,8 @@ classes layout:
                 		"Ref": 1,
                 		"Will": 1,
                 		"Abilities": [],
-				"SpellCasting": []
+				"SpellCasting": [],
+				"SpellsKnown": []
 			},
 			"3":
 			{
@@ -41,10 +43,13 @@ classes layout:
                 		"Ref": 1,
                 		"Will": 1,
                 		"Abilities": [],
-				"SpellCasting": []
+				"SpellCasting": [],
+				"SpellsKnown": []
 			}
 		},
-		"BookSource": ""
+		"BookSource": "",
+		"Misc": {
+		}
 	}
 
 ---------------------------------------------------------------------------------
@@ -65,8 +70,11 @@ about entries:
 				 a day, at level 4, they get it twice. at level 4 they will need to have that overwritten so
 			         that the higher value is taken
 		The array also has a spell casting array that will have the number of spells per day that they get.  this should be an
-		array of int's
+		array of int's. SpellsKnown holds the number of spells that class should know at that level.  some classes have spells
+		known based on the spell level and others have them based on a total number. any class that has access to all, it will
+		say here.
 	Book Source	: the book the class comes from
+	Misc		: any extra information that doesnt really belong anywhere else
 
 =================================================================================
 feats layout:
@@ -98,6 +106,61 @@ about entries:
 	Short Text	: text from the quick feat entry
 	Long Text	: text from the feat entry
 	Book Source	: the book the feat comes from
+
+=================================================================================
+magic items layout:
+=================================================================================
+    {
+        "Name": "",
+        "Cost": "",
+        "Location": "",
+        "Description": "",
+        "Benefits": {
+            "numeric": {
+                "skills": {},
+                "CharacterAbilities": {}
+            },
+            "other": []
+        },
+        "Source Book": "",
+        "Weight": ""
+    }
+
+---------------------------------------------------------------------------------
+about entries:
+
+	Name		: Self explaintory
+	Cost		: the price to buy the item
+	Location	: location the item is stored on the body, n/a means it can be stored anywhere
+	Desciption	: entry from the book
+	Benefits	: the benefit the item can grant, like with feats the item can give different types.
+		such as a stat boost, skill boost or speed boost.  this information is stored here.
+	Source Book	: the book the item came from
+	Weight		: the weight of the item
+
+=================================================================================
+mundane items layout:
+=================================================================================
+    {
+        "Name": "",
+        "Type": "",
+        "Weight": 1,
+        "Cost": "",
+        "Damage": "",
+        "Text": "",
+        "Source Book": ""
+    }
+
+---------------------------------------------------------------------------------
+about entries:
+
+	Name		: Self explaintory
+	Type		: the catagory of item
+	Weight		: the weight of the item
+	Cost		: the price for the item
+	Damage		: the damage of the item, if any
+	Text		: entry from the book
+	Source book	: the book the item came from
 
 =================================================================================
 spell layout:
@@ -167,32 +230,6 @@ about entries:
 +:-----------------------------------------:+
 	 Issues, Ideas and Idiocracy 
 +:-----------------------------------------:+
-
-Issue: Sorcercers
-	They have spells per day AND spells 
-	known we need to update the class 
-	lay out to handle these for spell 
-	casters, some are spontantous others 
-	Prepared. 
-		*could turn the SpellCaster 
-		entry from boolean into a 
-		string that holds the type 
-		they are
-
-Issue: Specialized spell casting
-	Wizard/psion problem, (well not so 
-	much psion because they have other 
-	stuffs) specialized wizards get an 
-	extra spell per spell level, how do 
-	we address this?
-
-Issue: over writing
-	just making sure, the program is 
-	going to deal with over writing of 
-	abilities granted from ClassAbilities?
-	basically if a barbarian levels up 
-	to level 4, he will lose rage/1 day 
-	and gain rage/2 day
 
 Idea: have synergy (from the alignment, 
 	synergy, archetype files) handle 
