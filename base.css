@@ -19,6 +19,10 @@ footer {
   overflow-y: scroll;
 }
 
+#lastPage {
+  display:none;
+}
+
 input[type="number"] {
   width: 40px;
 }

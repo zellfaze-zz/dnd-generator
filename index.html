@@ -3,613 +3,661 @@
   <head>
     <title>D&amp;D Random Character Generator</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="base.css" />
   </head>
   <body>
-    <h1>D&amp;D Random Character Generator</h1>
-    <aside><p>Protip: For help with any option, hover your mouse over it.</p></aside>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">D&amp;D Random Character Generator</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Welcome</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/zellfaze/dnd-generator" target="_new">Fork Me on GitHub!</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Show Advanced</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
     
-    <button id="generate" style="display:none;" title="Click this once you have all your requirements filled in">Generate Character!</button>
-    
-    <section>
-      <h1>Global Options</h1>
-      <div class="sectionContent">
-        <fieldset name="mainOptions" class="options">
-          <legend>Main Options</legend>
+    <div id="page1">
+      <div class="page-header text-center">
+        <h1>Welcome to the D&amp;D Character Sheet Generator</h1>
+        <p style="font-size: 1.75em; margin-bottom: 1.75em;">Would you like to:</p>
+        <div style="margin-left: auto; margin-right: auto;">
+          <a class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Start a character at level 1 and make choices all along the way.">Progress a<br />new Character</a>
+          <span class="lead" style="margin-left: 2em; margin-right: 2em;">Or</span>
+          <a class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Just select an ending level and what the character needs.">Generate a<br />new Character</a>
+        </div>
+      </div>
+    </div>
+    <div id="lastPage">
+      <h1>D&amp;D Random Character Generator</h1>
+      <aside><p>Protip: For help with any option, hover your mouse over it.</p></aside>
+      
+      <button id="generate" style="display:none;" title="Click this once you have all your requirements filled in">Generate Character!</button>
+      
+      <section>
+        <h1>Global Options</h1>
+        <div class="sectionContent">
+          <fieldset name="mainOptions" class="options">
+            <legend>Main Options</legend>
+            <table>
+              <tr>
+                <td><label for="mainOptions-classAbility" title="Does one of these determine the other?">Class/Ability Relationship:</label></td>
+                <td>
+                  <select name="mainOptions-classAbility" id="mainOptions-classAbility">
+                    <option>Random</option>
+                    <option>Class determines Ability Score choice</option>
+                    <option>Ability Scores determine Class choice</option>
+                    <option>Independent</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Basic Information</h1>
+        <div class="sectionContent">
+          <fieldset name="basicInfoOptions" class="options">
+            <legend>Options</legend>
+            <table>
+              <tr>
+                <td><label for="basicInfoOptions-minLevel" title="Lowest level that can be randomly selected">Min Level:</label></td>
+                <td><input name="basicInfoOptions-minLevel" id="basicInfoOptions-minLevel" type="number" /></td>
+              </tr>
+              <tr>
+                <td><label for="basicInfoOptions-maxLevel" title="Highest level that can be randomly selected">Max Level:</label></td>
+                <td><input name="basicInfoOptions-maxLevel" id="basicInfoOptions-maxLevel" type="number" /></td>
+              </tr>
+              <tr>
+                <td><label for="basicInfoOptions-multiclass" title="Check to enable multi-classing">Multi-classing:</label></td>
+                <td><input name="basicInfoOptions-multiclass" id="basicInfoOptions-multiclass" type="checkbox" checked="checked" /></td>
+              </tr>
+              <tr>
+                <td><label for="basicInfoOptions-alignmentDiety" title="Does one of these determine the other?">Alignment/Diety Relationship:</label></td>
+                <td>
+                  <select name="basicInfoOptions-alignmentDiety" id="basicInfoOptions-alignmentDiety">
+                    <option>Random</option>
+                    <option selected="selected">Alignment determines Diety choice</option>
+                    <option>Diety determine Alignment choice</option>
+                    <option>Independent</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <table>
+          <tr>
+            <td><label for="basicInfo-name">Name:</label></td>
+            <td><input type="text" name="basicInfo-name" id="basicInfo-name" /></td>
+          </tr>
+          <tr>
+            <td><label for="basicInfo-race">Race:</label></td>
+            <td>
+              <select name="basicInfo-race" id="basicInfo-race">
+                <option>Random</option>
+                <option>Dwarves, Hill</option>
+                <option>Elves, High</option>
+                <option>Gnomes, Rock</option>
+                <option>Half-Elves</option>
+                <option>Half-Orcs</option>
+                <option>Halflings, Lightfoot</option>
+                <option>Humans</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="basicInfo-class">Class:</label></td>
+            <td>
+              <select name="basicInfo-class" id="basicInfo-class">
+                <option>Random</option>
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Druid</option>
+                <option>Fighter</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Psion</option>
+                <option>Psychic Warrior</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Sorcerer</option>
+                <option>Soulknife</option>
+                <option>Wilder</option>
+                <option>Wizard</option>
+              </select>
+              /
+              <select name="basicInfo-class2" id="basicInfo-class2">
+                <option>Random</option>
+                <option>None</option>
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Druid</option>
+                <option>Fighter</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Psion</option>
+                <option>Psychic Warrior</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Sorcerer</option>
+                <option>Soulknife</option>
+                <option>Wilder</option>
+                <option>Wizard</option>
+              </select>
+              /
+              <select name="basicInfo-class3" id="basicInfo-class3">
+                <option>Random</option>
+                <option>None</option>
+                <option>Barbarian</option>
+                <option>Bard</option>
+                <option>Cleric</option>
+                <option>Druid</option>
+                <option>Fighter</option>
+                <option>Monk</option>
+                <option>Paladin</option>
+                <option>Psion</option>
+                <option>Psychic Warrior</option>
+                <option>Ranger</option>
+                <option>Rogue</option>
+                <option>Sorcerer</option>
+                <option>Soulknife</option>
+                <option>Wilder</option>
+                <option>Wizard</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="basicInfo-level">Level:</label></td>
+            <td>
+              <input type="number" name="basicInfo-level1" id="basicInfo-level1" min="1" step="1" /> /
+              <input type="number" name="basicInfo-level2" id="basicInfo-level2" min="1" step="1" /> /
+              <input type="number" name="basicInfo-level3" id="basicInfo-level3" min="1" step="1" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="basicInfo-alignment">Alignment:</label></td>
+            <td><input type="text" name="basicInfo-alignment" id="basicInfo-alignment" /></td>
+          </tr>
+          <tr>
+            <td><label for="basicInfo-diety">Diety:</label></td>
+            <td><input type="text" name="basicInfo-diety" id="basicInfo-diety" /></td>
+          </tr>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Ability Scores</h1>
+        <div class="sectionContent">
+          <fieldset name="abilityScoreOptions" class="options">
+            <legend>Options</legend>
+            <table>
+              <tr>
+                <td><label for="abilityScoreOptions-roll" title="See Readme file for more info">Roll Method:</label></td>
+                <td>
+                  <select name="abilityScoreOptions-roll" id="abilityScoreOptions-roll">
+                    <option>3d6 x6</option>
+                    <option>4d6 Drop x6</option>
+                    <option>4d6 Drop x7 Drop</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="abilityScoreOptions-place" title="See Readme file for more info">Placement Method:</label></td>
+                <td>
+                  <select name="abilityScoreOptions-place" id="abilityScoreOptions-place">
+                    <option>Random</option>
+                    <option>Pick</option>
+                  </select>
+                </td>
+              </tr>            
+            </table>
+          </fieldset>
           <table>
             <tr>
-              <td><label for="mainOptions-classAbility" title="Does one of these determine the other?">Class/Ability Relationship:</label></td>
-              <td>
-                <select name="mainOptions-classAbility" id="mainOptions-classAbility">
-                  <option>Random</option>
-                  <option>Class determines Ability Score choice</option>
-                  <option>Ability Scores determine Class choice</option>
-                  <option>Independent</option>
-                </select>
-              </td>
+              <th>&nbsp;</th>
+              <th>Score</th>
+              <th>Rolled</th>
+              <th title="Can be negative">Racial</th>
+              <th title="Can be negative">Misc</th>
+              <th>Modifier</th>
+            </tr>
+            <tr>
+              <td><label for="abilityScore-str">Str:</label></td>
+              <td><input name="abilityScore-str" id="abilityScore-str" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-strRolled" id="abilityScore-strRolled" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-strRacial" id="abilityScore-strRacial" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-strMisc" id="abilityScore-strMisc" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-strMod" id="abilityScore-strMod" type="number" min="1" step="1" /></td>
+            </tr>
+            <tr>
+              <td><label for="abilityScore-dex">Dex:</label></td>
+              <td><input name="abilityScore-dex" id="abilityScore-dex" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-dexRolled" id="abilityScore-dexRolled" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-dexRacial" id="abilityScore-dexRacial" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-dexMisc" id="abilityScore-dexMisc" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-dexMod" id="abilityScore-dexMod" type="number" min="1" step="1" /></td>
+            </tr>
+            <tr>
+              <td><label for="abilityScore-con">Con:</label></td>
+              <td><input name="abilityScore-con" id="abilityScore-con" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-conRolled" id="abilityScore-conRolled" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-conRacial" id="abilityScore-conRacial" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-conMisc" id="abilityScore-conMisc" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-conMod" id="abilityScore-conMod" type="number" min="1" step="1" /></td>
+            </tr>
+            <tr>
+              <td><label for="abilityScore-int">Int:</label></td>
+              <td><input name="abilityScore-int" id="abilityScore-int" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-intRolled" id="abilityScore-intRolled" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-intRacial" id="abilityScore-intRacial" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-intMisc" id="abilityScore-intMisc" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-intMod" id="abilityScore-intMod" type="number" min="1" step="1" /></td>
+            </tr>
+            <tr>
+              <td><label for="abilityScore-wis">Wis:</label></td>
+              <td><input name="abilityScore-wis" id="abilityScore-wis" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-wisRolled" id="abilityScore-wisRolled" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-wisRacial" id="abilityScore-wisRacial" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-wisMisc" id="abilityScore-wisMisc" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-wisMod" id="abilityScore-wisMod" type="number" min="1" step="1" /></td>
+            </tr>
+            <tr>
+              <td><label for="abilityScore-cha">Cha:</label></td>
+              <td><input name="abilityScore-cha" id="abilityScore-cha" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-chaRolled" id="abilityScore-chaRolled" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-chaRacial" id="abilityScore-chaRacial" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-chaMisc" id="abilityScore-chaMisc" type="number" min="1" step="1" /></td>
+              <td><input name="abilityScore-chaMod" id="abilityScore-chaMod" type="number" min="1" step="1" /></td>
             </tr>
           </table>
-        </fieldset>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Basic Information</h1>
-      <div class="sectionContent">
-        <fieldset name="basicInfoOptions" class="options">
-          <legend>Options</legend>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Hit Points</h1>
+        <div class="sectionContent">
+          <fieldset name="abilityScoreOptions" class="options">
+            <legend>Options</legend>
+            <table>
+              <tr>
+                <td><label for="hitpointsOptions-minHP" title="Lowest amount of HP allowed, leave blank for none">Minimum HP:</label></td>
+                <td><input name="hitpointsOptions-minHP" id="hitpointsOptions-minHP" type="number" /></td>
+              </tr>
+              <tr>
+                <td><label for="hitpointsOptions-bonusHP" title="After HP is determined, add this much">Bonus HP:</label></td>
+                <td><input name="hitpointsOptions-bonusHP" id="hitpointsOptions-bonusHP" type="number" /></td>
+              </tr>
+              <tr>
+                <td><label for="hitpointsOptions-bonusHPLevel" title="After HP is determined, add this much each level">Bonus HP per level:</label></td>
+                <td><input name="hitpointsOptions-bonusHPLevel" id="hitpointsOptions-bonusHPLevel" type="number" /></td>
+              </tr>
+            </table>
+          </fieldset>
           <table>
             <tr>
-              <td><label for="basicInfoOptions-minLevel" title="Lowest level that can be randomly selected">Min Level:</label></td>
-              <td><input name="basicInfoOptions-minLevel" id="basicInfoOptions-minLevel" type="number" /></td>
+              <td><label for="hitpoints-dieType">Die Type:</label></td>
+              <td><input name="hitpoints-dieType" id="hitpoints-dieType" type="text" /></td>
             </tr>
             <tr>
-              <td><label for="basicInfoOptions-maxLevel" title="Highest level that can be randomly selected">Max Level:</label></td>
-              <td><input name="basicInfoOptions-maxLevel" id="basicInfoOptions-maxLevel" type="number" /></td>
-            </tr>
-            <tr>
-              <td><label for="basicInfoOptions-multiclass" title="Check to enable multi-classing">Multi-classing:</label></td>
-              <td><input name="basicInfoOptions-multiclass" id="basicInfoOptions-multiclass" type="checkbox" checked="checked" /></td>
-            </tr>
-            <tr>
-              <td><label for="basicInfoOptions-alignmentDiety" title="Does one of these determine the other?">Alignment/Diety Relationship:</label></td>
-              <td>
-                <select name="basicInfoOptions-alignmentDiety" id="basicInfoOptions-alignmentDiety">
-                  <option>Random</option>
-                  <option selected="selected">Alignment determines Diety choice</option>
-                  <option>Diety determine Alignment choice</option>
-                  <option>Independent</option>
-                </select>
-              </td>
+              <td><label for="hitpoints-max">Max HP:</label></td>
+              <td><input name="hitpoints-max" id="hitpoints-max" type="number" /></td>
             </tr>
           </table>
-        </fieldset>
-        <table>
-        <tr>
-          <td><label for="basicInfo-name">Name:</label></td>
-          <td><input type="text" name="basicInfo-name" id="basicInfo-name" /></td>
-        </tr>
-        <tr>
-          <td><label for="basicInfo-race">Race:</label></td>
-          <td>
-            <select name="basicInfo-race" id="basicInfo-race">
-              <option>Random</option>
-              <option>Dwarves, Hill</option>
-              <option>Elves, High</option>
-              <option>Gnomes, Rock</option>
-              <option>Half-Elves</option>
-              <option>Half-Orcs</option>
-              <option>Halflings, Lightfoot</option>
-              <option>Humans</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td><label for="basicInfo-class">Class:</label></td>
-          <td>
-            <select name="basicInfo-class" id="basicInfo-class">
-              <option>Random</option>
-              <option>Barbarian</option>
-              <option>Bard</option>
-              <option>Cleric</option>
-              <option>Druid</option>
-              <option>Fighter</option>
-              <option>Monk</option>
-              <option>Paladin</option>
-              <option>Psion</option>
-              <option>Psychic Warrior</option>
-              <option>Ranger</option>
-              <option>Rogue</option>
-              <option>Sorcerer</option>
-              <option>Soulknife</option>
-              <option>Wilder</option>
-              <option>Wizard</option>
-            </select>
-            /
-            <select name="basicInfo-class2" id="basicInfo-class2">
-              <option>Random</option>
-              <option>None</option>
-              <option>Barbarian</option>
-              <option>Bard</option>
-              <option>Cleric</option>
-              <option>Druid</option>
-              <option>Fighter</option>
-              <option>Monk</option>
-              <option>Paladin</option>
-              <option>Psion</option>
-              <option>Psychic Warrior</option>
-              <option>Ranger</option>
-              <option>Rogue</option>
-              <option>Sorcerer</option>
-              <option>Soulknife</option>
-              <option>Wilder</option>
-              <option>Wizard</option>
-            </select>
-            /
-            <select name="basicInfo-class3" id="basicInfo-class3">
-              <option>Random</option>
-              <option>None</option>
-              <option>Barbarian</option>
-              <option>Bard</option>
-              <option>Cleric</option>
-              <option>Druid</option>
-              <option>Fighter</option>
-              <option>Monk</option>
-              <option>Paladin</option>
-              <option>Psion</option>
-              <option>Psychic Warrior</option>
-              <option>Ranger</option>
-              <option>Rogue</option>
-              <option>Sorcerer</option>
-              <option>Soulknife</option>
-              <option>Wilder</option>
-              <option>Wizard</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td><label for="basicInfo-level">Level:</label></td>
-          <td>
-            <input type="number" name="basicInfo-level1" id="basicInfo-level1" min="1" step="1" /> /
-            <input type="number" name="basicInfo-level2" id="basicInfo-level2" min="1" step="1" /> /
-            <input type="number" name="basicInfo-level3" id="basicInfo-level3" min="1" step="1" />
-          </td>
-        </tr>
-        <tr>
-          <td><label for="basicInfo-alignment">Alignment:</label></td>
-          <td><input type="text" name="basicInfo-alignment" id="basicInfo-alignment" /></td>
-        </tr>
-        <tr>
-          <td><label for="basicInfo-diety">Diety:</label></td>
-          <td><input type="text" name="basicInfo-diety" id="basicInfo-diety" /></td>
-        </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Ability Scores</h1>
-      <div class="sectionContent">
-        <fieldset name="abilityScoreOptions" class="options">
-          <legend>Options</legend>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Initiative</h1>
+        <div class="sectionContent">
           <table>
             <tr>
-              <td><label for="abilityScoreOptions-roll" title="See Readme file for more info">Roll Method:</label></td>
-              <td>
-                <select name="abilityScoreOptions-roll" id="abilityScoreOptions-roll">
-                  <option>3d6 x6</option>
-                  <option>4d6 Drop x6</option>
-                  <option>4d6 Drop x7 Drop</option>
-                </select>
-              </td>
+              <td><label for="init-total">Total:</label></td>
+              <td><input name="init-total" id="init-total" type="number" /></td>
             </tr>
             <tr>
-              <td><label for="abilityScoreOptions-place" title="See Readme file for more info">Placement Method:</label></td>
-              <td>
-                <select name="abilityScoreOptions-place" id="abilityScoreOptions-place">
-                  <option>Random</option>
-                  <option>Pick</option>
-                </select>
-              </td>
-            </tr>            
+              <td><label for="init-dex">Dex:</label></td>
+              <td><input name="init-dex" id="init-dex" type="number" /></td>
+            </tr>
+            <tr>
+              <td><label for="init-misc">Misc:</label></td>
+              <td><input name="init-misc" id="init-misc" type="number" /></td>
+            </tr>
           </table>
-        </fieldset>
-        <table>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Score</th>
-            <th>Rolled</th>
-            <th title="Can be negative">Racial</th>
-            <th title="Can be negative">Misc</th>
-            <th>Modifier</th>
-          </tr>
-          <tr>
-            <td><label for="abilityScore-str">Str:</label></td>
-            <td><input name="abilityScore-str" id="abilityScore-str" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-strRolled" id="abilityScore-strRolled" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-strRacial" id="abilityScore-strRacial" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-strMisc" id="abilityScore-strMisc" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-strMod" id="abilityScore-strMod" type="number" min="1" step="1" /></td>
-          </tr>
-          <tr>
-            <td><label for="abilityScore-dex">Dex:</label></td>
-            <td><input name="abilityScore-dex" id="abilityScore-dex" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-dexRolled" id="abilityScore-dexRolled" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-dexRacial" id="abilityScore-dexRacial" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-dexMisc" id="abilityScore-dexMisc" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-dexMod" id="abilityScore-dexMod" type="number" min="1" step="1" /></td>
-          </tr>
-          <tr>
-            <td><label for="abilityScore-con">Con:</label></td>
-            <td><input name="abilityScore-con" id="abilityScore-con" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-conRolled" id="abilityScore-conRolled" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-conRacial" id="abilityScore-conRacial" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-conMisc" id="abilityScore-conMisc" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-conMod" id="abilityScore-conMod" type="number" min="1" step="1" /></td>
-          </tr>
-          <tr>
-            <td><label for="abilityScore-int">Int:</label></td>
-            <td><input name="abilityScore-int" id="abilityScore-int" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-intRolled" id="abilityScore-intRolled" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-intRacial" id="abilityScore-intRacial" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-intMisc" id="abilityScore-intMisc" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-intMod" id="abilityScore-intMod" type="number" min="1" step="1" /></td>
-          </tr>
-          <tr>
-            <td><label for="abilityScore-wis">Wis:</label></td>
-            <td><input name="abilityScore-wis" id="abilityScore-wis" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-wisRolled" id="abilityScore-wisRolled" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-wisRacial" id="abilityScore-wisRacial" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-wisMisc" id="abilityScore-wisMisc" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-wisMod" id="abilityScore-wisMod" type="number" min="1" step="1" /></td>
-          </tr>
-          <tr>
-            <td><label for="abilityScore-cha">Cha:</label></td>
-            <td><input name="abilityScore-cha" id="abilityScore-cha" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-chaRolled" id="abilityScore-chaRolled" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-chaRacial" id="abilityScore-chaRacial" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-chaMisc" id="abilityScore-chaMisc" type="number" min="1" step="1" /></td>
-            <td><input name="abilityScore-chaMod" id="abilityScore-chaMod" type="number" min="1" step="1" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Hit Points</h1>
-      <div class="sectionContent">
-        <fieldset name="abilityScoreOptions" class="options">
-          <legend>Options</legend>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Armor Class</h1>
+        <div class="sectionContent">
           <table>
             <tr>
-              <td><label for="hitpointsOptions-minHP" title="Lowest amount of HP allowed, leave blank for none">Minimum HP:</label></td>
-              <td><input name="hitpointsOptions-minHP" id="hitpointsOptions-minHP" type="number" /></td>
+              <th><label for="ac-total">Total</label></th>
+              <th>Base</th>
+              <th><label for="ac-armor">Armor</label></th>
+              <th><label for="ac-shield">Shield</label></th>
+              <th><label for="ac-dex">Dex</label></th>
+              <th><label for="ac-size">Size</label></th>
+              <th><label for="ac-nat">Nat</label></th>
+              <th><label for="ac-misc1">Misc1</label></th>
+              <th><label for="ac-misc2">Misc2</label></th>
             </tr>
             <tr>
-              <td><label for="hitpointsOptions-bonusHP" title="After HP is determined, add this much">Bonus HP:</label></td>
-              <td><input name="hitpointsOptions-bonusHP" id="hitpointsOptions-bonusHP" type="number" /></td>
-            </tr>
-            <tr>
-              <td><label for="hitpointsOptions-bonusHPLevel" title="After HP is determined, add this much each level">Bonus HP per level:</label></td>
-              <td><input name="hitpointsOptions-bonusHPLevel" id="hitpointsOptions-bonusHPLevel" type="number" /></td>
+              <td><input name="ac-total" id="ac-total" type="number" /> = </td>
+              <td>10 + </td>
+              <td><input name="ac-armor" id="ac-armor" type="number" /> + </td>
+              <td><input name="ac-shield" id="ac-shield" type="number" /> + </td>
+              <td><input name="ac-dex" id="ac-dex" type="number" /> + </td>
+              <td><input name="ac-size" id="ac-size" type="number" /> + </td>
+              <td><input name="ac-nat" id="ac-nat" type="number" /> + </td>
+              <td><input name="ac-misc1" id="ac-misc1" type="number" /> + </td>
+              <td><input name="ac-misc2" id="ac-misc2" type="number" /></td>
             </tr>
           </table>
-        </fieldset>
-        <table>
-          <tr>
-            <td><label for="hitpoints-dieType">Die Type:</label></td>
-            <td><input name="hitpoints-dieType" id="hitpoints-dieType" type="text" /></td>
-          </tr>
-          <tr>
-            <td><label for="hitpoints-max">Max HP:</label></td>
-            <td><input name="hitpoints-max" id="hitpoints-max" type="number" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Initiative</h1>
-      <div class="sectionContent">
-        <table>
-          <tr>
-            <td><label for="init-total">Total:</label></td>
-            <td><input name="init-total" id="init-total" type="number" /></td>
-          </tr>
-          <tr>
-            <td><label for="init-dex">Dex:</label></td>
-            <td><input name="init-dex" id="init-dex" type="number" /></td>
-          </tr>
-          <tr>
-            <td><label for="init-misc">Misc:</label></td>
-            <td><input name="init-misc" id="init-misc" type="number" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Armor Class</h1>
-      <div class="sectionContent">
-        <table>
-          <tr>
-            <th><label for="ac-total">Total</label></th>
-            <th>Base</th>
-            <th><label for="ac-armor">Armor</label></th>
-            <th><label for="ac-shield">Shield</label></th>
-            <th><label for="ac-dex">Dex</label></th>
-            <th><label for="ac-size">Size</label></th>
-            <th><label for="ac-nat">Nat</label></th>
-            <th><label for="ac-misc1">Misc1</label></th>
-            <th><label for="ac-misc2">Misc2</label></th>
-          </tr>
-          <tr>
-            <td><input name="ac-total" id="ac-total" type="number" /> = </td>
-            <td>10 + </td>
-            <td><input name="ac-armor" id="ac-armor" type="number" /> + </td>
-            <td><input name="ac-shield" id="ac-shield" type="number" /> + </td>
-            <td><input name="ac-dex" id="ac-dex" type="number" /> + </td>
-            <td><input name="ac-size" id="ac-size" type="number" /> + </td>
-            <td><input name="ac-nat" id="ac-nat" type="number" /> + </td>
-            <td><input name="ac-misc1" id="ac-misc1" type="number" /> + </td>
-            <td><input name="ac-misc2" id="ac-misc2" type="number" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Saving Throws</h1>
-      <div class="sectionContent">
-        <table>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Total</th>
-            <th>Base 1</th>
-            <th>Base 2</th>
-            <th>Base 3</th>
-            <th>Ability</th>
-            <th>Magic</th>
-            <th>Misc</th>
-          </tr>
-          <tr>
-            <td>Fortitude:</td>
-            <td><input name="saves-fortTotal" id="saves-fortTotal" type="number" /></td>
-            <td><input name="saves-fortBase1" id="saves-fortBase1" type="number" /></td>
-            <td><input name="saves-fortBase2" id="saves-fortBase2" type="number" /></td>
-            <td><input name="saves-fortBase3" id="saves-fortBase3" type="number" /></td>
-            <td><input name="saves-fortAbility" id="saves-fortAbility" type="number" /></td>
-            <td><input name="saves-fortMagic" id="saves-fortMagic" type="number" /></td>
-            <td><input name="saves-fortMisc" id="saves-fortMisc" type="number" /></td>
-          </tr>
-          <tr>
-            <td>Reflex:</td>
-            <td><input name="saves-refTotal" id="saves-refTotal" type="number" /></td>
-            <td><input name="saves-refBase1" id="saves-refBase1" type="number" /></td>
-            <td><input name="saves-refBase2" id="saves-refBase2" type="number" /></td>
-            <td><input name="saves-refBase3" id="saves-refBase3" type="number" /></td>
-            <td><input name="saves-refAbility" id="saves-refAbility" type="number" /></td>
-            <td><input name="saves-refMagic" id="saves-refMagic" type="number" /></td>
-            <td><input name="saves-refMisc" id="saves-refMisc" type="number" /></td>
-          </tr>
-          <tr>
-            <td>Will:</td>
-            <td><input name="saves-willTotal" id="saves-willTotal" type="number" /></td>
-            <td><input name="saves-willBase1" id="saves-willBase1" type="number" /></td>
-            <td><input name="saves-willBase2" id="saves-willBase2" type="number" /></td>
-            <td><input name="saves-willBase3" id="saves-willBase3" type="number" /></td>
-            <td><input name="saves-willAbility" id="saves-willAbility" type="number" /></td>
-            <td><input name="saves-willMagic" id="saves-willMagic" type="number" /></td>
-            <td><input name="saves-willMisc" id="saves-willMisc" type="number" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Attack Rolls</h1>
-      <div class="sectionContent">
-        <table>
-          <tr>
-            <th>&nbsp;</th>
-            <th>Total 1</th>
-            <th>Total 2</th>
-            <th>Total 3</th>
-            <th>Total 4</th>
-            <th>Base 1</th>
-            <th>Base 2</th>
-            <th>Base 3</th>
-            <th>Base 4</th>
-            <th>Ability</th>
-            <th>Size</th>
-            <th>Misc 1</th>
-            <th>Misc 2</th>
-          </tr>
-          <tr>
-            <td>Melee</td>
-            <td><input name="attack-meleeTotal1" id="attack-meleeTotal1" type="number" /></td>
-            <td><input name="attack-meleeTotal2" id="attack-meleeTotal2" type="number" /></td>
-            <td><input name="attack-meleeTotal3" id="attack-meleeTotal3" type="number" /></td>
-            <td><input name="attack-meleeTotal4" id="attack-meleeTotal4" type="number" /></td>
-            <td><input name="attack-meleeBase1" id="attack-meleeBase1" type="number" /></td>
-            <td><input name="attack-meleeBase2" id="attack-meleeBase2" type="number" /></td>
-            <td><input name="attack-meleeBase3" id="attack-meleeBase3" type="number" /></td>
-            <td><input name="attack-meleeBase4" id="attack-meleeBase4" type="number" /></td>
-            <td><input name="attack-meleeAbility" id="attack-meleeAbility" type="number" /></td>
-            <td><input name="attack-meleeSize" id="attack-meleeSize" type="number" /></td>
-            <td><input name="attack-meleeMisc1" id="attack-meleeMisc1" type="number" /></td>
-            <td><input name="attack-meleeMisc2" id="attack-meleeMisc2" type="number" /></td>
-          </tr>
-          <tr>
-            <td>Ranged</td>
-            <td><input name="attack-rangedTotal1" id="attack-rangedTotal1" type="number" /></td>
-            <td><input name="attack-rangedTotal2" id="attack-rangedTotal2" type="number" /></td>
-            <td><input name="attack-rangedTotal3" id="attack-rangedTotal3" type="number" /></td>
-            <td><input name="attack-rangedTotal4" id="attack-rangedTotal4" type="number" /></td>
-            <td><input name="attack-rangedBase1" id="attack-rangedBase1" type="number" /></td>
-            <td><input name="attack-rangedBase2" id="attack-rangedBase2" type="number" /></td>
-            <td><input name="attack-rangedBase3" id="attack-rangedBase3" type="number" /></td>
-            <td><input name="attack-rangedBase4" id="attack-rangedBase4" type="number" /></td>
-            <td><input name="attack-rangedAbility" id="attack-rangedAbility" type="number" /></td>
-            <td><input name="attack-rangedSize" id="attack-rangedSize" type="number" /></td>
-            <td><input name="attack-rangedMisc1" id="attack-rangedMisc1" type="number" /></td>
-            <td><input name="attack-rangedMisc2" id="attack-rangedMisc2" type="number" /></td>
-          </tr>
-          <tr>
-            <td>Grapple</td>
-            <td><input name="attack-grappleTotal1" id="attack-grappleTotal1" type="number" /></td>
-            <td><input name="attack-grappleTotal2" id="attack-grappleTotal2" type="number" /></td>
-            <td><input name="attack-grappleTotal3" id="attack-grappleTotal3" type="number" /></td>
-            <td><input name="attack-grappleTotal4" id="attack-grappleTotal4" type="number" /></td>
-            <td><input name="attack-grappleBase1" id="attack-grappleBase1" type="number" /></td>
-            <td><input name="attack-grappleBase2" id="attack-grappleBase2" type="number" /></td>
-            <td><input name="attack-grappleBase3" id="attack-grappleBase3" type="number" /></td>
-            <td><input name="attack-grappleBase4" id="attack-grappleBase4" type="number" /></td>
-            <td><input name="attack-grappleAbility" id="attack-grappleAbility" type="number" /></td>
-            <td><input name="attack-grappleSize" id="attack-grappleSize" type="number" /></td>
-            <td><input name="attack-grappleMisc1" id="attack-grappleMisc1" type="number" /></td>
-            <td><input name="attack-grappleMisc2" id="attack-grappleMisc2" type="number" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Racial Abilities</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Class Abilities</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Feats</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Skills</h1>
-      <div class="sectionContent">
-        <fieldset name="skillsOptions" class="options">
-          <legend>Options</legend>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Saving Throws</h1>
+        <div class="sectionContent">
           <table>
             <tr>
-              <td><label for="skillsOptions-ignoreMagic" title="Skills important to magic users aren't weight differently">Ignore Magic:</label></td>
-              <td><input name="skillsOptions-ignoreMagic" id="skillsOptions-ignoreMagic" type="checkbox" /></td>
+              <th>&nbsp;</th>
+              <th>Total</th>
+              <th>Base 1</th>
+              <th>Base 2</th>
+              <th>Base 3</th>
+              <th>Ability</th>
+              <th>Magic</th>
+              <th>Misc</th>
             </tr>
             <tr>
-              <td><label for="skillsOptions-ignorePsi" title="Skills important to psionic users aren't weight differently">Ignore Psionic:</label></td>
-              <td><input name="skillsOptions-ignorePsi" id="skillsOptions-ignorePsi" type="checkbox" /></td>
+              <td>Fortitude:</td>
+              <td><input name="saves-fortTotal" id="saves-fortTotal" type="number" /></td>
+              <td><input name="saves-fortBase1" id="saves-fortBase1" type="number" /></td>
+              <td><input name="saves-fortBase2" id="saves-fortBase2" type="number" /></td>
+              <td><input name="saves-fortBase3" id="saves-fortBase3" type="number" /></td>
+              <td><input name="saves-fortAbility" id="saves-fortAbility" type="number" /></td>
+              <td><input name="saves-fortMagic" id="saves-fortMagic" type="number" /></td>
+              <td><input name="saves-fortMisc" id="saves-fortMisc" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Reflex:</td>
+              <td><input name="saves-refTotal" id="saves-refTotal" type="number" /></td>
+              <td><input name="saves-refBase1" id="saves-refBase1" type="number" /></td>
+              <td><input name="saves-refBase2" id="saves-refBase2" type="number" /></td>
+              <td><input name="saves-refBase3" id="saves-refBase3" type="number" /></td>
+              <td><input name="saves-refAbility" id="saves-refAbility" type="number" /></td>
+              <td><input name="saves-refMagic" id="saves-refMagic" type="number" /></td>
+              <td><input name="saves-refMisc" id="saves-refMisc" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Will:</td>
+              <td><input name="saves-willTotal" id="saves-willTotal" type="number" /></td>
+              <td><input name="saves-willBase1" id="saves-willBase1" type="number" /></td>
+              <td><input name="saves-willBase2" id="saves-willBase2" type="number" /></td>
+              <td><input name="saves-willBase3" id="saves-willBase3" type="number" /></td>
+              <td><input name="saves-willAbility" id="saves-willAbility" type="number" /></td>
+              <td><input name="saves-willMagic" id="saves-willMagic" type="number" /></td>
+              <td><input name="saves-willMisc" id="saves-willMisc" type="number" /></td>
             </tr>
           </table>
-        </fieldset>
-        <table id="skillsTable">
-          <tr>
-            <th>Skill</th>
-            <th>Total</th>
-            <th>Ability</th>
-            <th>Ranks</th>
-            <th>Misc 1</th>
-            <th>Misc 2</th>
-          </tr>
-        </table>
-        <p><sup>1</sup> Trained Only</p>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Weapons</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Armor</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Worn Magic Items</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Inventory</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Money</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Movement and Lifting</h1>
-      <div class="sectionContent">
-        <table>
-          <tr>
-            <th>Walk</th>
-            <th>Hustle</th>
-            <th>Run</th>
-          </tr>
-          <tr>
-            <td><input name="move-walk" id="move-walk" type="number" /></td>
-            <td><input name="move-hustle" id="move-hustle" type="number" /></td>
-            <td><input name="move-run" id="move-run" type="number" /></td>
-          </tr>
-          <tr>
-            <th><label title="Lift over head">Head</label></th>
-            <th><label title="Lift off ground">Ground</label></th>
-            <th><label title="Push or Drag">Push</label></th>
-          </tr>
-          <tr>
-            <td><input name="move-head" id="move-head" type="number" /></td>
-            <td><input name="move-ground" id="move-ground" type="number" /></td>
-            <td><input name="move-push" id="move-push" type="number" /></td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Languages</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Spells</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Flavour</h1>
-      <div class="sectionContent">
-        <table>
-        </table>
-      </div>
-    </section>
-    
-    <section>
-      <h1>Advanced Output</h1>
-      <div class="sectionContent">
-        <textarea id="advancedOutput" disabled="disabled" title="Output generated as random generation is performed"></textarea>
-      </div>
-    </section>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Attack Rolls</h1>
+        <div class="sectionContent">
+          <table>
+            <tr>
+              <th>&nbsp;</th>
+              <th>Total 1</th>
+              <th>Total 2</th>
+              <th>Total 3</th>
+              <th>Total 4</th>
+              <th>Base 1</th>
+              <th>Base 2</th>
+              <th>Base 3</th>
+              <th>Base 4</th>
+              <th>Ability</th>
+              <th>Size</th>
+              <th>Misc 1</th>
+              <th>Misc 2</th>
+            </tr>
+            <tr>
+              <td>Melee</td>
+              <td><input name="attack-meleeTotal1" id="attack-meleeTotal1" type="number" /></td>
+              <td><input name="attack-meleeTotal2" id="attack-meleeTotal2" type="number" /></td>
+              <td><input name="attack-meleeTotal3" id="attack-meleeTotal3" type="number" /></td>
+              <td><input name="attack-meleeTotal4" id="attack-meleeTotal4" type="number" /></td>
+              <td><input name="attack-meleeBase1" id="attack-meleeBase1" type="number" /></td>
+              <td><input name="attack-meleeBase2" id="attack-meleeBase2" type="number" /></td>
+              <td><input name="attack-meleeBase3" id="attack-meleeBase3" type="number" /></td>
+              <td><input name="attack-meleeBase4" id="attack-meleeBase4" type="number" /></td>
+              <td><input name="attack-meleeAbility" id="attack-meleeAbility" type="number" /></td>
+              <td><input name="attack-meleeSize" id="attack-meleeSize" type="number" /></td>
+              <td><input name="attack-meleeMisc1" id="attack-meleeMisc1" type="number" /></td>
+              <td><input name="attack-meleeMisc2" id="attack-meleeMisc2" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Ranged</td>
+              <td><input name="attack-rangedTotal1" id="attack-rangedTotal1" type="number" /></td>
+              <td><input name="attack-rangedTotal2" id="attack-rangedTotal2" type="number" /></td>
+              <td><input name="attack-rangedTotal3" id="attack-rangedTotal3" type="number" /></td>
+              <td><input name="attack-rangedTotal4" id="attack-rangedTotal4" type="number" /></td>
+              <td><input name="attack-rangedBase1" id="attack-rangedBase1" type="number" /></td>
+              <td><input name="attack-rangedBase2" id="attack-rangedBase2" type="number" /></td>
+              <td><input name="attack-rangedBase3" id="attack-rangedBase3" type="number" /></td>
+              <td><input name="attack-rangedBase4" id="attack-rangedBase4" type="number" /></td>
+              <td><input name="attack-rangedAbility" id="attack-rangedAbility" type="number" /></td>
+              <td><input name="attack-rangedSize" id="attack-rangedSize" type="number" /></td>
+              <td><input name="attack-rangedMisc1" id="attack-rangedMisc1" type="number" /></td>
+              <td><input name="attack-rangedMisc2" id="attack-rangedMisc2" type="number" /></td>
+            </tr>
+            <tr>
+              <td>Grapple</td>
+              <td><input name="attack-grappleTotal1" id="attack-grappleTotal1" type="number" /></td>
+              <td><input name="attack-grappleTotal2" id="attack-grappleTotal2" type="number" /></td>
+              <td><input name="attack-grappleTotal3" id="attack-grappleTotal3" type="number" /></td>
+              <td><input name="attack-grappleTotal4" id="attack-grappleTotal4" type="number" /></td>
+              <td><input name="attack-grappleBase1" id="attack-grappleBase1" type="number" /></td>
+              <td><input name="attack-grappleBase2" id="attack-grappleBase2" type="number" /></td>
+              <td><input name="attack-grappleBase3" id="attack-grappleBase3" type="number" /></td>
+              <td><input name="attack-grappleBase4" id="attack-grappleBase4" type="number" /></td>
+              <td><input name="attack-grappleAbility" id="attack-grappleAbility" type="number" /></td>
+              <td><input name="attack-grappleSize" id="attack-grappleSize" type="number" /></td>
+              <td><input name="attack-grappleMisc1" id="attack-grappleMisc1" type="number" /></td>
+              <td><input name="attack-grappleMisc2" id="attack-grappleMisc2" type="number" /></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Racial Abilities</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Class Abilities</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Feats</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Skills</h1>
+        <div class="sectionContent">
+          <fieldset name="skillsOptions" class="options">
+            <legend>Options</legend>
+            <table>
+              <tr>
+                <td><label for="skillsOptions-ignoreMagic" title="Skills important to magic users aren't weight differently">Ignore Magic:</label></td>
+                <td><input name="skillsOptions-ignoreMagic" id="skillsOptions-ignoreMagic" type="checkbox" /></td>
+              </tr>
+              <tr>
+                <td><label for="skillsOptions-ignorePsi" title="Skills important to psionic users aren't weight differently">Ignore Psionic:</label></td>
+                <td><input name="skillsOptions-ignorePsi" id="skillsOptions-ignorePsi" type="checkbox" /></td>
+              </tr>
+            </table>
+          </fieldset>
+          <table id="skillsTable">
+            <tr>
+              <th>Skill</th>
+              <th>Total</th>
+              <th>Ability</th>
+              <th>Ranks</th>
+              <th>Misc 1</th>
+              <th>Misc 2</th>
+            </tr>
+          </table>
+          <p><sup>1</sup> Trained Only</p>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Weapons</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Armor</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Worn Magic Items</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Inventory</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Money</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Movement and Lifting</h1>
+        <div class="sectionContent">
+          <table>
+            <tr>
+              <th>Walk</th>
+              <th>Hustle</th>
+              <th>Run</th>
+            </tr>
+            <tr>
+              <td><input name="move-walk" id="move-walk" type="number" /></td>
+              <td><input name="move-hustle" id="move-hustle" type="number" /></td>
+              <td><input name="move-run" id="move-run" type="number" /></td>
+            </tr>
+            <tr>
+              <th><label title="Lift over head">Head</label></th>
+              <th><label title="Lift off ground">Ground</label></th>
+              <th><label title="Push or Drag">Push</label></th>
+            </tr>
+            <tr>
+              <td><input name="move-head" id="move-head" type="number" /></td>
+              <td><input name="move-ground" id="move-ground" type="number" /></td>
+              <td><input name="move-push" id="move-push" type="number" /></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Languages</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Spells</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Flavour</h1>
+        <div class="sectionContent">
+          <table>
+          </table>
+        </div>
+      </section>
+      
+      <section>
+        <h1>Advanced Output</h1>
+        <div class="sectionContent">
+          <textarea id="advancedOutput" disabled="disabled" title="Output generated as random generation is performed"></textarea>
+        </div>
+      </section>
+    </div>  
     
     <footer>This generator was created by Derric Atzrott and Vin and is released to the public domain using <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC-0</a>.<br />
     This application also includes content made available under the Open Game License.<br />
     <a href="http://www.opengamingfoundation.org/ogl.html" target="_blank">Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.</a></footer>
+    
     
     <script src="jquery-2.0.3.min.js"></script>
     <script src="bootstrap-3.2.0/js/bootstrap.min.js"></script>

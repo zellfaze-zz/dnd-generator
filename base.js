@@ -1,4 +1,6 @@
 $(document).ready( function() {
+  $(function () { $("[data-toggle='tooltip']").tooltip(); });
+  
   //Reset advanced log
   $('#advancedOutput').val('');
   
