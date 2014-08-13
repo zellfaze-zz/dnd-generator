@@ -3,21 +3,13 @@ $(document).ready( function() {
   $('#advancedOutput').val('');
   
   logToAdvanced('==Application Initialization==');
-  logToAdvanced('Determining if application is local or remote...');
-  var appLocation;
-  if (document.location['protocol'] == 'file:') {
-    appLocation = 'local';
-  } else {
-    appLocation = 'remote';
-  }
-  logToAdvanced('Application is ' + appLocation);
-  
+  determineAppLocation();
   logToAdvanced('Looking for extra definitions...');
   window.definitions = new Array();
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
   
-  if (appLocation == 'local') {
+  if (window.appLocation == 'local') {
     var path = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
   } else {
     var path = '';
@@ -88,5 +80,16 @@ function loadJSONFiles(location, listOfFiles, callback) {
       }
     });
   });
+}
+
+function determineAppLocation() {
+  logToAdvanced('Determining if application is local or remote...');
+  window.appLocation ='';
+  if (document.location['protocol'] == 'file:') {
+    window.appLocation = 'local';
+  } else {
+    window.appLocation = 'remote';
+  }
+  logToAdvanced('Application is ' + window.appLocation);
 }
 
