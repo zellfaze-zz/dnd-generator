@@ -22,26 +22,7 @@ $(document).ready( function() {
       if (outstandingRequests == 0) {
         logToAdvanced('All extra definitions loaded');
         
-        //Build skills table
-        for (var skillNum = 0; skillNum < window.definitions['skills'].length; skillNum++) {
-          var skillKey = window.definitions['skills'][skillNum]['key'];
-          skillKey = skillKey.charAt(0).toUpperCase() + skillKey.slice(1);
-          var skillName = window.definitions['skills'][skillNum]['name'];
-          if (window.definitions['skills'][skillNum]['trained']) {
-            skillName = skillName+"<sup>1</sup>";
-          }
-          
-          var html = '<tr>';
-          html = html + '<td>' + skillName + '</td>';
-          html = html + '<td><input type="number" /></td>';
-          html = html + '<td>' + skillKey + '</td>';
-          html = html + '<td><input type="number" /></td>';
-          html = html + '<td><input type="number" /></td>';
-          html = html + '<td><input type="number" /></td>';
-          html = html + '</tr>';
-          $('#skillsTable').append(html);
-        }
-        logToAdvanced('Skills table built');
+        buildSkillsTable('#skillsTable');
         
         //Application is all set up, we can display the generate button now!
         logToAdvanced('Application initialized!');
@@ -93,3 +74,25 @@ function determineAppLocation() {
   logToAdvanced('Application is ' + window.appLocation);
 }
 
+function buildSkillsTable(selector) {
+  //Build skills table
+  for (var skillNum = 0; skillNum < window.definitions['skills'].length; skillNum++) {
+    var skillKey = window.definitions['skills'][skillNum]['key'];
+    skillKey = skillKey.charAt(0).toUpperCase() + skillKey.slice(1);
+    var skillName = window.definitions['skills'][skillNum]['name'];
+    if (window.definitions['skills'][skillNum]['trained']) {
+      skillName = skillName+"<sup>1</sup>";
+    }
+    
+    var html = '<tr>';
+    html = html + '<td>' + skillName + '</td>';
+    html = html + '<td><input type="number" /></td>';
+    html = html + '<td>' + skillKey + '</td>';
+    html = html + '<td><input type="number" /></td>';
+    html = html + '<td><input type="number" /></td>';
+    html = html + '<td><input type="number" /></td>';
+    html = html + '</tr>';
+    $(selector).append(html);
+  }
+  logToAdvanced('Skills table built');
+}
