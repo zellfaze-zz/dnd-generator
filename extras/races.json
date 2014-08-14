@@ -22,11 +22,11 @@
             53,
             73
         ],
-        "Weight Modifier": "2d4",
-        "Base weight": [
+		"Base weight": [
             120,
             85
         ],
+        "Weight Modifier": "2d4",
         "Alignment": "Any",
         "Religion": [
             "Any"
@@ -99,7 +99,8 @@
                 "Bonus saving throw (Poison)": 2,
                 "Bonus saving throw (Magic)": 2,
                 "Bonus armor class (Giant)": 4,
-                "Bonus attack rolls (orcs, goblinoid)": 1
+                "Bonus attack roll (Orcs)": 1,
+				"Bonus attack roll (goblinoid)": 1
             }
         }
     },
@@ -156,7 +157,7 @@
                 
             ],
             "Abilities": [
-                "Weapon Proficiency (longsword)",
+                "Weapon Proficiency (Longsword)",
                 "Weapon Proficiency (Rapier)",
                 "Weapon Proficiency (Longbow)",
                 "Weapon Proficiency (Shortbow)",
@@ -226,7 +227,8 @@
             "Misc": {
                 "Bonus difficulty class (Illusion)": 1,
                 "Bonus saving throw (Illusion)": 2,
-                "Bonus attack roll (kobold, goblinoid)": 1,
+                "Bonus attack roll (kobold)": 1,
+				"Bonus attack roll (goblinoid)": 1,
                 "Bonus armor class (Giant)": 4
             }
         }
@@ -278,10 +280,10 @@
             "Abilities": [
                 "Lowlight vision",
                 "Immunity to sleep",
-                "Elven Blood"
+                "Elven blood"
             ],
             "Misc": {
-                "Bonus saving throw (enchantment)": 2
+                "Bonus saving throw (Enchantment)": 2
             }
         }
     },
@@ -370,7 +372,7 @@
             25
         ],
         "Weight Modifier": "1",
-        "Alignment": "neutral",
+        "Alignment": "Neutral",
         "Religion": [
             "Any"
         ],
@@ -390,9 +392,9 @@
             "Abilities": [],
             "Misc": {
                 "Bonus saving throw (Fear)": 2,
-                "Bonus saving throw (all)": 1,
-                "Bonus attack roll (thrown weapons)": 1,
-                "Bonus attack roll (slings)": 1
+                "Bonus saving throw (All)": 1,
+                "Bonus attack roll (Thrown weapons)": 1,
+                "Bonus attack roll (Slings)": 1
             }
         }
     },
