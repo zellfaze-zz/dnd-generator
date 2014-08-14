@@ -23,6 +23,15 @@ footer {
   display:none;
 }
 
+#page2 {
+  display: none;
+}
+
+.subtitle {
+  font-size: 1.75em;
+  margin-bottom: 1.75em;
+}
+
 input[type="number"] {
   width: 40px;
 }

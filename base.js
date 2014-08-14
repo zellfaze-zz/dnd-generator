@@ -1,5 +1,17 @@
 $(document).ready( function() {
+  window.options = new Array();
   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+  
+  $('#generate-character').on('click', function() {
+    window.options['type'] = 'generate';
+    fadeBetween('#page1', '#page2');
+  });
+  
+  $('#progress-character').on('click', function() {
+    window.options['type'] = 'progress';
+    fadeBetween('#page1', '#page2');
+  });
+  
   
   //Reset advanced log
   $('#advancedOutput').val('');
@@ -92,3 +104,8 @@ function loadJSONFiles(location, listOfFiles, callback) {
   });
 }
 
+function fadeBetween(outSelect, inSelect) {
+  $(outSelect).fadeOut(400, function() {
+    $(inSelect).fadeIn(400);
+  });
+}

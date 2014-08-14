@@ -19,20 +19,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">D&amp;D Random Character Generator</a>
+          <a class="navbar-brand" href=".">D&amp;D Random Character Generator</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Welcome</a></li>
+            <li class="active"><a href=".">Welcome</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://github.com/zellfaze/dnd-generator" target="_new">Fork Me on GitHub!</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Show Advanced</a></li>
+                <li><p class="navbar-text"><div class="btn-group btn-group-xs"><button type="button" class="btn btn-default">Off</button><button type="button" class="btn btn-default">On</button></div><br />Show Advanced</p></li>
               </ul>
             </li>
           </ul>
@@ -40,17 +40,60 @@
       </div><!-- /.container-fluid -->
     </nav>
     
+    <div id="main-body" class="container-fluid">
+    
     <div id="page1">
       <div class="page-header text-center">
         <h1>Welcome to the D&amp;D Character Sheet Generator</h1>
-        <p style="font-size: 1.75em; margin-bottom: 1.75em;">Would you like to:</p>
+        <p class="subtitle">Would you like to:</p>
         <div style="margin-left: auto; margin-right: auto;">
-          <a class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Start a character at level 1 and make choices all along the way.">Progress a<br />new Character</a>
+          <a class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Start a character at level 1 and make choices all along the way." id="progress-character">Progress a<br />new Character</a>
           <span class="lead" style="margin-left: 2em; margin-right: 2em;">Or</span>
-          <a class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Just select an ending level and what the character needs.">Generate a<br />new Character</a>
+          <a class="btn btn-primary btn-lg" role="button" data-toggle="tooltip" data-placement="bottom" title="Just select an ending level and what the character needs." id="generate-character">Generate a<br />new Character</a>
         </div>
       </div>
     </div>
+    
+    <div id="page2">
+      <div class="page-header text-center">
+        <h1>Basic Information</h1>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <label for="name-input" class="control-label">Name:</label> <input type="text" name="name-input" id="name-input" class="form-control" placeholder="Enter name" />
+          <label class="checkbox-inline">
+            <input type="checkbox" id="name-random" name="name-random"> Random Name
+          </label>
+        </div>
+        <div class="col-sm-6">
+          <p><label for="gender-input" class="control-label">Preferred Pronoun:</label></p>
+          <label class="radio-inline">
+            <input type="radio" name="gender-input" id="gender-input1" value="he"> He
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender-input" id="gender-input2" value="she"> She
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender-input" id="gender-input3" value="they"> They
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender-input" id="gender-input4" value="it"> It
+          </label>
+          <br />
+          <label class="radio-inline">
+            <input type="radio" name="gender-input" id="gender-input5" value="random"> Random (only chooses He or She)
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a class="btn btn-primary btn-lg" role="button" id="page2-next">Next</a>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
     <div id="lastPage">
       <h1>D&amp;D Random Character Generator</h1>
       <aside><p>Protip: For help with any option, hover your mouse over it.</p></aside>
