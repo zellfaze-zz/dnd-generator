@@ -154,7 +154,6 @@
                 "Spot": 2
             },
             "Spells": [
-                
             ],
             "Abilities": [
                 "Weapon Proficiency (Longsword)",
@@ -296,7 +295,8 @@
         "Bonus Languages": [
             "Draconic",
             "Giant",
-            "Gnoll"."Goblin",
+            "Gnoll",
+			"Goblin",
             "Abyssal"
         ],
         "Size": "Medium",
