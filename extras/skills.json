@@ -197,7 +197,88 @@
     ]
   },
   {
-    "name": "Knowledge",
+    "name": "Knowledge (Arcana)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Architecture and engineering)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Dungeoneering)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Geography)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (History)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Local)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Nature)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Nobility and royalty)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (Religion)",
+    "trained": true,
+    "armorcheck": false,
+    "key": "int",
+    "magic": false,
+    "psi": false,
+    "synergy": []
+  },
+  {
+    "name": "Knowledge (the Planes)",
     "trained": true,
     "armorcheck": false,
     "key": "int",
