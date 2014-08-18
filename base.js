@@ -27,6 +27,10 @@ $(document).ready( function() {
     return false;
   });
   
+  $('#logo, #current-page').on('click', function() {
+    window.location.reload();
+  });
+  
   
   //Reset advanced log
   $('#advancedOutput').val('');
