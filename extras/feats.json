@@ -1,30 +1,540 @@
 [
     {
         "Name": "Acrobatic",
-        "Prerequisites": false,
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
         "Benefits": {
-            "numeric": {
-                "skills": {
+            "Numeric": {
+                "Skills": {
                     "Jump": 2,
                     "Tumble": 2
                 },
                 "CharacterAbilities": {}
             },
-            "other": []
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
         },
         "Short Text": "+2 Bonus on Jump and Tumble checks",
         "Long Text": "You get a +2 bonus on all Jump checks and Tumble checks.",
         "Book Source": "PHB"
     },
-    {
-        "Name": "",
-        "Prerequisites": [],
+	{
+        "Name": "Agile",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
         "Benefits": {
-            "numeric": {
-                "skills": {},
+            "Numeric": {
+                "Skills": {
+					"Balance": 2,
+					"Escape Artist": 2
+				},
                 "CharacterAbilities": {}
             },
-            "other": []
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Balance and Escape Artist check",
+        "Long Text": "You get a +2 bonus on all Balance checks and Escape Artist checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Alertness",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Listen": 2,
+					"Spot": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Listen and Spot checks",
+        "Long Text": "You get a +2 bonus on all Listen checks and Spot checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Animal Affinity",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Handle Animal": 2,
+					"Ride": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Handle Animal and Ride checks",
+        "Long Text": "You get a +2 bonus on all Handle Animel checks and Ride checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Armor Proficiency (Heavy)",
+		"Type": "General",
+        "Prerequisites": [
+			"Weapon and armor proficiency (Light armor)",
+			"Weapon and armor proficiency (Medium armor)"],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[
+					"Weapon and armor proficiency (Heavy armor)",
+					"Weapon and armor proficiency (Shields)"
+				],
+				"Misc":[]
+			}
+        },
+        "Short Text": "No armor check penalty on attack rolls",
+        "Long Text": "You are proficient with heavy armor and shields.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Armor Proficiency (Medium)",
+		"Type": "General",
+        "Prerequisites": [
+			"Weapon and armor proficiency (Light armor)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[
+					"Weapon and armor proficiency (Medium armor)"
+				],
+				"Misc":[]
+			}
+        },
+        "Short Text": "No armor check penalty on attack rolls",
+        "Long Text": "You are proficient with medium armor.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Armor proficiency (Light)",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[
+					"Weapon and armor proficiency (Light armor)"
+				],
+				"Misc":[]
+			}
+        },
+        "Short Text": "No armor check penalty on attack rolls",
+        "Long Text": "You are proficient with light armor.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Athletic",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Climb": 2,
+					"Swim": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on all Climb and Swim checks.",
+        "Long Text": "You get a +2 bonus on all Climb checks and Swim checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Augment Summoning",
+		"Type": "General",
+        "Prerequisites": [
+			"Spell Focus (Conjuration)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Summoned creatures get +4 strength and +4 constitution"
+				]
+			}
+        },
+        "Short Text": "Summoned creatures get +4 str, +4 con",
+        "Long Text": "Each creature you conjure with any summon spell gains a +4 enchancement bonus to strength and Constitution for the duration of the spell that summoned it",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Blind-Fight",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Reroll miss chance when fighting against an opponent with concealment",
+					"invisible attackers do not get bonuses to hit for being invisible",
+					"You do not lose your dexterity bonus against invisible attackers",
+					"Take only half penalties to movement speed for being unable to see"
+				]
+			}
+        },
+        "Short Text": "Reroll miss chance for concealment",
+        "Long Text": "In melee, every time you miss because of concealment, you can reroll your miss chance percentile roll one time to see if you actually hit.  An invisible attacker gets no advantages related to hitting you in melee.  That is, you don't lose your Dexterity bonus to Armor class, and the attacker doesn;t get the usual +2 bonus for being invisible.  The invisible attacker's bonuses do still apply for ranged attacks, however.  You take only half the usual penalty to speed for being unable to see.  Darkness and poor visibility in general reduces your speed to 3/4 normal, instead of 1/2.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Brew Potion",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster Level Minimum (3)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can brew potions"
+				]
+			}
+        },
+        "Short Text": "Create magic potions",
+        "Long Text": "You can create a potion of any 3rd level or lower spell that you know and that targets one or more creatures.  Brewing a potion takes 1 day.  When you create a potion, you set the caster level, which must be sufficient to cast the spell in question and no higher than your own level.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Cleave",
+		"Type": "General",
+        "Prerequisites": [
+			"Strength minimum (13)",
+			"Power Attack"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"1 extra attack once a round if you kill a creature"
+				]
+			}
+        },
+        "Short Text": "Extra melee attack after dropping target",
+        "Long Text": "If you deal a creature enough damage to make it drop, you get an immediate, extra melee attack against another creature within reach.  You can not take a 5-foot step before making this extra attack.  The extra attack is with the same weapon and at the same bonus as the attack that dropped the previous creature.  You can only use this ability once per round.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Combat Casting",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"+4 Concentration when casting defensively",
+					"+4 Concentration when casting in a Pin",
+					"+4 Concentration when casting in a Grapple"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on Concentration checks for defensive casting",
+        "Long Text": "You get a +4 on Concentration checks made to cast a spell or use a spell-like ability while on the defensive or while you are grappling or pinned",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Combat Expertise",
+		"Type": "General",
+        "Prerequisites": [
+			"Intelligence minimum (13)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can trade attack bonus for AC (Max of base attack bonus)"
+				]
+			}
+        },
+        "Short Text": "Trade attack bonus for AC (max 5 points)",
+        "Long Text": "When you use the attack action or the full attack action in melee, you can take a penalty of as much as -5 on your attack roll and add the same number as a dodge bonus to your armor class.  This number may not exceed your base attack bonus.  The changes to attack rolls and armor class last until your next action.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Combat Reflexes",
+		"Type": "General",
+        "Prerequisites": [
+			"General"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can make more than 1 attack of opportunity per round (up to dex modifier)",
+					"Can make attacks of opportunity while flat footed"
+				]
+			}
+        },
+        "Short Text": "Additional attacks of opportunity",
+        "Long Text": "When foes leave themselves open, you may make an number of additional attacks of opportunity equal to your Dexterity bonus.  You may also make attacks of opportunity while flat-footed.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Craft Magic Arms and Armor",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster level minimum (5)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can create magic weapons, armors, and shields",
+					"Can repair magic weapons, armors, and shields"
+				]
+			}
+        },
+        "Short Text": "Create magic weapons, armor, and shields",
+        "Long Text": "You can create any magic weapon, armor, or shield whose prerequisites you meet.  You can also mend a broken magic weapon, suit of armor or shield if it is one that you could make.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Craft Rod",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster level minimum (9)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can create magic rods"
+				]
+			}
+        },
+        "Short Text": "Create magic rods",
+        "Long Text": "You can create any rod whose prerequisites you meet.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Craft Staff",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster level minimum (12)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can create magic staffs"
+				]
+			}
+        },
+        "Short Text": "Create magic staffs",
+        "Long Text": "You can create any staff whose prerequisites you meet.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Craft Wand",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster level minimum (5)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can create magic wands"
+				]
+			}
+        },
+        "Short Text": "Create magic wands",
+        "Long Text": "You can create any wand of any 4th level or lower spell that you know.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Craft Wondrous Item",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster level minimum (3)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can create wondrous items"
+				]
+			}
+        },
+        "Short Text": "Create magic wondrous items",
+        "Long Text": "You can create any wondrous item whose prerequisites you meet.  You can also mend a broken wondrous item if it is one that you could make.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Deceitful",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Disguise": 2,
+					"Forgery": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Disguise and Forgery checks",
+        "Long Text": "You get a +2 bonus on all Disguise checks and Forgery checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Deflect Arrows",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (13)",
+			"Improved Unarmed Strike"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Once per round, you may deflect 1 ranged melee attack (non-magical attack) that you know of"
+				]
+			}
+        },
+        "Short Text": "Deflect 1 ranged attack per round",
+        "Long Text": "You must have at least 1 hand free to use this feat.  once per round when you would normally be hit with a ranged weapon, you may deflect it so that you take no damage from it.  You must be aware of the attack and not flat footed.  Attempting to deflect a ranged weapon doesn't count as an action.  Unusually massive ranged weapons or range attacks generated by spell effects can't be deflected.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Deft Hands",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Sleight of Hands": 2,
+					"Use Rope": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on all Sleight of Hand and Use Rope checks",
+        "Long Text": "You get a +2 bonus on all Sleight of Hand checks and Use Rope checks.",
+        "Book Source": "PHB"
+    },
+    {
+        "Name": "",
+		"Type": "",
+        "Prerequisites": [],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
         },
         "Short Text": "",
         "Long Text": "",
