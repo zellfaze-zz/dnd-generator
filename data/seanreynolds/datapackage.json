@@ -1,0 +1,31 @@
+{
+    "datapackage_version": "1.0-beta.10",
+    "name": "dnd-data-sean-reynolds-dieties",
+    "title": "Deities of The Faithful Package",
+    "description": "This package contains the dieties list from Sean Reynolds \"Deities of The Faithful\"",
+    "homepage": "https://github.com/zellfaze/dnd-generator",
+    "version": "0.0.0",
+    "licenses": [
+        {
+            "type": "Open Game License 1.0",
+            "url": "https://www.wizards.com/d20/files/OGLv1.0a.rtf"
+        }
+    ],
+    "creditline": "Skreyn's Register: The Bonds of Magic and \"Deities of The Faithful\" Copyright 2002 Sean K Reynolds. All rights reserved.",
+    "maintainers": [
+        {
+            "name": "Derric Atzrott",
+            "email": "zellfaze@zellfaze.org"
+        },
+        {
+            "name": "Vin"
+        }
+    ],
+    "resources": [
+        {
+            "name": "Dieties",
+            "path": "dieties.json",
+            "format": "json"
+        }
+    ]
+}

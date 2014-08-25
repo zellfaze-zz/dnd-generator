@@ -1,0 +1,71 @@
+{
+    "datapackage_version": "1.0-beta.10",
+    "name": "dnd-data-players-handbook-3.5",
+    "title": "D&D 3.5 Players Handbook Data",
+    "description": "This package contains a machine readable copy of the OGL Licensed data from the Players Handbook",
+    "homepage": "https://github.com/zellfaze/dnd-generator",
+    "version": "0.0.0",
+    "licenses": [
+        {
+            "type": "Open Game License 1.0",
+            "url": "https://www.wizards.com/d20/files/OGLv1.0a.rtf"
+        }
+    ],
+    "creditline": "Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.",
+    "maintainers": [
+        {
+            "name": "Derric Atzrott",
+            "email": "zellfaze@zellfaze.org"
+        },
+        {
+            "name": "Vin"
+        }
+    ],
+    "resources": [
+        {
+            "name": "Classes",
+            "path": "classes.json",
+            "format": "json"
+        },
+        {
+            "name": "Feats",
+            "path": "feats.json",
+            "format": "json"
+        },
+        {
+            "name": "Languages",
+            "path": "languages.json",
+            "format": "json"
+        },
+        {
+            "name": "Magic Items",
+            "path": "magic_items.json",
+            "format": "json"
+        },
+        {
+            "name": "Mundane Items",
+            "path": "mundane_items.json",
+            "format": "json"
+        },
+        {
+            "name": "Races",
+            "path": "races.json",
+            "format": "json"
+        },
+        {
+            "name": "Skills",
+            "path": "skills.json",
+            "format": "json"
+        },
+        {
+            "name": "Spell List",
+            "path": "spell_list.json",
+            "format": "json"
+        },
+        {
+            "name": "Spells",
+            "path": "spells.json",
+            "format": "json"
+        }
+    ]
+}
