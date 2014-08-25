@@ -18,9 +18,10 @@
     ],
     "resources": [
         {
-            "name": "Names",
+            "name": "Random Names",
             "path": "names.json",
-            "format": "json"
+            "format": "json",
+            "type": "names"
         }
     ]
 }

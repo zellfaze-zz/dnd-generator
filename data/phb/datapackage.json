@@ -28,49 +28,58 @@
     ],
     "resources": [
         {
-            "name": "Classes",
+            "name": "All Classes",
             "path": "classes.json",
-            "format": "json"
+            "format": "json",
+            "type": "classes"
         },
         {
-            "name": "Feats",
+            "name": "All Feats",
             "path": "feats.json",
-            "format": "json"
+            "format": "json",
+            "type": "feats"
         },
         {
-            "name": "Languages",
+            "name": "All Languages",
             "path": "languages.json",
-            "format": "json"
+            "format": "json",
+            "type": "languages"
         },
         {
-            "name": "Magic Items",
+            "name": "All Magic Items",
             "path": "magic_items.json",
-            "format": "json"
+            "format": "json",
+            "type": "magic_items"
         },
         {
-            "name": "Mundane Items",
+            "name": "All Mundane Items",
             "path": "mundane_items.json",
-            "format": "json"
+            "format": "json",
+            "type": "mundane_items"
         },
         {
-            "name": "Races",
+            "name": "All Races",
             "path": "races.json",
-            "format": "json"
+            "format": "json",
+            "type": "races"
         },
         {
-            "name": "Skills",
+            "name": "All Skills",
             "path": "skills.json",
-            "format": "json"
+            "format": "json",
+            "type": "skills"
         },
         {
-            "name": "Spell List",
+            "name": "All Spell Lists",
             "path": "spell_list.json",
-            "format": "json"
+            "format": "json",
+            "type": "spell_lists"
         },
         {
-            "name": "Spells",
+            "name": "All Spells",
             "path": "spells.json",
-            "format": "json"
+            "format": "json",
+            "type": "spells"
         }
     ]
 }

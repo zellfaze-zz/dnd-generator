@@ -29,9 +29,10 @@
     ],
     "resources": [
         {
-            "name": "Dieties",
+            "name": "Dieties of The Faithful",
             "path": "dieties.json",
-            "format": "json"
+            "format": "json",
+            "type": "dieties"
         }
     ]
 }
