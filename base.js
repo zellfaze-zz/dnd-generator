@@ -1,4 +1,37 @@
 $(document).ready( function() {
+  window.options = new Array();
+  window.options['showAdvanced'] = false;
+  $(function () { $("[data-toggle='tooltip']").tooltip(); });
+  
+  $('#generate-character').on('click', function() {
+    window.options['type'] = 'generate';
+    fadeBetween('#page1', '#page2');
+  });
+  
+  $('#progress-character').on('click', function() {
+    window.options['type'] = 'progress';
+    fadeBetween('#page1', '#page2');
+  });
+  
+  $('#advanced-off').on('click', function() {
+    window.options['showAdvanced'] = false;
+    $('#advanced-off').removeClass('btn-default').addClass('btn-primary');
+    $('#advanced-on').removeClass('btn-primary').addClass('btn-default');
+    return false;
+  });
+  
+  $('#advanced-on').on('click', function() {
+    window.options['showAdvanced'] = true;
+    $('#advanced-on').removeClass('btn-default').addClass('btn-primary');
+    $('#advanced-off').removeClass('btn-primary').addClass('btn-default');
+    return false;
+  });
+  
+  $('#logo, #current-page').on('click', function() {
+    window.location.reload();
+  });
+  
+  
   //Reset advanced log
   $('#advancedOutput').val('');
   
@@ -95,4 +128,10 @@ function buildSkillsTable(selector) {
     $(selector).append(html);
   }
   logToAdvanced('Skills table built');
+}
+
+function fadeBetween(outSelect, inSelect) {
+  $(outSelect).fadeOut(400, function() {
+    $(inSelect).fadeIn(400);
+  });
 }
