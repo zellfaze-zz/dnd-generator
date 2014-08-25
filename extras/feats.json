@@ -522,6 +522,495 @@
         "Long Text": "You get a +2 bonus on all Sleight of Hand checks and Use Rope checks.",
         "Book Source": "PHB"
     },
+	{
+        "Name": "Diehard",
+		"Type": "General",
+        "Prerequisites": [
+			"Endurance"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"You automatically become stable when reduced to between -1 and -9 Hit points",
+					"You act as disabled instead of dying when between -1 and -9 Hit points"]
+			}
+        },
+        "Short Text": "Remain conscious at -1 to -9 hp",
+        "Long Text": "When reduced to between -1 and -9 hit points, you automatically become stable.  You don't have to roll d% to see if you lose 1 hit point each round.  When reduced to negative hit points, you may choose to act as if you wer disabled, rather than dying.  you must make this decision as soon as you are reduced to negative hit points (even if it isn't your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Diligent",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Appraise": 2,
+					"Decipher Script": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Appraise and Decipher Script checks",
+        "Long Text": "You get a +2 bonus on all Appraise checks and Decipher Script checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Dodge",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (13)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"+1 dodge bonus to AC against 1 selected target"
+				]
+			}
+        },
+        "Short Text": "+1 dodge bonus to AC against selected target",
+        "Long Text": "During you action, you designate an opponent and receive a +1 dodge bonus to Armor Class against attacks from that opponent.  You can select a new opponent on any action.  A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses.  Also dodge bonuses stack with each other, unlike most other types of bonuses",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Empower Spell",
+		"Type": "Metamagic",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"increase a spells variables by 50%, this spell takes up a spell slot 2 levels higher"
+				]
+			}
+        },
+        "Short Text": "  Increase spell's variale, numeric effects by 50%",
+        "Long Text": "All variable, numeric effects of an empowered spell are increased by 1/2.  An empoewred spell deals half again as much damage as normal, cures half again as many hit points, affects half again as many targets, and so forth as appropriate.  Saving throws and opposed rolls are not affects, nor are spells with out random variables.  An empowered spell uses up a spell slot two levels higher than the spell's actual level.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Endurance",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"+4 on swim checks to resist nonlethal damage",
+					"+4 on Constitution checks to continue running",
+					"+4 on Constitution checks to avoid nonlethal damage from forced marches",
+					"+4 on Constitution checks to hold your breath",
+					"+4 on Constitution checks to avoid nonlethal damage from starvation or thirst",
+					"+4 on Fortitude saves to avoid nonlethal damage from hot or cold environments",
+					"+4 on Fortitude saves to resist damage from suffocation"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on checks or saves to resist nonlethal damage",
+        "Long Text": "You gain a +4 bonus on following checks and saves: swim checks made to resist nonlethal damage, Constitution checks made to continue running, Constitution checks made to avoid nonlethal damage from a forced march, Constitution checks made to hold your breath, Constitution checks made to avoid nonlethal damage from starvation or thirst.  Fortitude saves made to avoid nonlethal damage from hot or cold environments and fortitude saves made to resist damage from suffocation.  Alsom you may sleep in light or medium armor with out becoming fatigued.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Enlarge Spell",
+		"Type": "Metamagic",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Cast a spell at double its normal range, this spell takes up 1 spell slot higher"
+				]
+			}
+        },
+        "Short Text": "Double spell's range",
+        "Long Text": "You can alter a spell with a range of close, medium or long to increase it's range by 100%.  An enlarged spell with a range of close now has a range of 50ft + 5ft/level, while medium-range spells have a range of 200ft + 20ft/level and long-range spells have a range of 800ft + 80ft/level.  An enlarged spell uses up a spell slot one level higher than the spell's actual level.  Spells whose ranges are not defined by distance, as well as spells whose ranges are not close, medium, or long, do not have increased ranges.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Eschew Materials",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Cast spells with out having the spell components if its cost is under 1 gold"
+				]
+			}
+        },
+        "Short Text": "Cast spells without material components",
+        "Long Text": "You can cast any spell that has a material component costing 1 gp or less without needing that component.  (The casting of the spell still provokes attacks of opportunity as normal.)  If the spell requires a material component that costs more than 1 gp, you must have the material component at hand to cast the spell, just as normal.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Exotic Weapon Proficiency",
+		"Type": "General",
+        "Prerequisites": [
+			"Base attack bonus minimum (+1)",
+			"Select (Exotic weapon)",
+			"(Bastard sword) Strength minimum (13)",
+			"(Dwarven waraxe) Strength minimum (13)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[
+						"Weapon proficiency (Select weapon)"
+				],
+				"Misc":[]
+			}
+        },
+        "Short Text": "No penalty on attacks with specific exotic weapon",
+        "Long Text": "You make attack rolls with the weapon normally",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Extend Spell",
+		"Type": "General",
+        "Prerequisites": [
+			"Metamagic"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"cast a spell that lasts twice as long, this spell takes up a spell slot 1 level higher"
+				]
+			}
+        },
+        "Short Text": "Double spell's duration",
+        "Long Text": "An extended spell lasts twice as long as normal.  A spell with a duration or concentration, instantaneous, or permanent is not affected by this feat.  An extended spell uses up a spell slot 1 level higher than the spell's actual level.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Extra Turning",
+		"Type": "General",
+        "Prerequisites": [
+			"turn or rebuke"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Turn or rebuke": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "Can turn or rebuke 4 more times per day",
+        "Long Text": "Each time you take this feat, you can use your ability to turn or rebuke creatures four more times per day as normal.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Far Shot",
+		"Type": "General",
+        "Prerequisites": [
+			"Point Blank Shot"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Increase projectile weapons range by 1/2",
+					"Double thrown weapon range"
+				]
+			}
+        },
+        "Short Text": "Increase range increment by 50% or 100%",
+        "Long Text": "When you use a projectile weapon, it's range increment increases by 1/2.  when you use a thrown weapon, it's range increment is doubled.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Forge Ring",
+		"Type": "Item Creation",
+        "Prerequisites": [
+			"Caster level minimum (12)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Can create magic rings"
+				]
+			}
+        },
+        "Short Text": "Create magic rings",
+        "Long Text": "You can create any ring whose prerequisites you meet, You can also mend a broken ring if it is one that you could make.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Great Cleave",
+		"Type": "General",
+        "Prerequisites": [
+			"Strength minimum (13)",
+			"Cleave",
+			"Power attack",
+			"Base attack bonus minimum (4)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"You have no limit to the number of times you can cleave"
+				]
+			}
+        },
+        "Short Text": "No limit to cleave attacks each round",
+        "Long Text": "This feat works like Cleave, except that there is no limit to the number of times you can use it per round.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Great Fortitude",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Fortitude" : 2
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Fortitude saves",
+        "Long Text": "You are tougher than normal",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Greater Spell Focus",
+		"Type": "General",
+        "Prerequisites": [
+			"Select (Spell School)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Spell saving throw DC (Spell School)": 1
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on save DCs against specific school of magic",
+        "Long Text": "Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select.  This stacks with the bonus from Spell Focus.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Greater Spell Penetration",
+		"Type": "General",
+        "Prerequisites": [
+			"Spell Penetration"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"+2 bonus to overcome enemy spell resistance"
+				]
+			}
+        },
+        "Short Text": "+2 bonus on caster level checks to defeat spell resistance",
+        "Long Text": "You get a +2 bonus on caster level checks made to overcome a creatures spell resistance.  This bonus stacks with the one from Spell penetration",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Greater Two-Weapon Fighting",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (19)",
+			"Improved Two-Weapon Fighting".
+			"Two-Weapon fighting".
+			"Base attack bonus minimum (11)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Bonus attack (offhand)": -10
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "Gain third off-hand attack",
+        "Long Text": "you get a third attack with your off-hand weapon, albeit at a -10 penalty.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Greater Weapon Focus",
+		"Type": "General",
+        "Prerequisites": [
+			"Select (Weapon type)",
+			"Weapon Proficiency (Selected Weapon)",
+			"Weapon Focus (Selected Weapon)",
+			"Fighter level minimum (8)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Bonus Attack roll (Selected Weapon)": 1
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+1 bonus on attack rolls with selected weapon",
+        "Long Text": "You gain a +1 bonus on all attack rolls you make using the selected weapon.  This bonus stacks with other bonuses on attack rolls, including the one from Weapon Focus.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Greater Weapon Specialization",
+		"Type": "General",
+        "Prerequisites": [
+			"Select (Weapon type)",
+			"Weapon proficiency (Selected Weapon)",
+			"Greater Weapon Focus (Selected Weapon)",
+			"Weapon Focus (Selected Weapon)",
+			"Fight level minimum (12)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Bonus Damage (Selected Weapon)": 2
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on damage rolls with selected weapon",
+        "Long Text": "You gain a +2 bonus on all damage rolls you make using the selected weapon.  This bonus stacks with other bonuses on damage rolls, including the one from Weapon Specialization.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Heighten Spell",
+		"Type": "Metamagic",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Cast a spell at a higher level than normal. increasing the DC and spell level dependants"
+				]
+			}
+        },
+        "Short Text": "Cast a spell as a higher level",
+        "Long Text": "A heightened spell has a higher spell level than normal (Up to a maximum of 9th level).  Unlike other metamagic feats, Heighten spell actually increases the effective level of the spell that it modifies.  All effects dependent on spell level (Such as saving throw DCs and ability to penetrate a lesser glove of invulnerability) are calculated according to the heightened level.  The heightened spell is as difficult to prepare and cast as a spell of its effective level.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Bull Rush",
+		"Type": "General",
+        "Prerequisites": [
+			"Strength minimum (13)",
+			"Power Attack"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Bull rush": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Bull rushes do not provoke attacks of opportunity"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on bull rush attempts, no attack of opportunity",
+        "Long Text": "When you perform a bull rush, you do not provoke an attack of opportunity from the defender.  You also gain a +4 bonus on the opposed Strength check you make to push back the defender.",
+        "Book Source": "PHB"
+    },
     {
         "Name": "",
 		"Type": "",
