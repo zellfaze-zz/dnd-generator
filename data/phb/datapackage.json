@@ -12,6 +12,11 @@
         }
     ],
     "creditline": "Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.",
+    "sources": [
+        {
+            "name": "Dungeons & Dragons Player's Handbook: Core Rulebook 1, Vol. 3.5 (ISBN: 0786928867)"
+        }
+    ],
     "maintainers": [
         {
             "name": "Derric Atzrott",
