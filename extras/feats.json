@@ -832,7 +832,7 @@
             "Numeric": {
                 "Skills": {},
                 "CharacterAbilities": {
-					"Fortitude" : 2
+					"Save (Fortitude)" : 2
 				}
             },
             "Other": {
@@ -893,8 +893,8 @@
 		"Type": "General",
         "Prerequisites": [
 			"Dexterity minimum (19)",
-			"Improved Two-Weapon Fighting".
-			"Two-Weapon fighting".
+			"Improved Two-Weapon Fighting",
+			"Two-Weapon fighting",
 			"Base attack bonus minimum (11)"
 		],
         "Benefits": {
@@ -1007,8 +1007,504 @@
 				]
 			}
         },
-        "Short Text": "+4 bonus on bull rush attempts, no attack of opportunity",
+        "Short Text": "+4 bonus on bull rush attempts; no attack of opportunity",
         "Long Text": "When you perform a bull rush, you do not provoke an attack of opportunity from the defender.  You also gain a +4 bonus on the opposed Strength check you make to push back the defender.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Counterspell",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Counter spelling can be done with a spell that is at least 1 level higher of countering spell and of the same school"
+				]
+			}
+        },
+        "Short Text": "Counterspell with spell of the same school",
+        "Long Text": "When counterspelling, you may use a spell of the same school that is one or more spell levels higher than the target spell.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Critical",
+		"Type": "General",
+        "Prerequisites": [
+			"Base attack bonus minimum (8)",
+			"Select (Weapon type)",
+			"Weapon proficiency (Selected Weapon)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Weapon Critical range (Selected Weapon)": 2
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "Double threat range of weapon",
+        "Long Text": "When using the weapon you selected, your threat range is doubled.  This effect doesn't with any other effect that expand the threat range of a weapon.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Disarm",
+		"Type": "General",
+        "Prerequisites": [
+			"Intelligence minimum (13)",
+			"Combat Expertise"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Disarm": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Disarm attempts do not provoke attacks of opportunity",
+					"Opponents do not get disarm attempts when you fall on disarming"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on bull rush attempts; no attack of opportunity",
+        "Long Text": "You do not provoke attack of opportunity when you attempt to disarm an opponent, nor does the opponent have a chance to disarm you.  You also get a +4 bonus on opposed attack roll you make to disarm you opponent.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Feint",
+		"Type": "General",
+        "Prerequisites": [
+			"Intelligence minimum (13)",
+			"Combat Expertise"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"You can make bluff checks in combat as a move action"
+				]
+			}
+        },
+        "Short Text": "Feint in combat as move action",
+        "Long Text": "You can make a bluff check to feint in combat as a move action.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Grapple",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (13)",
+			"Improved Unarmed Strike"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Grapple": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Grapple attempts do not provoke attacks of opportunity"
+				]
+			}
+        },
+        "Short Text": "+4 on grapple checks; no attack of opportunity",
+        "Long Text": "You do not provoke an attack of opportunity when you make a touch attack to start a grapple.  You also gain a +4 bonus on all grapple checks, regardless of whether you started the grapple. ",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Initiative",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Initiative": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+4 bonus on initiative checks",
+        "Long Text": "You get a +4 bonus on initiative checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Overrun",
+		"Type": "General",
+        "Prerequisites": [
+			"Strength minimum (13)",
+			"Power Attack"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Overrun": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Opponents may not choose to avoid your overrun attempts",
+					"Overrun do not provoke attacks of opportunity"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on overrun attempts; no attack of opportunity",
+        "Long Text": "When you attempt to overrun an opponent, the target may not choose to avoid you.  You also gain a +4 bonus on your strength check to knock down your opponent.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Precise Shot",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (19)",
+			"Point Blank Shot",
+			"Precise Shot",
+			"Base attack bonus (11)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Ranged attacks ignore AC bonus from anything less than total cover",
+					"Ranged attacks ignore miss chance from anything less than total concealment",
+					"Automatically hit against selected target in a grapple"
+				]
+			}
+        },
+        "Short Text": "Ignore less than total than total cover/concealment on ranged attacks",
+        "Long Text": "Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment.  Total cover and total concealment provide their normal benefits against your ranged attacks.  In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically strike at the opponent you have chosen.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Shield Bash",
+		"Type": "General",
+        "Prerequisites": [
+			"Weapon and armor proficiency (Shield)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Retain shield bonus to AC when shield bashing"
+				]
+			}
+        },
+        "Short Text": "Retain shield bonus to AC when shield bashing",
+        "Long Text": "When you perfom a shield bash, you may still apply the shield's shield bonus to your AC",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Sunder",
+		"Type": "General",
+        "Prerequisites": [
+			"Strength minimum (13)",
+			"Power Attack"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Sunder": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Sunder attempts do not provoke attacks of opportunity"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on sunder attempts; no attack of opportunity",
+        "Long Text": "When you strike at an object held or carried by an opponent, you do not provoke an attack of opportunity.  You also gain a +4 bonus on any attack roll made to attack an object held or carried by another character.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Trip",
+		"Type": "General",
+        "Prerequisites": [
+			"Intelligence minimum (13)",
+			"Combat Expertise"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Trip": 4
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Free attack against successfully tripped opponent",
+					"Trip attempts do not provoke attack of opportunity"
+				]
+			}
+        },
+        "Short Text": "+4 bonus on trip attempts; no attack of opportunity",
+        "Long Text": "You do not provoke an of opportunity when you attempt to trip an opponent while you are unarmed.  You also get a +4 bonus on your Strength checks to trip your opponent.  If you trip an opponent in melee combat, you immediately get a melee attack against that opponent as if you hadn't used your attack for the trip attempt.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Turning",
+		"Type": "General",
+        "Prerequisites": [
+			"turn of rebuke"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Bonus turn or rebuke caster level": 1
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+1 level for turning checks",
+        "Long Text": "You turn or rebuke creatures as if you were one level higher than you are in the class that grants you the ability.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Two-Weapon Fighting",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (17)",
+			"Two-Weapon Fighting",
+			"Base attack bonus (6)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Bonus attack (offhand)": -5
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "Gain second off-hand attack",
+        "Long Text": "In addition to the standard single extra atack you get with an off-hand weapon, you get a second attack with it, albiet at a -5 penalty.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Improved Unarmed Strike",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"Unarmed attacks do not provoke attacks of opportunity",
+					"Unarmed strikes can deal lethal or nonlethal damage"
+				]
+			}
+        },
+        "Short Text": "Considered armed even when unarmed",
+        "Long Text": "You are considered to be armed even when unarmed - that is, you do not provoke attacks of opportunity from armed opponents when you attack them while unarmed.  In addition, your unarmed strikes can deal lethal or nonlethal damage, at your option.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Investigator",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Gather Information": 2,
+					"Search": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Gather Information and Search checks",
+        "Long Text": "You get a +2 bonus on all Gather Information checks and Search checks",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Iron Will",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Save (Will)": 2
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Will saves",
+        "Long Text": "You get a +2 bonus on all will saving throws.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Leadership",
+		"Type": "General",
+        "Prerequisites": [
+			"Character level minimum (6)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[
+					"You gain a cohort and followers"
+				]
+			}
+        },
+        "Short Text": "Attract cohort and followers",
+        "Long Text": "You can attract loyal companions and devoted followers, subordinates who assist you.  Your DM has information on what sort of cohort and how many followers you can recruit.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Lightning Reflexes",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {
+					"Save (Reflex)": 2
+				}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Reflex saves",
+        "Long Text": "You get a +2 bonus on all reflex saving throws.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Magical Aptitude",
+		"Type": "General",
+        "Prerequisites": [
+			"None"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {
+					"Spellcraft": 2,
+					"Use Magic Device": 2
+				},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[],
+				"Misc":[]
+			}
+        },
+        "Short Text": "+2 bonus on Spellcraft and Use Magic Device checks",
+        "Long Text": "You get a +2 bonus on all Spellcraft checks and Use Magic Device checks.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Manyshot",
+		"Type": "General",
+        "Prerequisites": [
+			"Dexterity minimum (17)",
+			"Point Blank Shot",
+			"Rapid Shot",
+			"Base attack bonus (6)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[
+					"Attack option (fire 2 arrows + 1 per 5 extra BAB above 6)(BAB + dex mod - 4)(range 30)"
+				],
+				"Misc":[]
+			}
+        },
+        "Short Text": "Shoot 2 or more arrows simultaneously",
+        "Long Text": "As a standard action, you may fire two arrows at a single opponent within 30 feet.  Both arrows use the same attack roll (with a -4 penalty) to determine success and deal damage normally.  For every five points of base attack bonus you have above +6, you may add one additional arrow to this attack, to a maximum of four arrows at a base attack bonus of +16.  However, each arrow after the second adds a cumulative -2 penalty on the attack roll.  Damage reduction and other resistances apply separately against each arrow fired.",
+        "Book Source": "PHB"
+    },
+	{
+        "Name": "Martial Weapon Proficiency",
+		"Type": "General",
+        "Prerequisites": [
+			"Select (Martial weapon)"
+		],
+        "Benefits": {
+            "Numeric": {
+                "Skills": {},
+                "CharacterAbilities": {}
+            },
+            "Other": {
+				"Ability":[
+					"Weapon Proficiency (Select Weapon)"
+				],
+				"Misc":[]
+			}
+        },
+        "Short Text": "No penalty on attacks with specific martial weapon",
+        "Long Text": "You make attack rolls with the selected weapon normally",
         "Book Source": "PHB"
     },
     {
