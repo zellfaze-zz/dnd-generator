@@ -31,7 +31,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 2,
@@ -43,7 +43,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 3,
@@ -55,7 +55,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 4,
@@ -67,7 +67,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 5,
@@ -79,7 +79,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 6,
@@ -91,7 +91,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 7,
@@ -103,7 +103,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 8,
@@ -115,7 +115,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 9,
@@ -127,7 +127,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 10,
@@ -139,7 +139,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 11,
@@ -151,7 +151,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 12,
@@ -164,7 +164,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 13,
@@ -176,7 +176,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 14,
@@ -188,7 +188,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 15,
@@ -200,7 +200,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 16,
@@ -213,7 +213,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 17,
@@ -225,7 +225,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 18,
@@ -237,7 +237,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 19,
@@ -249,7 +249,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 20,
@@ -262,7 +262,7 @@
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
@@ -277,7 +277,7 @@
             "Medium armor",
             "Shield"
         ],
-		"Alignment": "Non-lawful"
+        "Alignment": "Non-lawful"
     },
     {
         "Class": "Bard",
@@ -334,7 +334,7 @@
                 "SpellsKnown": [
                     4
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -350,7 +350,7 @@
                     5,
                     2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 2,
@@ -368,7 +368,7 @@
                     6,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 3,
@@ -386,7 +386,7 @@
                     3,
                     2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 3,
@@ -404,7 +404,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 4,
@@ -424,7 +424,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 5,
@@ -444,7 +444,7 @@
                     4,
                     2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 6,
@@ -466,7 +466,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 6,
@@ -488,7 +488,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 7,
@@ -510,7 +510,7 @@
                     4,
                     2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 8,
@@ -532,7 +532,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 9,
@@ -556,7 +556,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 9,
@@ -580,7 +580,7 @@
                     4,
                     2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 10,
@@ -606,7 +606,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 11,
@@ -632,7 +632,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 12,
@@ -658,7 +658,7 @@
                     4,
                     2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 12,
@@ -684,7 +684,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 13,
@@ -712,7 +712,7 @@
                     4,
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 14,
@@ -738,7 +738,7 @@
                     4,
                     4
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 15,
@@ -766,14 +766,14 @@
                     5,
                     4
                 ],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
         "Misc": [],
         "Bonus languages": [
-			"None"
-		],
+            "None"
+        ],
         "Weapon and armor proficiency": [
             "Simple weapons",
             "Longsword",
@@ -785,7 +785,7 @@
             "Light armor",
             "Basic shields"
         ],
-		"Alignment": "Non-lawful"
+        "Alignment": "Non-lawful"
     },
     {
         "Class": "Cleric",
@@ -824,7 +824,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -839,7 +839,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 2,
@@ -855,7 +855,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 3,
@@ -871,7 +871,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 3,
@@ -888,7 +888,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 4,
@@ -905,7 +905,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 5,
@@ -923,7 +923,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 6,
@@ -941,7 +941,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 6,
@@ -960,7 +960,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 7,
@@ -979,7 +979,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 8,
@@ -999,7 +999,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 9,
@@ -1019,7 +1019,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 9,
@@ -1040,7 +1040,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 10,
@@ -1061,7 +1061,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 11,
@@ -1083,7 +1083,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 12,
@@ -1105,7 +1105,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 12,
@@ -1128,7 +1128,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 13,
@@ -1151,7 +1151,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 14,
@@ -1174,7 +1174,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 15,
@@ -1197,7 +1197,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
@@ -1207,8 +1207,8 @@
             "Domain spells"
         ],
         "Bonus languages": [
-			"None"
-		],
+            "None"
+        ],
         "Weapon and armor proficiency": [
             "Simple weapons",
             "Light armor",
@@ -1216,7 +1216,7 @@
             "Heavy armor",
             "Basic shields"
         ],
-		"Alignment": "Any"
+        "Alignment": "Any"
     },
     {
         "Class": "Druid",
@@ -1231,16 +1231,16 @@
             "Concentration",
             "Craft",
             "Diplomacy",
-			"Handle Animal",
+            "Handle Animal",
             "Heal",
             "Knowledge (Nature)",
-			"Listen",
-			"Profession",
-			"Ride",
+            "Listen",
+            "Profession",
+            "Ride",
             "Spellcraft",
-			"Spot",
-			"Survival",
-			"Swim"
+            "Spot",
+            "Survival",
+            "Swim"
         ],
         "ClassAbilities": {
             "1": {
@@ -1249,9 +1249,9 @@
                 "Ref": 0,
                 "Will": 2,
                 "Abilities": [
-					"Animal companion",
-					"Nature sense",
-					"Wild empathy"
+                    "Animal companion",
+                    "Nature sense",
+                    "Wild empathy"
                 ],
                 "SpellCasting": [
                     3,
@@ -1260,7 +1260,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -1268,8 +1268,8 @@
                 "Ref": 0,
                 "Will": 3,
                 "Abilities": [
-					"Woodland stride"
-				],
+                    "Woodland stride"
+                ],
                 "SpellCasting": [
                     4,
                     2
@@ -1277,7 +1277,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 2,
@@ -1285,8 +1285,8 @@
                 "Ref": 1,
                 "Will": 3,
                 "Abilities": [
-					"Trackless step"
-				],
+                    "Trackless step"
+                ],
                 "SpellCasting": [
                     4,
                     2,
@@ -1295,7 +1295,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 3,
@@ -1303,8 +1303,8 @@
                 "Ref": 1,
                 "Will": 4,
                 "Abilities": [
-					"Resist nature's lure"
-				],
+                    "Resist nature's lure"
+                ],
                 "SpellCasting": [
                     5,
                     3,
@@ -1313,7 +1313,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 3,
@@ -1321,8 +1321,8 @@
                 "Ref": 1,
                 "Will": 4,
                 "Abilities": [
-					"Wild shape (1/day)"
-				],
+                    "Wild shape (1/day)"
+                ],
                 "SpellCasting": [
                     5,
                     3,
@@ -1332,7 +1332,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 4,
@@ -1340,8 +1340,8 @@
                 "Ref": 2,
                 "Will": 5,
                 "Abilities": [
-					"Wild shape (2/day)"
-				],
+                    "Wild shape (2/day)"
+                ],
                 "SpellCasting": [
                     5,
                     3,
@@ -1351,7 +1351,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 5,
@@ -1359,8 +1359,8 @@
                 "Ref": 2,
                 "Will": 5,
                 "Abilities": [
-					"Wild shape (3/day)"
-				],
+                    "Wild shape (3/day)"
+                ],
                 "SpellCasting": [
                     6,
                     4,
@@ -1371,7 +1371,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 6,
@@ -1379,8 +1379,8 @@
                 "Ref": 2,
                 "Will": 6,
                 "Abilities": [
-					"Wild shape (large)"
-				],
+                    "Wild shape (large)"
+                ],
                 "SpellCasting": [
                     6,
                     4,
@@ -1391,7 +1391,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 6,
@@ -1399,8 +1399,8 @@
                 "Ref": 3,
                 "Will": 6,
                 "Abilities": [
-					"Venom immunity"
-				],
+                    "Venom immunity"
+                ],
                 "SpellCasting": [
                     6,
                     4,
@@ -1412,7 +1412,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 7,
@@ -1420,8 +1420,8 @@
                 "Ref": 3,
                 "Will": 7,
                 "Abilities": [
-					"Wild shape (4/day)"
-				],
+                    "Wild shape (4/day)"
+                ],
                 "SpellCasting": [
                     6,
                     4,
@@ -1433,7 +1433,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 8,
@@ -1441,8 +1441,8 @@
                 "Ref": 3,
                 "Will": 7,
                 "Abilities": [
-					"Wild shape (tiny)"
-				],
+                    "Wild shape (tiny)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1455,7 +1455,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 9,
@@ -1463,8 +1463,8 @@
                 "Ref": 4,
                 "Will": 8,
                 "Abilities": [
-					"Wild shape (plant)"
-				],
+                    "Wild shape (plant)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1477,7 +1477,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 9,
@@ -1485,8 +1485,8 @@
                 "Ref": 4,
                 "Will": 8,
                 "Abilities": [
-					"A thousand faces"
-				],
+                    "A thousand faces"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1500,7 +1500,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 10,
@@ -1508,8 +1508,8 @@
                 "Ref": 4,
                 "Will": 9,
                 "Abilities": [
-					"Wild shape (5/day)"
-				],
+                    "Wild shape (5/day)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1523,7 +1523,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 11,
@@ -1531,9 +1531,9 @@
                 "Ref": 5,
                 "Will": 9,
                 "Abilities": [
-					"Timeless body",
-					"Wild shape (huge)"
-				],
+                    "Timeless body",
+                    "Wild shape (huge)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1548,7 +1548,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 12,
@@ -1556,8 +1556,8 @@
                 "Ref": 5,
                 "Will": 10,
                 "Abilities": [
-					"Wild shape (elemental 1/day)"
-				],
+                    "Wild shape (elemental 1/day)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1572,7 +1572,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 12,
@@ -1595,7 +1595,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 14,
@@ -1603,9 +1603,9 @@
                 "Ref": 6,
                 "Will": 11,
                 "Abilities": [
-					"Wild shape (6/day)",
-					"Wild shape (elemental 2/day)"
-				],
+                    "Wild shape (6/day)",
+                    "Wild shape (elemental 2/day)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1621,7 +1621,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 14,
@@ -1644,7 +1644,7 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 15,
@@ -1652,9 +1652,9 @@
                 "Ref": 6,
                 "Will": 12,
                 "Abilities": [
-					"Wild shape (elemental 3/day)",
-					"Wild shape (huge elemental)"
-				],
+                    "Wild shape (elemental 3/day)",
+                    "Wild shape (huge elemental)"
+                ],
                 "SpellCasting": [
                     6,
                     5,
@@ -1670,29 +1670,29 @@
                 "SpellsKnown": [
                     "All"
                 ],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
         "Misc": [
-			"Language (Druidic)",
-			"Animal companion"
+            "Language (Druidic)",
+            "Animal companion"
         ],
         "Bonus languages": [
-			"Sylvan"
-		],
-        "Weapon and armor proficiency": [
-			"Club",
-			"Dagger",
-			"Dart",
-			"Quarterstaff",
-			"Scimitar",
-			"Sickle",
-			"Shortspear",
-			"Sling",
-			"Spear"
+            "Sylvan"
         ],
-		"Alignment": "Neutral"
+        "Weapon and armor proficiency": [
+            "Club",
+            "Dagger",
+            "Dart",
+            "Quarterstaff",
+            "Scimitar",
+            "Sickle",
+            "Shortspear",
+            "Sling",
+            "Spear"
+        ],
+        "Alignment": "Neutral"
     },
     {
         "Class": "Fighter",
@@ -1709,8 +1709,8 @@
             "Handle Animal",
             "Intimidate",
             "Jump",
-			"Ride",
-			"Swim"
+            "Ride",
+            "Swim"
         ],
         "ClassAbilities": {
             "1": {
@@ -1719,11 +1719,11 @@
                 "Ref": 0,
                 "Will": 0,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 2,
@@ -1731,11 +1731,11 @@
                 "Ref": 0,
                 "Will": 0,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 3,
@@ -1745,7 +1745,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 4,
@@ -1753,11 +1753,11 @@
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 5,
@@ -1767,7 +1767,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 6,
@@ -1775,11 +1775,11 @@
                 "Ref": 2,
                 "Will": 2,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 7,
@@ -1789,7 +1789,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 8,
@@ -1797,11 +1797,11 @@
                 "Ref": 2,
                 "Will": 2,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 9,
@@ -1811,7 +1811,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 10,
@@ -1819,11 +1819,11 @@
                 "Ref": 3,
                 "Will": 3,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 11,
@@ -1833,7 +1833,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 12,
@@ -1841,11 +1841,11 @@
                 "Ref": 4,
                 "Will": 4,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 13,
@@ -1855,7 +1855,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 14,
@@ -1863,11 +1863,11 @@
                 "Ref": 4,
                 "Will": 4,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 15,
@@ -1877,7 +1877,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 16,
@@ -1885,11 +1885,11 @@
                 "Ref": 5,
                 "Will": 5,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 17,
@@ -1899,7 +1899,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 18,
@@ -1907,11 +1907,11 @@
                 "Ref": 6,
                 "Will": 6,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 19,
@@ -1921,7 +1921,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 20,
@@ -1929,11 +1929,11 @@
                 "Ref": 6,
                 "Will": 6,
                 "Abilities": [
-					"Bonus fighter feat"
+                    "Bonus fighter feat"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
@@ -1942,14 +1942,14 @@
             "None"
         ],
         "Weapon and armor proficiency": [
-			"Simple weapons",
-			"Martial weapons",
-			"Light armor",
-			"Medium armor",
-			"Heavy armor",
-			"Shields"
+            "Simple weapons",
+            "Martial weapons",
+            "Light armor",
+            "Medium armor",
+            "Heavy armor",
+            "Shields"
         ],
-		"Alignment": "Any"
+        "Alignment": "Any"
     },
     {
         "Class": "Monk",
@@ -1961,21 +1961,21 @@
         "SpellCaster": false,
         "PsionicClass": false,
         "ClassSkills": [
-			"Balance",
-			"Climb",
-			"Concentration",
-			"Craft",
-			"Diplomacy",
-			"Escape Artist",
-			"Hide",
-			"Jump",
-			"Knowledge (Arcana)",
-			"Knowledge (Religion)",
-			"Listen",
-			"Move Silently",
-			"Spot",
-			"Swim",
-			"Tumble"
+            "Balance",
+            "Climb",
+            "Concentration",
+            "Craft",
+            "Diplomacy",
+            "Escape Artist",
+            "Hide",
+            "Jump",
+            "Knowledge (Arcana)",
+            "Knowledge (Religion)",
+            "Listen",
+            "Move Silently",
+            "Spot",
+            "Swim",
+            "Tumble"
         ],
         "ClassAbilities": {
             "1": {
@@ -1984,20 +1984,18 @@
                 "Ref": 2,
                 "Will": 2,
                 "Abilities": [
-					"Bonus monk feat",
-					"Flurry of blows",
-					"Unarmed strike"
+                    "Bonus monk feat",
+                    "Flurry of blows",
+                    "Unarmed strike"
                 ],
-                "SpellCasting": [
-                ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "-2/-2",
-					"Unarmed damage": "1d6",
-					"AC bonus": 0,
-					"Unarmored speed bonus": 0
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "-2/-2",
+                    "Unarmed damage": "1d6",
+                    "AC bonus": 0,
+                    "Unarmored speed bonus": 0
+                }
             },
             "2": {
                 "BAB": 1,
@@ -2005,20 +2003,18 @@
                 "Ref": 3,
                 "Will": 3,
                 "Abilities": [
-					"Bonus monk feat",
-					"Evasion",
-					"Fast movement"
-				],
-                "SpellCasting": [
+                    "Bonus monk feat",
+                    "Evasion",
+                    "Fast movement"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "-1/-1",
-					"Unarmed damage": "1d6",
-					"AC bonus": 0,
-					"Unarmored speed bonus": 0
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "-1/-1",
+                    "Unarmed damage": "1d6",
+                    "AC bonus": 0,
+                    "Unarmored speed bonus": 0
+                }
             },
             "3": {
                 "BAB": 2,
@@ -2026,18 +2022,16 @@
                 "Ref": 3,
                 "Will": 3,
                 "Abilities": [
-					"Still mind"
-				],
-                "SpellCasting": [
+                    "Still mind"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "-0/-0",
-					"Unarmed damage": "1d6",
-					"AC bonus": 0,
-					"Unarmored speed bonus": 10
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "-0/-0",
+                    "Unarmed damage": "1d6",
+                    "AC bonus": 0,
+                    "Unarmored speed bonus": 10
+                }
             },
             "4": {
                 "BAB": 3,
@@ -2045,19 +2039,17 @@
                 "Ref": 4,
                 "Will": 4,
                 "Abilities": [
-					"Ki strike(magic)",
-					"Slow fall 20ft"
-				],
-                "SpellCasting": [
+                    "Ki strike(magic)",
+                    "Slow fall 20ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "1/1",
-					"Unarmed damage": "1d8",
-					"AC bonus": 0,
-					"Unarmored speed bonus": 10
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "1/1",
+                    "Unarmed damage": "1d8",
+                    "AC bonus": 0,
+                    "Unarmored speed bonus": 10
+                }
             },
             "5": {
                 "BAB": 3,
@@ -2065,18 +2057,16 @@
                 "Ref": 4,
                 "Will": 4,
                 "Abilities": [
-					"Purity of body"
-				],
-                "SpellCasting": [
+                    "Purity of body"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "2/2",
-					"Unarmed damage": "1d8",
-					"AC bonus": 1,
-					"Unarmored speed bonus": 10
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "2/2",
+                    "Unarmed damage": "1d8",
+                    "AC bonus": 1,
+                    "Unarmored speed bonus": 10
+                }
             },
             "6": {
                 "BAB": 4,
@@ -2084,19 +2074,17 @@
                 "Ref": 5,
                 "Will": 5,
                 "Abilities": [
-					"Bonus monk feat",
-					"Slow fall 30ft"
-				],
-                "SpellCasting": [
+                    "Bonus monk feat",
+                    "Slow fall 30ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "3/3",
-					"Unarmed damage": "1d8",
-					"AC bonus": 0,
-					"Unarmored speed bonus": 20
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "3/3",
+                    "Unarmed damage": "1d8",
+                    "AC bonus": 0,
+                    "Unarmored speed bonus": 20
+                }
             },
             "7": {
                 "BAB": 5,
@@ -2104,18 +2092,16 @@
                 "Ref": 5,
                 "Will": 5,
                 "Abilities": [
-					"Wholeness of body"
-				],
-                "SpellCasting": [
+                    "Wholeness of body"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "4/4",
-					"Unarmed damage": "1d8",
-					"AC bonus": 1,
-					"Unarmored speed bonus": 20
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "4/4",
+                    "Unarmed damage": "1d8",
+                    "AC bonus": 1,
+                    "Unarmored speed bonus": 20
+                }
             },
             "8": {
                 "BAB": 6,
@@ -2123,18 +2109,16 @@
                 "Ref": 6,
                 "Will": 6,
                 "Abilities": [
-					"Slow fall 40ft"
-				],
-                "SpellCasting": [
+                    "Slow fall 40ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "5/5/0",
-					"Unarmed damage": "1d10",
-					"AC bonus": 1,
-					"Unarmored speed bonus": 20
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "5/5/0",
+                    "Unarmed damage": "1d10",
+                    "AC bonus": 1,
+                    "Unarmored speed bonus": 20
+                }
             },
             "9": {
                 "BAB": 6,
@@ -2142,18 +2126,16 @@
                 "Ref": 6,
                 "Will": 6,
                 "Abilities": [
-					"Improved evasion"
-				],
-                "SpellCasting": [
+                    "Improved evasion"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "6/6/1",
-					"Unarmed damage": "1d10",
-					"AC bonus": 1,
-					"Unarmored speed bonus": 30
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "6/6/1",
+                    "Unarmed damage": "1d10",
+                    "AC bonus": 1,
+                    "Unarmored speed bonus": 30
+                }
             },
             "10": {
                 "BAB": 7,
@@ -2161,19 +2143,17 @@
                 "Ref": 7,
                 "Will": 7,
                 "Abilities": [
-					"Ki strike (lawful)",
-					"Slow fall 50ft"
-				],
-                "SpellCasting": [
+                    "Ki strike (lawful)",
+                    "Slow fall 50ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "7/7/2",
-					"Unarmed damage": "1d10",
-					"AC bonus": 2,
-					"Unarmored speed bonus": 30
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "7/7/2",
+                    "Unarmed damage": "1d10",
+                    "AC bonus": 2,
+                    "Unarmored speed bonus": 30
+                }
             },
             "11": {
                 "BAB": 8,
@@ -2181,19 +2161,17 @@
                 "Ref": 7,
                 "Will": 7,
                 "Abilities": [
-					"Diamond body",
-					"Greater flurry"
-				],
-                "SpellCasting": [
+                    "Diamond body",
+                    "Greater flurry"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "8/8/8/3",
-					"Unarmed damage": "1d10",
-					"AC bonus": 2,
-					"Unarmored speed bonus": 30
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "8/8/8/3",
+                    "Unarmed damage": "1d10",
+                    "AC bonus": 2,
+                    "Unarmored speed bonus": 30
+                }
             },
             "12": {
                 "BAB": 9,
@@ -2201,19 +2179,17 @@
                 "Ref": 8,
                 "Will": 8,
                 "Abilities": [
-					"Abundant step",
-					"Slow fall 60ft"
-				],
-                "SpellCasting": [
+                    "Abundant step",
+                    "Slow fall 60ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "9/9/9/4",
-					"Unarmed damage": "2d6",
-					"AC bonus": 2,
-					"Unarmored speed bonus": 40
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "9/9/9/4",
+                    "Unarmed damage": "2d6",
+                    "AC bonus": 2,
+                    "Unarmored speed bonus": 40
+                }
             },
             "13": {
                 "BAB": 9,
@@ -2221,18 +2197,16 @@
                 "Ref": 8,
                 "Will": 8,
                 "Abilities": [
-					"Diamond soul"
-				],
-                "SpellCasting": [
+                    "Diamond soul"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "9/9/9/4",
-					"Unarmed damage": "2d6",
-					"AC bonus": 2,
-					"Unarmored speed bonus": 40
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "9/9/9/4",
+                    "Unarmed damage": "2d6",
+                    "AC bonus": 2,
+                    "Unarmored speed bonus": 40
+                }
             },
             "14": {
                 "BAB": 10,
@@ -2240,18 +2214,16 @@
                 "Ref": 9,
                 "Will": 9,
                 "Abilities": [
-					"Slow fall 70ft"
-				],
-                "SpellCasting": [
+                    "Slow fall 70ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "10/10/10/5",
-					"Unarmed damage": "2d6",
-					"AC bonus": 2,
-					"Unarmored speed bonus": 40
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "10/10/10/5",
+                    "Unarmed damage": "2d6",
+                    "AC bonus": 2,
+                    "Unarmored speed bonus": 40
+                }
             },
             "15": {
                 "BAB": 11,
@@ -2259,18 +2231,16 @@
                 "Ref": 9,
                 "Will": 9,
                 "Abilities": [
-					"Quivering palm"
-				],
-                "SpellCasting": [
+                    "Quivering palm"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "11/11/11/6/1",
-					"Unarmed damage": "2d6",
-					"AC bonus": 3,
-					"Unarmored speed bonus": 50
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "11/11/11/6/1",
+                    "Unarmed damage": "2d6",
+                    "AC bonus": 3,
+                    "Unarmored speed bonus": 50
+                }
             },
             "16": {
                 "BAB": 12,
@@ -2278,19 +2248,17 @@
                 "Ref": 10,
                 "Will": 10,
                 "Abilities": [
-					"Ki strike (adamantine)",
-					"Slow fall 80ft"
-				],
-                "SpellCasting": [
+                    "Ki strike (adamantine)",
+                    "Slow fall 80ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "12/12/12/7/2",
-					"Unarmed damage": "2d8",
-					"AC bonus": 3,
-					"Unarmored speed bonus": 50
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "12/12/12/7/2",
+                    "Unarmed damage": "2d8",
+                    "AC bonus": 3,
+                    "Unarmored speed bonus": 50
+                }
             },
             "17": {
                 "BAB": 12,
@@ -2298,19 +2266,17 @@
                 "Ref": 10,
                 "Will": 10,
                 "Abilities": [
-					"Timeless body",
-					"Tongue of the sun and moon"
-				],
-                "SpellCasting": [
+                    "Timeless body",
+                    "Tongue of the sun and moon"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "12/12/12/7/2",
-					"Unarmed damage": "2d8",
-					"AC bonus": 3,
-					"Unarmored speed bonus": 50
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "12/12/12/7/2",
+                    "Unarmed damage": "2d8",
+                    "AC bonus": 3,
+                    "Unarmored speed bonus": 50
+                }
             },
             "18": {
                 "BAB": 13,
@@ -2318,18 +2284,16 @@
                 "Ref": 11,
                 "Will": 11,
                 "Abilities": [
-					"Slow fall 90ft"
-				],
-                "SpellCasting": [
+                    "Slow fall 90ft"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "13/13/13/8/3",
-					"Unarmed damage": "2d8",
-					"AC bonus": 3,
-					"Unarmored speed bonus": 60
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "13/13/13/8/3",
+                    "Unarmed damage": "2d8",
+                    "AC bonus": 3,
+                    "Unarmored speed bonus": 60
+                }
             },
             "19": {
                 "BAB": 14,
@@ -2337,18 +2301,16 @@
                 "Ref": 11,
                 "Will": 11,
                 "Abilities": [
-					"Empty body"
-				],
-                "SpellCasting": [
+                    "Empty body"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "14/14/14/9/4",
-					"Unarmed damage": "2d8",
-					"AC bonus": 3,
-					"Unarmored speed bonus": 60
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "14/14/14/9/4",
+                    "Unarmed damage": "2d8",
+                    "AC bonus": 3,
+                    "Unarmored speed bonus": 60
+                }
             },
             "20": {
                 "BAB": 15,
@@ -2356,45 +2318,43 @@
                 "Ref": 12,
                 "Will": 12,
                 "Abilities": [
-					"Perfect self",
-					"Slow fall any distance"
-				],
-                "SpellCasting": [
+                    "Perfect self",
+                    "Slow fall any distance"
                 ],
-                "SpellsKnown": [
-                ],
-				"Misc": {
-					"Flurry of blows": "15/15/15/10/5",
-					"Unarmed damage": "2d10",
-					"AC bonus": 4,
-					"Unarmored speed bonus": 60
-				}
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {
+                    "Flurry of blows": "15/15/15/10/5",
+                    "Unarmed damage": "2d10",
+                    "AC bonus": 4,
+                    "Unarmored speed bonus": 60
+                }
             }
         },
         "BookSource": "PHB",
         "Misc": [
-			"Armor penalties",
-			"Cross class leveling penalties"
+            "Armor penalties",
+            "Cross class leveling penalties"
         ],
         "Bonus languages": [
-			"None"
-		],
-        "Weapon and armor proficiency": [
-			"Club",
-			"Light crossbow",
-			"Heavy crossbow",
-			"Dagger",
-			"Handaxe",
-			"Javelin",
-			"Kama",
-			"Nunchaku",
-			"Quarterstaff",
-			"Sai",
-			"Shuriken",
-			"Siangham",
-			"Sling"
+            "None"
         ],
-		"Alignment": "Lawful"
+        "Weapon and armor proficiency": [
+            "Club",
+            "Light crossbow",
+            "Heavy crossbow",
+            "Dagger",
+            "Handaxe",
+            "Javelin",
+            "Kama",
+            "Nunchaku",
+            "Quarterstaff",
+            "Sai",
+            "Shuriken",
+            "Siangham",
+            "Sling"
+        ],
+        "Alignment": "Lawful"
     },
     {
         "Class": "Paladin",
@@ -2408,11 +2368,11 @@
         "ClassSkills": [
             "Concentration",
             "Craft",
-			"Diplomacy",
+            "Diplomacy",
             "Handle Animal",
-			"Heal",
+            "Heal",
             "Knowledge (Nobility and royalty)",
-			"Knowledge (Religion)",
+            "Knowledge (Religion)",
             "Profession",
             "Ride",
             "Survival"
@@ -2424,13 +2384,13 @@
                 "Ref": 0,
                 "Will": 0,
                 "Abilities": [
-					"Aura of good",
-					"Detect evil",
-					"Smite evil 1/day"
+                    "Aura of good",
+                    "Detect evil",
+                    "Smite evil 1/day"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 2,
@@ -2438,12 +2398,12 @@
                 "Ref": 0,
                 "Will": 0,
                 "Abilities": [
-					"Divine grace",
-					"Lay on hands"
+                    "Divine grace",
+                    "Lay on hands"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 3,
@@ -2451,12 +2411,12 @@
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [
-					"Aura of courage",
-					"Divine health"
+                    "Aura of courage",
+                    "Divine health"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 4,
@@ -2464,15 +2424,15 @@
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [
-					"Turn undead"
+                    "Turn undead"
                 ],
                 "SpellCasting": [
-					0
-				],
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "5": {
                 "BAB": 5,
@@ -2480,16 +2440,16 @@
                 "Ref": 1,
                 "Will": 1,
                 "Abilities": [
-					"Smite evil 2/day",
-					"Special mount"
+                    "Smite evil 2/day",
+                    "Special mount"
                 ],
                 "SpellCasting": [
-					0
-				],
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "6": {
                 "BAB": 6,
@@ -2497,15 +2457,15 @@
                 "Ref": 2,
                 "Will": 2,
                 "Abilities": [
-					"Remove disease 1/week"
+                    "Remove disease 1/week"
                 ],
                 "SpellCasting": [
-					1
-				],
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "7": {
                 "BAB": 7,
@@ -2514,12 +2474,12 @@
                 "Will": 2,
                 "Abilities": [],
                 "SpellCasting": [
-					1
-				],
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "8": {
                 "BAB": 8,
@@ -2528,13 +2488,13 @@
                 "Will": 2,
                 "Abilities": [],
                 "SpellCasting": [
-					1,
-					0
-				],
+                    1,
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "9": {
                 "BAB": 9,
@@ -2542,16 +2502,16 @@
                 "Ref": 3,
                 "Will": 3,
                 "Abilities": [
-					"Remove disease 2/week"
+                    "Remove disease 2/week"
                 ],
                 "SpellCasting": [
-					1,
-					0
-				],
+                    1,
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "10": {
                 "BAB": 10,
@@ -2559,16 +2519,16 @@
                 "Ref": 3,
                 "Will": 3,
                 "Abilities": [
-					"Smite evil 3/day"
+                    "Smite evil 3/day"
                 ],
                 "SpellCasting": [
-					1,
-					1
-				],
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "11": {
                 "BAB": 11,
@@ -2577,12 +2537,12 @@
                 "Will": 3,
                 "Abilities": [],
                 "SpellCasting": [
-					1,
-					1,
-					0
-				],
+                    1,
+                    1,
+                    0
+                ],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 12,
@@ -2590,17 +2550,17 @@
                 "Ref": 4,
                 "Will": 4,
                 "Abilities": [
-					"Remove disease 3/week"
+                    "Remove disease 3/week"
                 ],
                 "SpellCasting": [
-					1,
-					1,
-					1
-				],
+                    1,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "13": {
                 "BAB": 13,
@@ -2609,14 +2569,14 @@
                 "Will": 4,
                 "Abilities": [],
                 "SpellCasting": [
-					1,
-					1,
-					1
-				],
+                    1,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "14": {
                 "BAB": 14,
@@ -2625,15 +2585,15 @@
                 "Will": 4,
                 "Abilities": [],
                 "SpellCasting": [
-					2,
-					1,
-					1,
-					0
-				],
+                    2,
+                    1,
+                    1,
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "15": {
                 "BAB": 15,
@@ -2641,19 +2601,19 @@
                 "Ref": 5,
                 "Will": 5,
                 "Abilities": [
-					"Remove disease 4/week",
-					"Smite evil 4/day"
+                    "Remove disease 4/week",
+                    "Smite evil 4/day"
                 ],
                 "SpellCasting": [
-					2,
-					1,
-					1,
-					1
-				],
+                    2,
+                    1,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "16": {
                 "BAB": 16,
@@ -2662,15 +2622,15 @@
                 "Will": 5,
                 "Abilities": [],
                 "SpellCasting": [
-					2,
-					2,
-					1,
-					1
-				],
+                    2,
+                    2,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "17": {
                 "BAB": 17,
@@ -2679,15 +2639,15 @@
                 "Will": 5,
                 "Abilities": [],
                 "SpellCasting": [
-					2,
-					2,
-					2,
-					1
-				],
+                    2,
+                    2,
+                    2,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "18": {
                 "BAB": 18,
@@ -2695,18 +2655,18 @@
                 "Ref": 6,
                 "Will": 6,
                 "Abilities": [
-					"Remove disease 5/week"
+                    "Remove disease 5/week"
                 ],
                 "SpellCasting": [
-					3,
-					2,
-					2,
-					1
-				],
+                    3,
+                    2,
+                    2,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "19": {
                 "BAB": 19,
@@ -2715,15 +2675,15 @@
                 "Will": 6,
                 "Abilities": [],
                 "SpellCasting": [
-					3,
-					3,
-					3,
-					2
-				],
+                    3,
+                    3,
+                    3,
+                    2
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "20": {
                 "BAB": 20,
@@ -2731,40 +2691,40 @@
                 "Ref": 6,
                 "Will": 6,
                 "Abilities": [
-					"Smite evil 5/day"
+                    "Smite evil 5/day"
                 ],
                 "SpellCasting": [
-					3,
-					3,
-					3,
-					3
-				],
+                    3,
+                    3,
+                    3,
+                    3
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
         "Misc": [
-			"Alignment penalties",
-			"Cross class leveling penalties",
-			"Mount"
-		],
+            "Alignment penalties",
+            "Cross class leveling penalties",
+            "Mount"
+        ],
         "Bonus languages": [
             "None"
         ],
         "Weapon and armor proficiency": [
-			"Simple weapons",
-			"Martial weapons",
-			"Light armor",
-			"Medium armor",
-			"Heavy armor",
-			"Basic shields"
+            "Simple weapons",
+            "Martial weapons",
+            "Light armor",
+            "Medium armor",
+            "Heavy armor",
+            "Basic shields"
         ],
-		"Alignment": "lawful good"
+        "Alignment": "lawful good"
     },
-	{
+    {
         "Class": "Ranger",
         "Base": true,
         "HitDice": "d8",
@@ -2775,22 +2735,22 @@
         "PsionicClass": false,
         "ClassSkills": [
             "Climb",
-			"Concentration",
-			"Craft",
-			"Handle Animal",
-			"Heal",
-			"Hide",
-			"Jump",
-			"Knowledge (Nature)",
-			"Listen",
-			"Move Silently",
-			"Profession",
-			"Ride",
-			"Search",
-			"Spot",
-			"Survival",
-			"Swim",
-			"Use Rope"
+            "Concentration",
+            "Craft",
+            "Handle Animal",
+            "Heal",
+            "Hide",
+            "Jump",
+            "Knowledge (Nature)",
+            "Listen",
+            "Move Silently",
+            "Profession",
+            "Ride",
+            "Search",
+            "Spot",
+            "Survival",
+            "Swim",
+            "Use Rope"
         ],
         "ClassAbilities": {
             "1": {
@@ -2799,13 +2759,13 @@
                 "Ref": 2,
                 "Will": 0,
                 "Abilities": [
-					"Favored enemy (1st)",
-					"Track",
-					"Wild empathy"
+                    "Favored enemy (1st)",
+                    "Track",
+                    "Wild empathy"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 2,
@@ -2813,11 +2773,11 @@
                 "Ref": 3,
                 "Will": 0,
                 "Abilities": [
-					"Combat style"
+                    "Combat style"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 3,
@@ -2825,11 +2785,11 @@
                 "Ref": 3,
                 "Will": 1,
                 "Abilities": [
-					"Endurance"
+                    "Endurance"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 4,
@@ -2837,15 +2797,15 @@
                 "Ref": 4,
                 "Will": 1,
                 "Abilities": [
-					"Animal companion"
+                    "Animal companion"
                 ],
                 "SpellCasting": [
-					0
-				],
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "5": {
                 "BAB": 5,
@@ -2853,15 +2813,15 @@
                 "Ref": 4,
                 "Will": 1,
                 "Abilities": [
-					"Favored enemy (2nd)"
+                    "Favored enemy (2nd)"
                 ],
                 "SpellCasting": [
-					0
-				],
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "6": {
                 "BAB": 6,
@@ -2869,15 +2829,15 @@
                 "Ref": 5,
                 "Will": 2,
                 "Abilities": [
-					"Improved combat style"
+                    "Improved combat style"
                 ],
                 "SpellCasting": [
-					1
-				],
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "7": {
                 "BAB": 7,
@@ -2885,15 +2845,15 @@
                 "Ref": 5,
                 "Will": 2,
                 "Abilities": [
-					"Woodland stride"
-				],
+                    "Woodland stride"
+                ],
                 "SpellCasting": [
-					1
-				],
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "8": {
                 "BAB": 8,
@@ -2901,16 +2861,16 @@
                 "Ref": 6,
                 "Will": 2,
                 "Abilities": [
-					"Swift tracker"
-				],
+                    "Swift tracker"
+                ],
                 "SpellCasting": [
-					1,
-					0
-				],
+                    1,
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "9": {
                 "BAB": 9,
@@ -2918,16 +2878,16 @@
                 "Ref": 6,
                 "Will": 3,
                 "Abilities": [
-					"Evasion"
+                    "Evasion"
                 ],
                 "SpellCasting": [
-					1,
-					0
-				],
+                    1,
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "10": {
                 "BAB": 10,
@@ -2935,16 +2895,16 @@
                 "Ref": 7,
                 "Will": 3,
                 "Abilities": [
-					"Favored enemy (3rd)"
+                    "Favored enemy (3rd)"
                 ],
                 "SpellCasting": [
-					1,
-					1
-				],
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "11": {
                 "BAB": 11,
@@ -2952,15 +2912,15 @@
                 "Ref": 7,
                 "Will": 3,
                 "Abilities": [
-					"Mastery combat style"
-				],
+                    "Mastery combat style"
+                ],
                 "SpellCasting": [
-					1,
-					1,
-					0
-				],
+                    1,
+                    1,
+                    0
+                ],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 12,
@@ -2969,14 +2929,14 @@
                 "Will": 4,
                 "Abilities": [],
                 "SpellCasting": [
-					1,
-					1,
-					1
-				],
+                    1,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "13": {
                 "BAB": 13,
@@ -2984,17 +2944,17 @@
                 "Ref": 8,
                 "Will": 4,
                 "Abilities": [
-					"Camouflage"
-				],
+                    "Camouflage"
+                ],
                 "SpellCasting": [
-					1,
-					1,
-					1
-				],
+                    1,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "14": {
                 "BAB": 14,
@@ -3003,15 +2963,15 @@
                 "Will": 4,
                 "Abilities": [],
                 "SpellCasting": [
-					2,
-					1,
-					1,
-					0
-				],
+                    2,
+                    1,
+                    1,
+                    0
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "15": {
                 "BAB": 15,
@@ -3019,18 +2979,18 @@
                 "Ref": 9,
                 "Will": 5,
                 "Abilities": [
-					"Favored enemy (4th)"
+                    "Favored enemy (4th)"
                 ],
                 "SpellCasting": [
-					2,
-					1,
-					1,
-					1
-				],
+                    2,
+                    1,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "16": {
                 "BAB": 16,
@@ -3039,15 +2999,15 @@
                 "Will": 5,
                 "Abilities": [],
                 "SpellCasting": [
-					2,
-					2,
-					1,
-					1
-				],
+                    2,
+                    2,
+                    1,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "17": {
                 "BAB": 17,
@@ -3055,18 +3015,18 @@
                 "Ref": 10,
                 "Will": 5,
                 "Abilities": [
-					"Hide in plain sight"
-				],
+                    "Hide in plain sight"
+                ],
                 "SpellCasting": [
-					2,
-					2,
-					2,
-					1
-				],
+                    2,
+                    2,
+                    2,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "18": {
                 "BAB": 18,
@@ -3075,15 +3035,15 @@
                 "Will": 6,
                 "Abilities": [],
                 "SpellCasting": [
-					3,
-					2,
-					2,
-					1
-				],
+                    3,
+                    2,
+                    2,
+                    1
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "19": {
                 "BAB": 19,
@@ -3092,15 +3052,15 @@
                 "Will": 6,
                 "Abilities": [],
                 "SpellCasting": [
-					3,
-					3,
-					3,
-					2
-				],
+                    3,
+                    3,
+                    3,
+                    2
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             },
             "20": {
                 "BAB": 20,
@@ -3108,39 +3068,39 @@
                 "Ref": 12,
                 "Will": 6,
                 "Abilities": [
-					"Favored enemy (5th)"
+                    "Favored enemy (5th)"
                 ],
                 "SpellCasting": [
-					3,
-					3,
-					3,
-					3
-				],
+                    3,
+                    3,
+                    3,
+                    3
+                ],
                 "SpellsKnown": [
-					"All"
-				],
-				"Misc": {}
+                    "All"
+                ],
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
         "Misc": [
-			"Combat style",
-			"Animal Companion",
-			"Favored enemy"
-		],
+            "Combat style",
+            "Animal Companion",
+            "Favored enemy"
+        ],
         "Bonus languages": [
             "None"
         ],
         "Weapon and armor proficiency": [
-			"Simple weapons",
-			"Martial weapons",
-			"Light armor",
-			"Medium armor",
-			"Basic shields"
+            "Simple weapons",
+            "Martial weapons",
+            "Light armor",
+            "Medium armor",
+            "Basic shields"
         ],
-		"Alignment": "Good"
+        "Alignment": "Good"
     },
-	{
+    {
         "Class": "Rogue",
         "Base": true,
         "HitDice": "d6",
@@ -3187,12 +3147,12 @@
                 "Ref": 2,
                 "Will": 0,
                 "Abilities": [
-					"Sneak attack 1d6",
-					"Trapfinding"
+                    "Sneak attack 1d6",
+                    "Trapfinding"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -3200,11 +3160,11 @@
                 "Ref": 3,
                 "Will": 0,
                 "Abilities": [
-					"Evasion"
-				],
+                    "Evasion"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 2,
@@ -3212,12 +3172,12 @@
                 "Ref": 3,
                 "Will": 1,
                 "Abilities": [
-					"Sneak attack 2d6",
-					"Trap sense +1"
+                    "Sneak attack 2d6",
+                    "Trap sense +1"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 3,
@@ -3225,11 +3185,11 @@
                 "Ref": 4,
                 "Will": 1,
                 "Abilities": [
-					"Uncanny dodge"
-				],
+                    "Uncanny dodge"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 3,
@@ -3237,11 +3197,11 @@
                 "Ref": 4,
                 "Will": 1,
                 "Abilities": [
-					"Sneak attack 3d6"
-				],
+                    "Sneak attack 3d6"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 4,
@@ -3249,11 +3209,11 @@
                 "Ref": 5,
                 "Will": 2,
                 "Abilities": [
-					"Trap sense +2"
+                    "Trap sense +2"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 5,
@@ -3261,11 +3221,11 @@
                 "Ref": 5,
                 "Will": 2,
                 "Abilities": [
-					"Sneak attack 4d6"
-				],
+                    "Sneak attack 4d6"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 6,
@@ -3273,11 +3233,11 @@
                 "Ref": 6,
                 "Will": 2,
                 "Abilities": [
-					"Improved uncanny dodge"
+                    "Improved uncanny dodge"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 6,
@@ -3285,12 +3245,12 @@
                 "Ref": 6,
                 "Will": 3,
                 "Abilities": [
-					"Sneak attack 5d6",
-					"Trap sense +3"
+                    "Sneak attack 5d6",
+                    "Trap sense +3"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 7,
@@ -3298,11 +3258,11 @@
                 "Ref": 7,
                 "Will": 3,
                 "Abilities": [
-					"Special ability"
-				],
+                    "Special ability"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 8,
@@ -3310,11 +3270,11 @@
                 "Ref": 7,
                 "Will": 3,
                 "Abilities": [
-					"Sneak attack 6d6"
-				],
+                    "Sneak attack 6d6"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 9,
@@ -3322,11 +3282,11 @@
                 "Ref": 8,
                 "Will": 4,
                 "Abilities": [
-					"Trap sense +4"
+                    "Trap sense +4"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 9,
@@ -3334,12 +3294,12 @@
                 "Ref": 8,
                 "Will": 4,
                 "Abilities": [
-					"Sneak attack 7d6",
-					"Special ability"
-				],
+                    "Sneak attack 7d6",
+                    "Special ability"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 10,
@@ -3349,7 +3309,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 11,
@@ -3357,12 +3317,12 @@
                 "Ref": 9,
                 "Will": 5,
                 "Abilities": [
-					"Sneak attack 8d6",
-					"Trap sense +5"
+                    "Sneak attack 8d6",
+                    "Trap sense +5"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 12,
@@ -3370,11 +3330,11 @@
                 "Ref": 10,
                 "Will": 5,
                 "Abilities": [
-					"Special ability"
-				],
+                    "Special ability"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 12,
@@ -3382,11 +3342,11 @@
                 "Ref": 10,
                 "Will": 5,
                 "Abilities": [
-					"Sneak attack 9d6"
-				],
+                    "Sneak attack 9d6"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 13,
@@ -3394,11 +3354,11 @@
                 "Ref": 11,
                 "Will": 6,
                 "Abilities": [
-					"Trap sense +6"
+                    "Trap sense +6"
                 ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 14,
@@ -3406,43 +3366,40 @@
                 "Ref": 11,
                 "Will": 6,
                 "Abilities": [
-					"Sneak attack 10d6",
-					"Special ability"
-				],
+                    "Sneak attack 10d6",
+                    "Special ability"
+                ],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 15,
                 "Fort": 6,
                 "Ref": 12,
                 "Will": 6,
-                "Abilities": [
-                ],
-                "SpellCasting": [
-                ],
-                "SpellsKnown": [
-                ],
-				"Misc": {}
+                "Abilities": [],
+                "SpellCasting": [],
+                "SpellsKnown": [],
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
         "Misc": [
-			"Special ability"
-		],
-        "Bonus languages": [
-			"None"
-		],
-        "Weapon and armor proficiency": [
-			"Simple weapons",
-			"Hand crossbow",
-			"Short sword",
-			"Light armor"
+            "Special ability"
         ],
-		"Alignment": "Chaotic"
+        "Bonus languages": [
+            "None"
+        ],
+        "Weapon and armor proficiency": [
+            "Simple weapons",
+            "Hand crossbow",
+            "Short sword",
+            "Light armor"
+        ],
+        "Alignment": "Chaotic"
     },
-	{
+    {
         "Class": "Sorcerer",
         "Base": true,
         "HitDice": "d4",
@@ -3453,11 +3410,11 @@
         "PsionicClass": false,
         "ClassSkills": [
             "Bluff",
-			"Concentration",
-			"Craft",
-			"Knowledge (arcana)",
-			"Profession",
-			"Spellcraft"
+            "Concentration",
+            "Craft",
+            "Knowledge (arcana)",
+            "Profession",
+            "Spellcraft"
         ],
         "ClassAbilities": {
             "1": {
@@ -3473,10 +3430,10 @@
                     3
                 ],
                 "SpellsKnown": [
-					4,
-					2
+                    4,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -3489,10 +3446,10 @@
                     4
                 ],
                 "SpellsKnown": [
-					5,
-					2
+                    5,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 1,
@@ -3505,10 +3462,10 @@
                     5
                 ],
                 "SpellsKnown": [
-					5,
-					3
+                    5,
+                    3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 2,
@@ -3522,11 +3479,11 @@
                     3
                 ],
                 "SpellsKnown": [
-					6,
-					3,
-					1
+                    6,
+                    3,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 2,
@@ -3536,15 +3493,15 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					4
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					6,
-					4,
-					2
+                    6,
+                    4,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 3,
@@ -3554,17 +3511,17 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					5,
-					3
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					7,
-					4,
-					2,
-					1
+                    7,
+                    4,
+                    2,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 3,
@@ -3575,16 +3532,16 @@
                 "SpellCasting": [
                     6,
                     6,
-					6,
-					4
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					7,
-					5,
-					3,
-					2
+                    7,
+                    5,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 4,
@@ -3595,18 +3552,18 @@
                 "SpellCasting": [
                     6,
                     6,
-					6,
-					5,
-					3
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					8,
-					5,
-					3,
-					2,
-					1
+                    8,
+                    5,
+                    3,
+                    2,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 4,
@@ -3617,18 +3574,18 @@
                 "SpellCasting": [
                     6,
                     6,
-					6,
-					6,
-					4
+                    6,
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					8,
-					5,
-					4,
-					3,
-					2
+                    8,
+                    5,
+                    4,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 5,
@@ -3639,20 +3596,20 @@
                 "SpellCasting": [
                     6,
                     6,
-					6,
-					6,
-					5,
-					3
+                    6,
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					4,
-					3,
-					2,
-					1
+                    9,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 5,
@@ -3663,20 +3620,20 @@
                 "SpellCasting": [
                     6,
                     6,
-					6,
-					6,
-					6,
-					4
+                    6,
+                    6,
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					3,
-					2
+                    9,
+                    5,
+                    5,
+                    4,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 6,
@@ -3686,23 +3643,23 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					5,
-					3
+                    6,
+                    6,
+                    6,
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					3,
-					2,
-					1
+                    9,
+                    5,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 6,
@@ -3712,23 +3669,23 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					4
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					3,
-					2
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 7,
@@ -3738,25 +3695,25 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					5,
-					3
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					3,
-					2,
-					1
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 7,
@@ -3766,25 +3723,25 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					4
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					4,
-					3,
-					2
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 8,
@@ -3794,27 +3751,27 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					5,
-					3
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					4,
-					3,
-					2,
-					1
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    2,
+                    1
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 8,
@@ -3824,27 +3781,27 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					4
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					4,
-					3,
-					3,
-					2
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 9,
@@ -3854,29 +3811,29 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					5,
-					3
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    5,
+                    3
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					4,
-					3,
-					3,
-					3,
-					2
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 9,
@@ -3886,29 +3843,29 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					4
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    4
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					4,
-					3,
-					3,
-					3,
-					2
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    3,
+                    2
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 10,
@@ -3918,42 +3875,42 @@
                 "Abilities": [],
                 "SpellCasting": [
                     6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6,
-					6
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6
                 ],
                 "SpellsKnown": [
-					9,
-					5,
-					5,
-					4,
-					4,
-					4,
-					3,
-					3,
-					3,
-					3
+                    9,
+                    5,
+                    5,
+                    4,
+                    4,
+                    4,
+                    3,
+                    3,
+                    3,
+                    3
                 ],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
         "Misc": [
-			"Familiar"
+            "Familiar"
         ],
         "Bonus languages": [
-			"None"
-		],
+            "None"
+        ],
         "Weapon and armor proficiency": [
-			"Simple weapons"
-		],
-		"Alignment": "Any"
+            "Simple weapons"
+        ],
+        "Alignment": "Any"
     },
     {
         "Class": "Wizard",
@@ -3989,7 +3946,7 @@
                 "SpellsKnown": [
                     3
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -4004,7 +3961,7 @@
                 "SpellsKnown": [
                     5
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 1,
@@ -4020,7 +3977,7 @@
                 "SpellsKnown": [
                     7
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "4": {
                 "BAB": 2,
@@ -4036,7 +3993,7 @@
                 "SpellsKnown": [
                     9
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "5": {
                 "BAB": 2,
@@ -4055,7 +4012,7 @@
                 "SpellsKnown": [
                     11
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "6": {
                 "BAB": 3,
@@ -4072,7 +4029,7 @@
                 "SpellsKnown": [
                     13
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "7": {
                 "BAB": 3,
@@ -4090,7 +4047,7 @@
                 "SpellsKnown": [
                     15
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "8": {
                 "BAB": 4,
@@ -4108,7 +4065,7 @@
                 "SpellsKnown": [
                     17
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "9": {
                 "BAB": 4,
@@ -4127,7 +4084,7 @@
                 "SpellsKnown": [
                     19
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "10": {
                 "BAB": 5,
@@ -4148,7 +4105,7 @@
                 "SpellsKnown": [
                     21
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "11": {
                 "BAB": 5,
@@ -4168,7 +4125,7 @@
                 "SpellsKnown": [
                     23
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "12": {
                 "BAB": 6,
@@ -4188,7 +4145,7 @@
                 "SpellsKnown": [
                     25
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "13": {
                 "BAB": 6,
@@ -4209,7 +4166,7 @@
                 "SpellsKnown": [
                     27
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "14": {
                 "BAB": 7,
@@ -4230,7 +4187,7 @@
                 "SpellsKnown": [
                     29
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "15": {
                 "BAB": 7,
@@ -4254,7 +4211,7 @@
                 "SpellsKnown": [
                     31
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "16": {
                 "BAB": 8,
@@ -4276,7 +4233,7 @@
                 "SpellsKnown": [
                     33
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "17": {
                 "BAB": 8,
@@ -4299,7 +4256,7 @@
                 "SpellsKnown": [
                     35
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "18": {
                 "BAB": 9,
@@ -4322,7 +4279,7 @@
                 "SpellsKnown": [
                     37
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "19": {
                 "BAB": 9,
@@ -4345,7 +4302,7 @@
                 "SpellsKnown": [
                     39
                 ],
-				"Misc": {}
+                "Misc": {}
             },
             "20": {
                 "BAB": 10,
@@ -4370,7 +4327,7 @@
                 "SpellsKnown": [
                     41
                 ],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "PHB",
@@ -4388,7 +4345,7 @@
             "Light crossbow",
             "Quarterstaff"
         ],
-		"Alignment": "Lawful"
+        "Alignment": "Lawful"
     },
     {
         "Class": "",
@@ -4409,7 +4366,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "2": {
                 "BAB": 1,
@@ -4419,7 +4376,7 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             },
             "3": {
                 "BAB": 1,
@@ -4429,13 +4386,13 @@
                 "Abilities": [],
                 "SpellCasting": [],
                 "SpellsKnown": [],
-				"Misc": {}
+                "Misc": {}
             }
         },
         "BookSource": "",
         "Misc": [],
         "Bonus languages": [],
         "Weapon and armor proficiency": [],
-		"Alignment": ""
+        "Alignment": ""
     }
 ]
