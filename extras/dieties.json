@@ -1,77 +1,77 @@
 [
-  {
-    "name": "Chalavar",
-    "alignment": "NN",
-    "type": "Lesser"
-  },
-  {
-    "name": "Enoran",
-    "alignment": "NN",
-    "type": "Demi"
-  },
-  {
-    "name": "Halgrin",
-    "alignment": "CE",
-    "type": "Demi"
-  },
-  {
-    "name": "Korven",
-    "alignment": "LG",
-    "type": "Lesser"
-  },
-  {
-    "name": "Larhoon",
-    "alignment": "NE",
-    "type": "Lesser"
-  },
-  {
-    "name": "Kurzana",
-    "alignment": "LN",
-    "type": "Lesser"
-  },
-  {
-    "name": "Kain",
-    "alignment": "LE",
-    "type": "Major"
-  },
-  {
-    "name": "Luna",
-    "alignment": "CG",
-    "type": "Lesser"
-  },
-  {
-    "name": "Shehaan",
-    "alignment": "NN",
-    "type": "Demi"
-  },
-  {
-    "name": "Thalander",
-    "alignment": "NG",
-    "type": "Lesser"
-  },
-  {
-    "name": "Thoin",
-    "alignment": "N",
-    "type": "Lesser"
-  },
-  {
-    "name": "Vaath",
-    "alignment": "CN",
-    "type": "Demi"
-  },
-  {
-    "name": "Valkon",
-    "alignment": "LN",
-    "type": "Lesser"
-  },
-  {
-    "name": "Vogg",
-    "alignment": "CE",
-    "type": "Demi"
-  },
-  {
-    "name": "Yaheine",
-    "alignment": "LG",
-    "type": "Demi"
-  }
+    {
+        "name": "Chalavar",
+        "alignment": "NN",
+        "type": "Lesser"
+    },
+    {
+        "name": "Enoran",
+        "alignment": "NN",
+        "type": "Demi"
+    },
+    {
+        "name": "Halgrin",
+        "alignment": "CE",
+        "type": "Demi"
+    },
+    {
+        "name": "Korven",
+        "alignment": "LG",
+        "type": "Lesser"
+    },
+    {
+        "name": "Larhoon",
+        "alignment": "NE",
+        "type": "Lesser"
+    },
+    {
+        "name": "Kurzana",
+        "alignment": "LN",
+        "type": "Lesser"
+    },
+    {
+        "name": "Kain",
+        "alignment": "LE",
+        "type": "Major"
+    },
+    {
+        "name": "Luna",
+        "alignment": "CG",
+        "type": "Lesser"
+    },
+    {
+        "name": "Shehaan",
+        "alignment": "NN",
+        "type": "Demi"
+    },
+    {
+        "name": "Thalander",
+        "alignment": "NG",
+        "type": "Lesser"
+    },
+    {
+        "name": "Thoin",
+        "alignment": "N",
+        "type": "Lesser"
+    },
+    {
+        "name": "Vaath",
+        "alignment": "CN",
+        "type": "Demi"
+    },
+    {
+        "name": "Valkon",
+        "alignment": "LN",
+        "type": "Lesser"
+    },
+    {
+        "name": "Vogg",
+        "alignment": "CE",
+        "type": "Demi"
+    },
+    {
+        "name": "Yaheine",
+        "alignment": "LG",
+        "type": "Demi"
+    }
 ]
