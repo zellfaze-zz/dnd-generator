@@ -196,12 +196,12 @@
             "Other": {
                 "Ability": [],
                 "Misc": [
-                    "Summoned creatures get +4 strength and +4 constitution"
+                    "Summoned creatures get +4 Strength and +4 Constitution"
                 ]
             }
         },
-        "Short Text": "Summoned creatures get +4 str, +4 con",
-        "Long Text": "Each creature you conjure with any summon spell gains a +4 enchancement bonus to strength and Constitution for the duration of the spell that summoned it",
+        "Short Text": "Summoned creatures get +4 Str, +4 Con",
+        "Long Text": "Each creature you conjure with any summon spell gains a +4 enhancement bonus to Strength and Constitution for the duration of the spell that summoned it",
         "Book Source": "PHB"
     },
     {
@@ -218,15 +218,15 @@
             "Other": {
                 "Ability": [],
                 "Misc": [
-                    "Reroll miss chance when fighting against an opponent with concealment",
+                    "Re-roll miss chance when fighting against an opponent with concealment",
                     "invisible attackers do not get bonuses to hit for being invisible",
-                    "You do not lose your dexterity bonus against invisible attackers",
+                    "You do not lose your Dexterity bonus against invisible attackers",
                     "Take only half penalties to movement speed for being unable to see"
                 ]
             }
         },
-        "Short Text": "Reroll miss chance for concealment",
-        "Long Text": "In melee, every time you miss because of concealment, you can reroll your miss chance percentile roll one time to see if you actually hit.  An invisible attacker gets no advantages related to hitting you in melee.  That is, you don't lose your Dexterity bonus to Armor class, and the attacker doesn;t get the usual +2 bonus for being invisible.  The invisible attacker's bonuses do still apply for ranged attacks, however.  You take only half the usual penalty to speed for being unable to see.  Darkness and poor visibility in general reduces your speed to 3/4 normal, instead of 1/2.",
+        "Short Text": "Re-roll miss chance for concealment",
+        "Long Text": "In melee, every time you miss because of concealment, you can re-roll your miss chance percentile roll one time to see if you actually hit.  An invisible attacker gets no advantages related to hitting you in melee.  That is, you don't lose your Dexterity bonus to Armor class, and the attacker doesn't get the usual +2 bonus for being invisible.  The invisible attacker's bonuses do still apply for ranged attacks, however.  You take only half the usual penalty to speed for being unable to see.  Darkness and poor visibility in general reduces your speed to 3/4 normal, instead of 1/2.",
         "Book Source": "PHB"
     },
     {
@@ -316,7 +316,7 @@
                 ]
             }
         },
-        "Short Text": "Trade attack bonus for AC (max 5 points)",
+        "Short Text": "Trade attack bonus for AC (Max 5 points)",
         "Long Text": "When you use the attack action or the full attack action in melee, you can take a penalty of as much as -5 on your attack roll and add the same number as a dodge bonus to your armor class.  This number may not exceed your base attack bonus.  The changes to attack rolls and armor class last until your next action.",
         "Book Source": "PHB"
     },
@@ -334,7 +334,7 @@
             "Other": {
                 "Ability": [],
                 "Misc": [
-                    "Can make more than 1 attack of opportunity per round (up to dex modifier)",
+                    "Can make more than 1 attack of opportunity per round (up to Dex modifier)",
                     "Can make attacks of opportunity while flat footed"
                 ]
             }
@@ -543,7 +543,7 @@
             }
         },
         "Short Text": "Remain conscious at -1 to -9 hp",
-        "Long Text": "When reduced to between -1 and -9 hit points, you automatically become stable.  You don't have to roll d% to see if you lose 1 hit point each round.  When reduced to negative hit points, you may choose to act as if you wer disabled, rather than dying.  you must make this decision as soon as you are reduced to negative hit points (even if it isn't your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious.",
+        "Long Text": "When reduced to between -1 and -9 hit points, you automatically become stable.  You don't have to roll d% to see if you lose 1 hit point each round.  When reduced to negative hit points, you may choose to act as if you were disabled, rather than dying.  you must make this decision as soon as you are reduced to negative hit points (even if it isn't your turn). If you do not choose to act as if you were disabled, you immediately fall unconscious.",
         "Book Source": "PHB"
     },
     {
@@ -609,8 +609,8 @@
                 ]
             }
         },
-        "Short Text": "  Increase spell's variale, numeric effects by 50%",
-        "Long Text": "All variable, numeric effects of an empowered spell are increased by 1/2.  An empoewred spell deals half again as much damage as normal, cures half again as many hit points, affects half again as many targets, and so forth as appropriate.  Saving throws and opposed rolls are not affects, nor are spells with out random variables.  An empowered spell uses up a spell slot two levels higher than the spell's actual level.",
+        "Short Text": "Increase spell's variable, numeric effects by 50%",
+        "Long Text": "All variable, numeric effects of an empowered spell are increased by 1/2.  An empowered spell deals half again as much damage as normal, cures half again as many hit points, affects half again as many targets, and so forth as appropriate.  Saving throws and opposed rolls are not affects, nor are spells with out random variables.  An empowered spell uses up a spell slot two levels higher than the spell's actual level.",
         "Book Source": "PHB"
     },
     {
@@ -627,18 +627,18 @@
             "Other": {
                 "Ability": [],
                 "Misc": [
-                    "+4 on swim checks to resist nonlethal damage",
+                    "+4 on swim checks to resist non-lethal damage",
                     "+4 on Constitution checks to continue running",
-                    "+4 on Constitution checks to avoid nonlethal damage from forced marches",
+                    "+4 on Constitution checks to avoid non-lethal damage from forced marches",
                     "+4 on Constitution checks to hold your breath",
-                    "+4 on Constitution checks to avoid nonlethal damage from starvation or thirst",
-                    "+4 on Fortitude saves to avoid nonlethal damage from hot or cold environments",
+                    "+4 on Constitution checks to avoid non-lethal damage from starvation or thirst",
+                    "+4 on Fortitude saves to avoid non-lethal damage from hot or cold environments",
                     "+4 on Fortitude saves to resist damage from suffocation"
                 ]
             }
         },
-        "Short Text": "+4 bonus on checks or saves to resist nonlethal damage",
-        "Long Text": "You gain a +4 bonus on following checks and saves: swim checks made to resist nonlethal damage, Constitution checks made to continue running, Constitution checks made to avoid nonlethal damage from a forced march, Constitution checks made to hold your breath, Constitution checks made to avoid nonlethal damage from starvation or thirst.  Fortitude saves made to avoid nonlethal damage from hot or cold environments and fortitude saves made to resist damage from suffocation.  Alsom you may sleep in light or medium armor with out becoming fatigued.",
+        "Short Text": "+4 bonus on checks or saves to resist non-lethal damage",
+        "Long Text": "You gain a +4 bonus on following checks and saves: swim checks made to resist non-lethal damage, Constitution checks made to continue running, Constitution checks made to avoid non-lethal damage from a forced march, Constitution checks made to hold your breath, Constitution checks made to avoid non-lethal damage from starvation or thirst.  Fortitude saves made to avoid non-lethal damage from hot or cold environments and fortitude saves made to resist damage from suffocation.  Also you may sleep in light or medium armor with out becoming fatigued.",
         "Book Source": "PHB"
     },
     {
@@ -1176,7 +1176,7 @@
             }
         },
         "Short Text": "+4 bonus on overrun attempts; no attack of opportunity",
-        "Long Text": "When you attempt to overrun an opponent, the target may not choose to avoid you.  You also gain a +4 bonus on your strength check to knock down your opponent.",
+        "Long Text": "When you attempt to overrun an opponent, the target may not choose to avoid you.  You also gain a +4 bonus on your Strength check to knock down your opponent.",
         "Book Source": "PHB"
     },
     {
@@ -1203,7 +1203,7 @@
             }
         },
         "Short Text": "Ignore less than total than total cover/concealment on ranged attacks",
-        "Long Text": "Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment.  Total cover and total concealment provide their normal benefits against your ranged attacks.  In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically strike at the opponent you have chosen.",
+        "Long Text": "Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment.  Total cover and total concealment provide their normal benefits against your ranged attacks.  In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically Strike at the opponent you have chosen.",
         "Book Source": "PHB"
     },
     {
@@ -1225,7 +1225,7 @@
             }
         },
         "Short Text": "Retain shield bonus to AC when shield bashing",
-        "Long Text": "When you perfom a shield bash, you may still apply the shield's shield bonus to your AC",
+        "Long Text": "When you perform a shield bash, you may still apply the shield's shield bonus to your AC",
         "Book Source": "PHB"
     },
     {
@@ -1250,7 +1250,7 @@
             }
         },
         "Short Text": "+4 bonus on sunder attempts; no attack of opportunity",
-        "Long Text": "When you strike at an object held or carried by an opponent, you do not provoke an attack of opportunity.  You also gain a +4 bonus on any attack roll made to attack an object held or carried by another character.",
+        "Long Text": "When you Strike at an object held or carried by an opponent, you do not provoke an attack of opportunity.  You also gain a +4 bonus on any attack roll made to attack an object held or carried by another character.",
         "Book Source": "PHB"
     },
     {
@@ -1322,7 +1322,7 @@
             }
         },
         "Short Text": "Gain second off-hand attack",
-        "Long Text": "In addition to the standard single extra atack you get with an off-hand weapon, you get a second attack with it, albiet at a -5 penalty.",
+        "Long Text": "In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a -5 penalty.",
         "Book Source": "PHB"
     },
     {
@@ -1340,12 +1340,12 @@
                 "Ability": [],
                 "Misc": [
                     "Unarmed attacks do not provoke attacks of opportunity",
-                    "Unarmed strikes can deal lethal or nonlethal damage"
+                    "Unarmed Strikes can deal lethal or non-lethal damage"
                 ]
             }
         },
         "Short Text": "Considered armed even when unarmed",
-        "Long Text": "You are considered to be armed even when unarmed - that is, you do not provoke attacks of opportunity from armed opponents when you attack them while unarmed.  In addition, your unarmed strikes can deal lethal or nonlethal damage, at your option.",
+        "Long Text": "You are considered to be armed even when unarmed - that is, you do not provoke attacks of opportunity from armed opponents when you attack them while unarmed.  In addition, your unarmed Strikes can deal lethal or non-lethal damage, at your option.",
         "Book Source": "PHB"
     },
     {
@@ -1476,7 +1476,7 @@
             },
             "Other": {
                 "Ability": [
-                    "Attack option (fire 2 arrows + 1 per 5 extra BAB above 6)(BAB + dex mod - 4)(range 30)"
+                    "Attack option (fire 2 arrows + 1 per 5 extra BAB above 6)(BAB + Dex mod - 4)(range 30)"
                 ],
                 "Misc": []
             }
@@ -1526,7 +1526,7 @@
             }
         },
         "Short Text": "Maximize spell's variable, numeric effects",
-        "Long Text": "All variable, numeric effects of a spell modified by this feat are maximized.  A maximized spell deals maximum damage, cures the maximum number of hit points, affects the maximum number of targets, etc, as appropriate. Saving throws and opposed rolls are not affected, nor arespells without random variables.  A maximized spell takes up a spell slot three levels higher than the spell's actual level.",
+        "Long Text": "All variable, numeric effects of a spell modified by this feat are maximized.  A maximized spell deals maximum damage, cures the maximum number of hit points, affects the maximum number of targets, etc., as appropriate. Saving throws and opposed rolls are not affected, nor are spells without random variables.  A maximized spell takes up a spell slot three levels higher than the spell's actual level.",
         "Book Source": "PHB"
     },
     {
@@ -1823,7 +1823,7 @@
             }
         },
         "Short Text": "Reload crossbow more quickly",
-        "Long Text": "The time required for you to reload your chosen type of crossbow is reduced to a free action (if it is a hand or light crossbow) or a move action (if it is a heavy crossbow).  Reloading a crossbow still provokes an attack of opportunity.  If you have selected this feat for hand crossbow or light crossbow, You may fire that weapon as many times in a full attack action as you could attack if you wer using a bow.",
+        "Long Text": "The time required for you to reload your chosen type of crossbow is reduced to a free action (if it is a hand or light crossbow) or a move action (if it is a heavy crossbow).  Reloading a crossbow still provokes an attack of opportunity.  If you have selected this feat for hand crossbow or light crossbow, You may fire that weapon as many times in a full attack action as you could attack if you were using a bow.",
         "Book Source": "PHB"
     },
     {
@@ -2124,7 +2124,7 @@
             }
         },
         "Short Text": "Can prepare some spells without spellbook",
-        "Long Text": "Each time you take this feat, choose a number of spellsequal to your intelligence modifier that you already know.  From that point on you can prepare these spells without referring to a spellbook.",
+        "Long Text": "Each time you take this feat, choose a number of spells equal to your Intelligence modifier that you already know.  From that point on you can prepare these spells without referring to a spellbook.",
         "Book Source": "PHB"
     },
     {
@@ -2193,7 +2193,7 @@
                     "New (Attack Option) (Spring Attack)"
                 ],
                 "Misc": [
-                    "You can move before and after a melee attack, this does not provoke attacks of opportunity from your target, the distance covered durring movement can not exceed your maximum move speed"
+                    "You can move before and after a melee attack, this does not provoke attacks of opportunity from your target, the distance covered during movement can not exceed your maximum move speed"
                 ]
             }
         },
@@ -2242,7 +2242,7 @@
                 ]
             }
         },
-        "Short Text": "Cast spells without somatic componets",
+        "Short Text": "Cast spells without somatic components",
         "Long Text": "A still spell can be cast with no somatic components.  Spells without somatic components are not affected.  A stilled spell uses up a spell slot one level higher than the spell's actual level.",
         "Book Source": "PHB"
     },
@@ -2267,8 +2267,8 @@
                 "Misc": []
             }
         },
-        "Short Text": "Stun opponent with unarmed strike",
-        "Long Text": "You must declare that you are using this feat before you make your attack roll.  Stunning First forces a foe damaged by your unarmed attack to make a fortitude saving throw, in addition to dealing damage normally.  A defender who fails this saving throw is stunned for 1 round (until just before your next action).  A stunned character can't act, drops anything held, loses any Dexterity bonus to AC, and takes a -2 penalty to AC.  You may attempt a stunning attack once per day for every 4 levels you have attained, and no more than once per round.  Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.",
+        "Short Text": "Stun opponent with unarmed Strike",
+        "Long Text": "You must declare that you are using this feat before you make your attack roll.  Stunning First forces a foe damaged by your unarmed attack to make a fortitude saving throw, in addition to dealing damage normally.  A defender who fails this saving throw is stunned for 1 round (until just before your next action).  A stunned character can't act, drops anything held, loses any Dexterity bonus to AC, and takes a -2 penalty to AC.  You may attempt a stunning attack once per day for every 4 levels you have attained, and no more than once per round.  ConStructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.",
         "Book Source": "PHB"
     },
     {
@@ -2380,7 +2380,7 @@
             }
         },
         "Short Text": "Off hand weapon grants +1 shield bonus to AC",
-        "Long Text": "When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC.",
+        "Long Text": "When wielding a double weapon or two weapons (not including natural weapons or unarmed Strikes), you gain a +1 shield bonus to your AC.",
         "Book Source": "PHB"
     },
     {
