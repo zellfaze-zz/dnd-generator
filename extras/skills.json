@@ -3,7 +3,7 @@
         "name": "Appraise",
         "trained": false,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -12,7 +12,7 @@
         "name": "Autohypnosis",
         "trained": true,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -21,7 +21,7 @@
         "name": "Balance",
         "trained": false,
         "armorcheck": true,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -30,11 +30,11 @@
         "name": "Bluff",
         "trained": false,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": [
-            "Displomacy",
+            "Diplomacy",
             "Disguise",
             "Intimidate",
             "Sleight of Hand"
@@ -44,7 +44,7 @@
         "name": "Climb",
         "trained": false,
         "armorcheck": true,
-        "key": "str",
+        "key": "Str",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -53,7 +53,7 @@
         "name": "Concentration",
         "trained": false,
         "armorcheck": false,
-        "key": "con",
+        "key": "Con",
         "magic": true,
         "psi": true,
         "synergy": [
@@ -64,7 +64,7 @@
         "name": "Control Shape",
         "trained": false,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -73,7 +73,7 @@
         "name": "Craft",
         "trained": false,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -84,7 +84,7 @@
         "name": "Decipher Script",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -95,7 +95,7 @@
         "name": "Diplomacy",
         "trained": false,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -104,7 +104,7 @@
         "name": "Disable Device",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -113,7 +113,7 @@
         "name": "Disguise",
         "trained": false,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -122,7 +122,7 @@
         "name": "Escape Artist",
         "trained": false,
         "armorcheck": true,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -133,7 +133,7 @@
         "name": "Forgery",
         "trained": false,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -142,7 +142,7 @@
         "name": "Gather Information",
         "trained": false,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -151,7 +151,7 @@
         "name": "Handle Animal",
         "trained": true,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -162,7 +162,7 @@
         "name": "Heal",
         "trained": false,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -171,7 +171,7 @@
         "name": "Hide",
         "trained": false,
         "armorcheck": true,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -180,7 +180,7 @@
         "name": "Intimidate",
         "trained": false,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -189,7 +189,7 @@
         "name": "Jump",
         "trained": false,
         "armorcheck": true,
-        "key": "str",
+        "key": "Str",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -200,7 +200,7 @@
         "name": "Knowledge (Arcana)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -209,7 +209,7 @@
         "name": "Knowledge (Architecture and engineering)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -218,7 +218,7 @@
         "name": "Knowledge (Dungeoneering)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -227,7 +227,7 @@
         "name": "Knowledge (Geography)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -236,7 +236,7 @@
         "name": "Knowledge (History)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -245,7 +245,7 @@
         "name": "Knowledge (Local)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -254,7 +254,7 @@
         "name": "Knowledge (Nature)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -263,7 +263,7 @@
         "name": "Knowledge (Nobility and royalty)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -272,7 +272,7 @@
         "name": "Knowledge (Religion)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -281,7 +281,7 @@
         "name": "Knowledge (the Planes)",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -290,7 +290,7 @@
         "name": "Listen",
         "trained": false,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -299,7 +299,7 @@
         "name": "Move Silently",
         "trained": false,
         "armorcheck": true,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -308,7 +308,7 @@
         "name": "Open Lock",
         "trained": true,
         "armorcheck": false,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -317,7 +317,7 @@
         "name": "Perform",
         "trained": false,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -326,7 +326,7 @@
         "name": "Psicraft",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": true,
         "synergy": [
@@ -337,7 +337,7 @@
         "name": "Profession",
         "trained": true,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -346,7 +346,7 @@
         "name": "Ride",
         "trained": false,
         "armorcheck": false,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -355,7 +355,7 @@
         "name": "Search",
         "trained": false,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -366,7 +366,7 @@
         "name": "Sense Motive",
         "trained": false,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -377,7 +377,7 @@
         "name": "Sleight of Hand",
         "trained": true,
         "armorcheck": true,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -395,7 +395,7 @@
         "name": "Spellcraft",
         "trained": true,
         "armorcheck": false,
-        "key": "int",
+        "key": "Int",
         "magic": true,
         "psi": false,
         "synergy": [
@@ -406,7 +406,7 @@
         "name": "Spot",
         "trained": false,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -415,7 +415,7 @@
         "name": "Survival",
         "trained": false,
         "armorcheck": false,
-        "key": "wis",
+        "key": "Wis",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -424,7 +424,7 @@
         "name": "Swim",
         "trained": false,
         "armorcheck": true,
-        "key": "str",
+        "key": "Str",
         "magic": false,
         "psi": false,
         "synergy": []
@@ -433,7 +433,7 @@
         "name": "Tumble",
         "trained": true,
         "armorcheck": true,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": [
@@ -445,7 +445,7 @@
         "name": "Use Magic Device",
         "trained": true,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": true,
         "psi": false,
         "synergy": [
@@ -456,7 +456,7 @@
         "name": "Use Psionic Device",
         "trained": true,
         "armorcheck": false,
-        "key": "cha",
+        "key": "Cha",
         "magic": false,
         "psi": true,
         "synergy": [
@@ -467,7 +467,7 @@
         "name": "Use Rope",
         "trained": false,
         "armorcheck": false,
-        "key": "dex",
+        "key": "Dex",
         "magic": false,
         "psi": false,
         "synergy": [
