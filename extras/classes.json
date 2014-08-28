@@ -5,10 +5,10 @@
         "HitDice": "d12",
         "SkillPoints": 4,
         "KeyStat": "Constitution",
-        "SecStat": "Strength",
+        "SecondaryStat": "Strength",
         "SpellCaster": false,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Climb",
             "Craft",
             "Handle Animal",
@@ -285,10 +285,10 @@
         "HitDice": "d6",
         "SkillPoints": 6,
         "KeyStat": "Charisma",
-        "SecStat": "Dexterity",
+        "SecondaryStat": "Dexterity",
         "SpellCaster": true,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Appraise",
             "Balance",
             "Bluff",
@@ -793,10 +793,10 @@
         "HitDice": "d4",
         "SkillPoints": 2,
         "KeyStat": "Wisdom",
-        "SecStat": "Charisma",
+        "SecondaryStat": "Charisma",
         "SpellCaster": true,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Concentration",
             "Craft",
             "Diplomacy",
@@ -1118,7 +1118,7 @@
                     5,
                     5,
                     5,
-					5,
+                    5,
                     4,
                     4,
                     3,
@@ -1202,7 +1202,7 @@
         },
         "BookSource": "PHB",
         "Misc": [
-            "Dieties weapon proficiency",
+            "Diety's weapon proficiency",
             "Domain abilities",
             "Domain spells"
         ],
@@ -1224,10 +1224,10 @@
         "HitDice": "d8",
         "SkillPoints": 4,
         "KeyStat": "Wisdom",
-        "SecStat": "Charisma",
+        "SecondaryStat": "Charisma",
         "SpellCaster": true,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Concentration",
             "Craft",
             "Diplomacy",
@@ -1585,7 +1585,7 @@
                     5,
                     5,
                     5,
-					5,
+                    5,
                     4,
                     4,
                     3,
@@ -1700,10 +1700,10 @@
         "HitDice": "d10",
         "SkillPoints": 2,
         "KeyStat": "Strength",
-        "SecStat": "Constitution",
+        "SecondaryStat": "Constitution",
         "SpellCaster": false,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Climb",
             "Craft",
             "Handle Animal",
@@ -1957,10 +1957,10 @@
         "HitDice": "d8",
         "SkillPoints": 4,
         "KeyStat": "Dexterity",
-        "SecStat": "Strength",
+        "SecondaryStat": "Strength",
         "SpellCaster": false,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
 			"Balance",
 			"Climb",
 			"Concentration",
@@ -2402,10 +2402,10 @@
         "HitDice": "d10",
         "SkillPoints": 2,
         "KeyStat": "Charisma",
-        "SecStat": "Strength",
+        "SecondaryStat": "Strength",
         "SpellCaster": false,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Concentration",
             "Craft",
 			"Diplomacy",
@@ -2770,10 +2770,10 @@
         "HitDice": "d8",
         "SkillPoints": 2,
         "KeyStat": "Dexterity",
-        "SecStat": "Strength",
+        "SecondaryStat": "Strength",
         "SpellCaster": true,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Climb",
 			"Concentration",
 			"Craft",
@@ -3146,10 +3146,10 @@
         "HitDice": "d6",
         "SkillPoints": 6,
         "KeyStat": "Dexterity",
-        "SecStat": "Intelligence",
+        "SecondaryStat": "Intelligence",
         "SpellCaster": false,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Appraise",
             "Balance",
             "Bluff",
@@ -3157,24 +3157,24 @@
             "Craft",
             "Decipher Script",
             "Diplomacy",
-			"Disable Device",
+            "Disable Device",
             "Disguise",
             "Escape Artist",
-			"Forgery",
+            "Forgery",
             "Gather Information",
             "Hide",
-			"Intimidate",
+            "Intimidate",
             "Jump",
             "Knowledge (Local)",
             "Listen",
             "Move Silently",
-			"Open Lock",
+            "Open Lock",
             "Perform",
             "Profession",
-			"Search",
+            "Search",
             "Sense Motive",
             "Sleight of Hand",
-			"Spot",
+            "Spot",
             "Swim",
             "Tumble",
             "Use Magic Device",
@@ -3448,10 +3448,10 @@
         "HitDice": "d4",
         "SkillPoints": 2,
         "KeyStat": "Charisma",
-        "SecStat": "Dexterity",
+        "SecondaryStat": "Dexterity",
         "SpellCaster": true,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Bluff",
 			"Concentration",
 			"Craft",
@@ -3961,10 +3961,10 @@
         "HitDice": "d4",
         "SkillPoints": 2,
         "KeyStat": "Intelligence",
-        "SecStat": "Dexterity",
+        "SecondaryStat": "Dexterity",
         "SpellCaster": true,
         "PsionicClass": false,
-        "ClassSkill": [
+        "ClassSkills": [
             "Concentration",
             "Craft",
             "Decipher Script",
@@ -4396,10 +4396,10 @@
         "HitDice": "",
         "SkillPoints": 4,
         "KeyStat": "",
-        "SecStat": "",
+        "SecondaryStat": "",
         "SpellCaster": false,
         "PsionicClass": false,
-        "ClassSkill": [],
+        "ClassSkills": [],
         "ClassAbilities": {
             "1": {
                 "BAB": 1,
