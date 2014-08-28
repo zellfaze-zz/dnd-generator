@@ -4,54 +4,54 @@ Please use this file as a guide to formating entries and update all edited entri
 ================================================================================
 classes layout:
 ================================================================================
-    {
-        "Class": "",
-        "Base": true,
-        "HitDice": "",
-        "SkillPoints": 4,
-        "KeyStat": "",
-        "SecStat": "",
-        "SpellCaster": false,
-        "PsionicClass": false,
-        "ClassSkill": [],
-        "ClassAbilities": {
-            "1": {
-                "BAB": 1,
-                "Fort": 1,
-                "Ref": 1,
-                "Will": 1,
-                "Abilities": [],
-                "SpellCasting": [],
-                "SpellsKnown": [],
-		"Misc": {}
-            },
-            "2": {
-                "BAB": 1,
-                "Fort": 1,
-                "Ref": 1,
-                "Will": 1,
-                "Abilities": [],
-                "SpellCasting": [],
-                "SpellsKnown": [],
-		"Misc": {}
-            },
-            "3": {
-                "BAB": 1,
-                "Fort": 1,
-                "Ref": 1,
-                "Will": 1,
-                "Abilities": [],
-                "SpellCasting": [],
-                "SpellsKnown": [],
-		"Misc": {}
-            }
-        },
-        "BookSource": "",
-        "Misc": [],
-        "Bonus languages": [],
-        "Weapon and armor proficiency": [],
-	"Alignment": ""
-    }
+  {
+    "Class": "",
+    "Base": true,
+    "HitDice": "",
+    "SkillPoints": 4,
+    "KeyStat": "",
+    "SecStat": "",
+    "SpellCaster": false,
+    "PsionicClass": false,
+    "ClassSkill": [],
+    "ClassAbilities": {
+      "1": {
+        "BAB": 1,
+        "Fort": 1,
+        "Ref": 1,
+        "Will": 1,
+        "Abilities": [],
+        "SpellCasting": [],
+        "SpellsKnown": [],
+	"Misc": {}
+      },
+      "2": {
+        "BAB": 1,
+        "Fort": 1,
+        "Ref": 1,
+        "Will": 1,
+        "Abilities": [],
+        "SpellCasting": [],
+        "SpellsKnown": [],
+	"Misc": {}
+      },
+      "3": {
+        "BAB": 1,
+        "Fort": 1,
+        "Ref": 1,
+        "Will": 1,
+        "Abilities": [],
+        "SpellCasting": [],
+        "SpellsKnown": [],
+	"Misc": {}
+      }
+    },
+    "BookSource": "",
+    "Misc": [],
+    "Bonus languages": [],
+    "Weapon and armor proficiency": [],
+    "Alignment": ""
+  }
 ]
 
 --------------------------------------------------------------------------------
