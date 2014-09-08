@@ -9,13 +9,8 @@ $(document).ready( function() {
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
   
-  if (window.appLocation == 'local') {
-    var path = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
-  } else {
-    var path = '';
-  }
   listOfJSON = new Array('dieties', 'languages', 'skills');
-  loadJSONFiles(path, listOfJSON, completedRequests);
+  loadJSONFiles(listOfJSON, completedRequests);
   
   //This will run once all the requests are done
   function completedRequests(outstandingRequests) {
@@ -44,11 +39,11 @@ function weightedRandom(arrayOfWeightedData) {
   
 }
 
-function loadJSONFiles(location, listOfFiles, callback) {
+function loadJSONFiles(listOfFiles, callback) {
   var outstandingRequests = listOfFiles.length;
   
   listOfFiles.forEach(function (item) {
-    $.getJSON(location + "extras/" + item + ".json", function( data ) {
+    $.getJSON(window.path + "extras/" + item + ".json", function( data ) {
       logToAdvanced('Found ' + item + ' definition file');
       window.definitions[item] = data;
     }).fail( function() {
@@ -72,6 +67,12 @@ function determineAppLocation() {
     window.appLocation = 'remote';
   }
   logToAdvanced('Application is ' + window.appLocation);
+  
+  if (window.appLocation == 'local') {
+    window.path = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
+  } else {
+    window.path = '';
+  }
 }
 
 function buildSkillsTable(selector) {
