@@ -152,11 +152,11 @@ function packageFile(file, callback) {
   this.resourcesList  = null;
   
   $.getJSON(window.path + "data/" + file + "/datapackage.json", function( data ) {
-    logToAdvanced('Loaded ' + file + ' data package file');
+    logToAdvanced('  Loaded ' + file + ' data package file');
     self.ready = true;
     self.data = data;
   }).fail( function() {
-    logToAdvanced('Could not load ' + file + ' data package file');
+    logToAdvanced('  Could not load ' + file + ' data package file');
     self.ready = false;
   }).always( function() {
     if (typeof callback === "function") {
