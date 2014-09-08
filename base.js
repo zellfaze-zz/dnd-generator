@@ -200,15 +200,15 @@ function packageFile(file, callback) {
     return self.data.licenses;
   });
   
+  //This function is lazy initialized
   this.__defineGetter__("resources", function(){
-    //If we have already worked this out, just return it
     if (self.resourcesList != null) {
       return self.resourcesList;
     }
     
     var dataFiles = new Array();
     self.data.resources.forEach(function (item) {
-      dataFiles.push(new dataFile(item.name, item.path, item.format, item.type));
+      dataFiles.push(new dataFile(item.name, self.file + "/" + item.path, item.format, item.type));
     });
     
     self.resourcesList = dataFiles;
@@ -219,7 +219,7 @@ function packageFile(file, callback) {
 function dataFile(name, path, format, type) {
   var self = this;
   this.name   = name;
-  this.path   = path;
+  this.path   = window.path + "data/" + path + ".json"
   this.format = format;
   this.type   = type;
   
