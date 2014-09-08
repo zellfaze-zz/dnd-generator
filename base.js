@@ -219,11 +219,31 @@ function packageFile(file, callback) {
 function dataFile(name, path, format, type) {
   var self = this;
   this.name   = name;
-  this.path   = window.path + "data/" + path + ".json"
+  this.path   = window.path + "data/" + path;
   this.format = format;
   this.type   = type;
+  this.data   = null;
   
   if (self.format != 'json') {
     throw "Data files can only be JSON formatted at this time!";
+  }
+  
+  //This returns a promise which is resolved once the data is loaded
+  this.getData = function() {
+    var deferredObject = new $.Deferred();
+    
+    if (self.data != null) {
+      deferredObject.resolve(self.data);
+      return deferredObject.promise();
+    }
+    
+    $.getJSON(self.path, function( data ) {
+      self.data = data;
+      deferredObject.resolve(self.data);
+    }).fail( function() {
+      deferredObject.reject();
+    });
+    
+    return deferredObject.promise();
   }
 }
