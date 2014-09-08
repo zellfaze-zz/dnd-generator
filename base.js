@@ -127,33 +127,29 @@ function packageFileList(location) {
     //  store them in packageFile objects.  self.loadedPackages will end up
     //  populated with all of our package definitions
     self.loadedPackages = new Array();
-    loadingPackages = new Array();
-    var outstandingRequests = data.length;
+    outstandingRequests = data.length;
     data.forEach(function(item) {
-      loadingPackages.push(new packageFile(item, function(thisPackage) {
-        if (thisPackage.ready) {
-          self.loadedPackages.push(thisPackage);
-        }
-        
+      var currentPackage = new packageFile(item);
+      currentPackage.loaded.done(function(thisPackage) {
+        //Package loaded, add it to the list
+        self.loadedPackages.push(thisPackage);
+      }).always(function() {
         outstandingRequests--;
         if (outstandingRequests == 0) {
-          keepLoading();
+          //All packages have now loaded lets output some data and fulfill our
+          //  promise.
+          logToAdvanced('Loaded all available packages');
+          logToAdvanced('Loaded packages:');
+          self.loadedPackages.forEach(function(item) {
+            logToAdvanced(' '  + item.title);
+            logToAdvanced('  ' + item.description);
+            logToAdvanced('  ' + item.creditline);
+          });
+          
+          self.deferredObject.resolve(self.loadedPackages);
         }
-      }));
-    });
-    
-    //This gets executed once self.loadedPackages is populated
-    function keepLoading() {
-      logToAdvanced('Loaded all available packages');
-      logToAdvanced('Loaded packages:');
-      self.loadedPackages.forEach(function(item) {
-        logToAdvanced(' '  + item.title);
-        logToAdvanced('  ' + item.description);
-        logToAdvanced('  ' + item.creditline);
       });
-      
-      self.deferredObject.resolve(self.loadedPackages);
-    }
+    });
     
   //This only executes if the load.json file wasn't present  
   }).fail( function() {
@@ -167,24 +163,21 @@ function packageFileList(location) {
   }
 }
 
-function packageFile(file, callback) {
+function packageFile(file) {
   var self            = this;
-  this.ready          = false; //True if package loaded successfully, false otherwise
   this.file           = file;
   this.data           = null;
   this.resourcesList  = null;
+  this.deferredObj    = new $.Deferred();
+  this.loaded         = this.deferredObj.promise();
   
   $.getJSON(window.path + "data/" + file + "/datapackage.json", function( data ) {
     logToAdvanced('  Loaded ' + file + ' data package file');
-    self.ready = true;
     self.data = data;
+    self.deferredObj.resolve(self);
   }).fail( function() {
     logToAdvanced('  Could not load ' + file + ' data package file');
-    self.ready = false;
-  }).always( function() {
-    if (typeof callback === "function") {
-      callback(self);
-    }
+    self.deferredObj.reject();
   });
   
   this.__defineGetter__("creditline", function(){
@@ -223,7 +216,8 @@ function packageFile(file, callback) {
     return self.data.licenses;
   });
   
-  //This function is lazy initialized
+  //This function is lazy initialized, but does not return a promise
+  //  it should execute fast enough to not need one unless the package is huge
   this.__defineGetter__("resources", function(){
     if (self.resourcesList != null) {
       return self.resourcesList;
