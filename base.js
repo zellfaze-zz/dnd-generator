@@ -9,16 +9,11 @@ $(document).ready( function() {
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
   
-  if (window.appLocation == 'local') {
-    var path = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
-  } else {
-    var path = '';
-  }
-  
-  packageList = new packageFileList(path);
+  packageList = new packageFileList();
   return;
+
   listOfJSON = new Array('dieties', 'languages', 'skills');
-  loadJSONFiles(path, listOfJSON, completedRequests);
+  loadJSONFiles(listOfJSON, completedRequests);
   
   //This will run once all the requests are done
   function completedRequests(outstandingRequests) {
@@ -47,11 +42,11 @@ function weightedRandom(arrayOfWeightedData) {
   
 }
 
-function loadJSONFiles(location, listOfFiles, callback) {
+function loadJSONFiles(listOfFiles, callback) {
   var outstandingRequests = listOfFiles.length;
   
   listOfFiles.forEach(function (item) {
-    $.getJSON(location + "extras/" + item + ".json", function( data ) {
+    $.getJSON(window.path + "extras/" + item + ".json", function( data ) {
       logToAdvanced('Found ' + item + ' definition file');
       window.definitions[item] = data;
     }).fail( function() {
@@ -75,6 +70,12 @@ function determineAppLocation() {
     window.appLocation = 'remote';
   }
   logToAdvanced('Application is ' + window.appLocation);
+  
+  if (window.appLocation == 'local') {
+    window.path = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
+  } else {
+    window.path = '';
+  }
 }
 
 function buildSkillsTable(selector) {
@@ -100,10 +101,10 @@ function buildSkillsTable(selector) {
   logToAdvanced('Skills table built');
 }
 
-function packageFileList(location) {
+function packageFileList() {
   var self = this;
   
-  $.getJSON(location + "data/load.json", function( data ) {
+  $.getJSON(window.path + "data/load.json", function( data ) {
     logToAdvanced('Found list of packages');
     
     //We'll load all of the package file definitions asyncronously and
@@ -113,7 +114,7 @@ function packageFileList(location) {
     loadingPackages = new Array();
     var outstandingRequests = data.length;
     data.forEach(function(item) {
-      loadingPackages.push(new packageFile(location, item, function(thisPackage) {
+      loadingPackages.push(new packageFile(item, function(thisPackage) {
         if (thisPackage.ready) {
           self.loadedPackages.push(thisPackage);
         }
@@ -143,14 +144,14 @@ function packageFileList(location) {
   });
 }
 
-function packageFile(location, file, callback) {
+function packageFile(file, callback) {
   var self            = this;
   this.ready          = false; //True if package loaded successfully, false otherwise
   this.file           = file;
   this.data           = null;
   this.resourcesList  = null;
   
-  $.getJSON(location + "data/" + file + "/datapackage.json", function( data ) {
+  $.getJSON(window.path + "data/" + file + "/datapackage.json", function( data ) {
     logToAdvanced('Loaded ' + file + ' data package file');
     self.ready = true;
     self.data = data;

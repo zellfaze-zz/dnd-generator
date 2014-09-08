@@ -22,7 +22,7 @@
             53,
             73
         ],
-		"Base weight": [
+		"Base Weight": [
             120,
             85
         ],
@@ -72,7 +72,7 @@
             43,
             51
         ],
-        "Base weight": [
+        "Base Weight": [
             130,
             100
         ],
@@ -133,7 +133,7 @@
             53,
             65
         ],
-        "Base weight": [
+        "Base Weight": [
             85,
             80
         ],
@@ -194,7 +194,7 @@
             34,
             42
         ],
-        "Base weight": [
+        "Base Weight": [
             40,
             35
         ],
@@ -256,7 +256,7 @@
             53,
             69
         ],
-        "Base weight": [
+        "Base Weight": [
             100,
             80
         ],
@@ -314,7 +314,7 @@
             53,
             77
         ],
-        "Base weight": [
+        "Base Weight": [
             150,
             110
         ],
@@ -367,7 +367,7 @@
             30,
             38
         ],
-        "Base weight": [
+        "Base Weight": [
             30,
             25
         ],
@@ -406,7 +406,7 @@
         "Speed": 30,
         "Age": [],
         "Height": [],
-        "Base weight": [],
+        "Base Weight": [],
         "Weight Modifier": "",
         "Alignment": "",
         "Religion": [""],
