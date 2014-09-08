@@ -101,6 +101,12 @@ function buildSkillsTable(selector) {
   logToAdvanced('Skills table built');
 }
 
+/*******************************************************************************
+**                                                                            **
+**                            Packaging Classes                               **
+**                                                                            **
+*******************************************************************************/
+
 function packageFileList() {
   var self = this;
   
@@ -247,3 +253,22 @@ function dataFile(name, path, format, type) {
     return deferredObject.promise();
   }
 }
+
+/*******************************************************************************
+**                                                                            **
+**                            Datastore Classes                               **
+**                                                                            **
+*******************************************************************************/
+
+//Datastores
+//  classes
+//  feats
+//  languages
+//  magic_items
+//  mundane_items
+//  races
+//  skills
+//  spell_lists
+//  spells
+//  names
+//  dieties
