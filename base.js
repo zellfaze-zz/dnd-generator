@@ -10,6 +10,9 @@ $(document).ready( function() {
   //  done.
   
   packageList = new packageFileList();
+  packageList.getLoadedPackages().done(function (packages) {
+    console.log(packages);
+  });
   return;
 
   listOfJSON = new Array('dieties', 'languages', 'skills');
@@ -107,10 +110,17 @@ function buildSkillsTable(selector) {
 **                                                                            **
 *******************************************************************************/
 
-function packageFileList() {
+function packageFileList(location) {
   var self = this;
+  self.loadedPackages = null;
+  self.deferredObject = new $.Deferred();
+  self.listLoaded     = self.deferredObject.promise();
   
-  $.getJSON(window.path + "data/load.json", function( data ) {
+  if (typeof location != "string") {
+    location = "data/load.json";
+  }
+  
+  $.getJSON(window.path + location, function( data ) {
     logToAdvanced('Found list of packages');
     
     //We'll load all of the package file definitions asyncronously and
@@ -141,13 +151,20 @@ function packageFileList() {
         logToAdvanced('  ' + item.description);
         logToAdvanced('  ' + item.creditline);
       });
+      
+      self.deferredObject.resolve(self.loadedPackages);
     }
     
   //This only executes if the load.json file wasn't present  
   }).fail( function() {
     logToAdvanced('Could not find list of packages');
-    throw 'Could not find list of packages';
+    self.deferredObject.reject();
   });
+  
+  //Returns a promise object that resolves once package list is loaded
+  this.getLoadedPackages = function() {
+    return self.listLoaded;
+  }
 }
 
 function packageFile(file, callback) {
