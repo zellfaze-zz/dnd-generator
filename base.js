@@ -123,12 +123,20 @@ function packageFileList(location) {
           keepLoading();
         }
       }));
-    }, self);
+    });
     
     //This gets executed once self.loadedPackages is populated
     function keepLoading() {
-      console.log(self.loadedPackages);
+      logToAdvanced('Loaded all available packages');
+      logToAdvanced('Loaded packages:');
+      self.loadedPackages.forEach(function(item) {
+        logToAdvanced(' '  + item.title);
+        logToAdvanced('  ' + item.description);
+        logToAdvanced('  ' + item.creditline);
+      });
     }
+    
+  //This only executes if the load.json file wasn't present  
   }).fail( function() {
     logToAdvanced('Could not find list of packages');
     throw 'Could not find list of packages';
@@ -153,4 +161,38 @@ function packageFile(location, file, callback) {
       callback(self);
     }
   });
+  
+  this.__defineGetter__("creditline", function(){
+    return self.data.creditline;
+  });
+  
+  this.__defineGetter__("name", function(){
+    return self.data.name;
+  });
+  
+  this.__defineGetter__("title", function(){
+    return self.data.title;
+  });
+  
+  this.__defineGetter__("description", function(){
+    return self.data.description;
+  });
+  
+  this.__defineGetter__("homepage", function(){
+    return self.data.homepage;
+  });
+  
+  this.__defineGetter__("version", function(){
+    return self.data.version;
+  });
+  
+  this.__defineGetter__("license", function(){
+    return self.data.license;
+  });
+  
+  //TODO: Maintainers
+  
+  //TODO: Resources
+  
+  //TODO: Licenses
 }
