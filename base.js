@@ -4,7 +4,7 @@ $(document).ready( function() {
   
   logToAdvanced('==Application Initialization==');
   determineAppLocation();
-  logToAdvanced('Looking for extra definitions...');
+  logToAdvanced('Looking for data files...');
   window.definitions = new Array();
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
@@ -14,6 +14,9 @@ $(document).ready( function() {
   } else {
     var path = '';
   }
+  
+  packageList = new packageFileList(path);
+  return;
   listOfJSON = new Array('dieties', 'languages', 'skills');
   loadJSONFiles(path, listOfJSON, completedRequests);
   
@@ -95,4 +98,59 @@ function buildSkillsTable(selector) {
     $(selector).append(html);
   }
   logToAdvanced('Skills table built');
+}
+
+function packageFileList(location) {
+  var self = this;
+  
+  $.getJSON(location + "data/load.json", function( data ) {
+    logToAdvanced('Found list of packages');
+    
+    //We'll load all of the package file definitions asyncronously and
+    //  store them in packageFile objects.  self.loadedPackages will end up
+    //  populated with all of our package definitions
+    self.loadedPackages = new Array();
+    loadingPackages = new Array();
+    var outstandingRequests = data.length;
+    data.forEach(function(item) {
+      loadingPackages.push(new packageFile(location, item, function(thisPackage) {
+        if (thisPackage.ready) {
+          self.loadedPackages.push(thisPackage);
+        }
+        
+        outstandingRequests--;
+        if (outstandingRequests == 0) {
+          keepLoading();
+        }
+      }));
+    }, self);
+    
+    //This gets executed once self.loadedPackages is populated
+    function keepLoading() {
+      console.log(self.loadedPackages);
+    }
+  }).fail( function() {
+    logToAdvanced('Could not find list of packages');
+    throw 'Could not find list of packages';
+  });
+}
+
+function packageFile(location, file, callback) {
+  var self    = this;
+  this.ready  = false; //True if package loaded successfully, false otherwise
+  this.file   = file;
+  this.data   = null;
+  
+  $.getJSON(location + "data/" + file + "/datapackage.json", function( data ) {
+    logToAdvanced('Loaded ' + file + ' data package file');
+    self.ready = true;
+    self.data = data;
+  }).fail( function() {
+    logToAdvanced('Could not load ' + file + ' data package file');
+    self.ready = false;
+  }).always( function() {
+    if (typeof callback === "function") {
+      callback(self);
+    }
+  });
 }
