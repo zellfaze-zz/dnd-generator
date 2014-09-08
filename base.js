@@ -180,56 +180,59 @@ function packageFile(file) {
     self.deferredObj.reject();
   });
   
-  this.__defineGetter__("creditline", function(){
-    return self.data.creditline;
-  });
-  
-  this.__defineGetter__("name", function(){
-    return self.data.name;
-  });
-  
-  this.__defineGetter__("title", function(){
-    return self.data.title;
-  });
-  
-  this.__defineGetter__("description", function(){
-    return self.data.description;
-  });
-  
-  this.__defineGetter__("homepage", function(){
-    return self.data.homepage;
-  });
-  
-  this.__defineGetter__("version", function(){
-    return self.data.version;
-  });
-  
-  this.__defineGetter__("license", function(){
-    return self.data.license;
-  });
-  
-  this.__defineGetter__("maintainers", function(){
-    return self.data.maintainers;
-  });
-  
-  this.__defineGetter__("licenses", function(){
-    return self.data.licenses;
-  });
-  
-  //This function is lazy initialized, but does not return a promise
-  //  it should execute fast enough to not need one unless the package is huge
-  this.__defineGetter__("resources", function(){
-    if (self.resourcesList != null) {
-      return self.resourcesList;
-    }
-    
-    var dataFiles = new Array();
-    self.data.resources.forEach(function (item) {
-      dataFiles.push(new dataFile(item.name, self.file + "/" + item.path, item.format, item.type));
+  //Block off access to these methods until the package file is loaded
+  this.loaded.done(function() {
+    self.__defineGetter__("creditline", function(){
+      return self.data.creditline;
     });
     
-    self.resourcesList = dataFiles;
-    return self.resourcesList;
+    self.__defineGetter__("name", function(){
+      return self.data.name;
+    });
+    
+    self.__defineGetter__("title", function(){
+      return self.data.title;
+    });
+    
+    self.__defineGetter__("description", function(){
+      return self.data.description;
+    });
+    
+    self.__defineGetter__("homepage", function(){
+      return self.data.homepage;
+    });
+    
+    self.__defineGetter__("version", function(){
+      return self.data.version;
+    });
+    
+    self.__defineGetter__("license", function(){
+      return self.data.license;
+    });
+    
+    self.__defineGetter__("maintainers", function(){
+      return self.data.maintainers;
+    });
+    
+    self.__defineGetter__("licenses", function(){
+      return self.data.licenses;
+    });
+    
+    //This function is lazy initialized, but does not return a promise
+    //  it should execute fast enough to not need one unless the package is huge
+    self.__defineGetter__("resources", function(){
+      if (self.resourcesList != null) {
+        return self.resourcesList;
+      }
+      
+      var dataFiles = new Array();
+      self.data.resources.forEach(function (item) {
+        dataFiles.push(new dataFile(item.name, self.file + "/" + item.path, item.format, item.type));
+      });
+      
+      self.resourcesList = dataFiles;
+      return self.resourcesList;
+    });
   });
 }
 
