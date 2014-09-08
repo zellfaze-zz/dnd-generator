@@ -144,10 +144,11 @@ function packageFileList(location) {
 }
 
 function packageFile(location, file, callback) {
-  var self    = this;
-  this.ready  = false; //True if package loaded successfully, false otherwise
-  this.file   = file;
-  this.data   = null;
+  var self            = this;
+  this.ready          = false; //True if package loaded successfully, false otherwise
+  this.file           = file;
+  this.data           = null;
+  this.resourcesList  = null;
   
   $.getJSON(location + "data/" + file + "/datapackage.json", function( data ) {
     logToAdvanced('Loaded ' + file + ' data package file');
@@ -190,9 +191,38 @@ function packageFile(location, file, callback) {
     return self.data.license;
   });
   
-  //TODO: Maintainers
+  this.__defineGetter__("maintainers", function(){
+    return self.data.maintainers;
+  });
   
-  //TODO: Resources
+  this.__defineGetter__("licenses", function(){
+    return self.data.licenses;
+  });
   
-  //TODO: Licenses
+  this.__defineGetter__("resources", function(){
+    //If we have already worked this out, just return it
+    if (self.resourcesList != null) {
+      return self.resourcesList;
+    }
+    
+    var dataFiles = new Array();
+    self.data.resources.forEach(function (item) {
+      dataFiles.push(new dataFile(item.name, item.path, item.format, item.type));
+    });
+    
+    self.resourcesList = dataFiles;
+    return self.resourcesList;
+  });
+}
+
+function dataFile(name, path, format, type) {
+  var self = this;
+  this.name   = name;
+  this.path   = path;
+  this.format = format;
+  this.type   = type;
+  
+  if (self.format != 'json') {
+    throw "Data files can only be JSON formatted at this time!";
+  }
 }
