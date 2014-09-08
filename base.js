@@ -11,7 +11,10 @@ $(document).ready( function() {
   
   packageList = new packageFileList();
   packageList.getLoadedPackages().done(function (packages) {
-    console.log(packages);
+    var names = new namesDataStore();
+    packages.forEach(function(packageObj) {
+      names.addDataFilesFromPackage(packageObj);
+    });
   });
   return;
 
@@ -43,6 +46,10 @@ function logToAdvanced(textToLog) {
 //Given an array of items and their weights, selects a random item
 function weightedRandom(arrayOfWeightedData) {
   
+}
+
+function unweightedRandom(arrayOfData) {
+  return arrayOfData[Math.floor(Math.random() * arrayOfData.length)];
 }
 
 function loadJSONFiles(listOfFiles, callback) {
@@ -286,3 +293,101 @@ function dataFile(name, path, format, type) {
 //  spells
 //  names
 //  dieties
+
+
+//Defining the shell of the dataStore object
+function dataStore() {
+}
+
+dataStore.prototype.dataFiles = null;
+
+//Adds a datafile to the datastore. Some checking is done to ensure the data
+//  file is of the correct type.  Passing true as arg2 will skip those checks;
+//  do so at your own risk.
+dataStore.prototype.addDataFile = function(data, force) {
+  var self = this;
+  if (typeof force != "boolean") {
+    force = false;
+  }
+  
+  if ((data.type == self.dataType) || (force === true)) {
+    if (self.dataFiles == null) {
+      self.dataFiles = new Array();
+    }
+    self.dataFiles.push(data);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//Adds all valid datafiles from a package to the data store
+dataStore.prototype.addDataFilesFromPackage = function(packageObj) {
+  var self = this;
+  packageObj.resources.forEach(function(item) {
+    self.addDataFile(item);
+  });
+}
+
+//Returns arrays of the data from all data files.  Returns a promise.
+dataStore.prototype.getAllData = function() {
+  var self = this;
+  var promiseArray = new Array();
+  var dataArray = new Array();
+  var deferredObj = new $.Deferred();
+  
+  self.dataFiles.forEach(function(item) {
+    promiseArray.push(item.getData().done(function(data) {
+      dataArray.push(data);
+    }));
+  });
+  
+  $.when.apply($, promiseArray).always(function() {
+    deferredObj.resolve(dataArray);
+  });
+  
+  return deferredObj.promise();
+}
+
+//Possible TODO: Remove datafiles from data store if they fail to load.
+//Inherites from dataStore
+namesDataStore.prototype = new dataStore();
+function namesDataStore() {
+  var self = this;
+  this.dataType = 'names';
+  
+  //Gets a random first name, returns a promise
+  this.getFirstName = function(gender) {
+    var deferredObj = new $.Deferred();
+    
+    if (typeof gender != "string") {
+      gender = 'random';
+    }
+    
+    if ((gender != 'male') && (gender != 'female')) {
+      gender = 'random';
+    }
+    
+    if (gender == 'random') {
+      switch (Math.floor(Math.random() * 2) + 1) {
+        case 1:
+          gender = 'male';
+          break;
+        case 2:
+          gender = 'female';
+          break;
+      }
+    }
+    
+    self.getAllData().done(function(data) {
+      var maleNames = new Array();
+      data.forEach(function(item) {
+        maleNames = maleNames.concat(item.Firstnames.Male);
+      });
+      
+      deferredObj.resolve(unweightedRandom(maleNames));
+    });
+    
+    return deferredObj.promise();
+  }
+}
