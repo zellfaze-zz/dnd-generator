@@ -48,17 +48,17 @@ This software comes with the following data packages:
 * Standard Packaged Data for D&D Generator
     This package includes all data required for the D&D Character Sheet
     Generator that doesn't fit well into another package, but is still required
-    to run the generator. Created by Derric Atzrott and Vin. Released under the
-    CC-0 license.
+    to run the generator. _Created by Derric Atzrott and Vin. Released under the
+    CC-0 license._
 * D&D 3.5 Players Handbook Data
     This package contains a machine readable copy of the OGL Licensed data from
-    the Players Handbook. Open Game License v 1.0 Copyright 2000, Wizards of
-    the Coast, Inc. Released under the Open Game License v 1.0.
+    the Players Handbook. _Open Game License v 1.0 Copyright 2000, Wizards of
+    the Coast, Inc. Released under the Open Game License v 1.0._
 * Deities of The Faithful Package
     This package contains the dieties list from Sean Reynolds "Deities of
-    The Faithful". Skreyn's Register: The Bonds of Magic and "Deities of The
+    The Faithful". _Skreyn's Register: The Bonds of Magic and "Deities of The
     Faithful" Copyright 2002 Sean K Reynolds. All rights reserved. Released
-    under the Open Game License v 1.0.
+    under the Open Game License v 1.0._
     
 [1]: http://creativecommons.org/publicdomain/zero/1.0/    "CreativeCommons.org"
 [2]: http://dataprotocols.org/data-packages/    "Frictionless Data Package"
