@@ -16,23 +16,6 @@ $(document).ready( function() {
       names.addDataFilesFromPackage(packageObj);
     });
   });
-  return;
-
-  listOfJSON = new Array('dieties', 'languages', 'skills');
-  loadJSONFiles(listOfJSON, completedRequests);
-  
-  //This will run once all the requests are done
-  function completedRequests(outstandingRequests) {
-      if (outstandingRequests == 0) {
-        logToAdvanced('All extra definitions loaded');
-        
-        buildSkillsTable('#skillsTable');
-        
-        //Application is all set up, we can display the generate button now!
-        logToAdvanced('Application initialized!');
-        $("#generate").show();
-      }
-  }
 });
 
 //Logs information to the advanced section at the bottom of the page
@@ -52,25 +35,6 @@ function unweightedRandom(arrayOfData) {
   return arrayOfData[Math.floor(Math.random() * arrayOfData.length)];
 }
 
-function loadJSONFiles(listOfFiles, callback) {
-  var outstandingRequests = listOfFiles.length;
-  
-  listOfFiles.forEach(function (item) {
-    $.getJSON(window.path + "extras/" + item + ".json", function( data ) {
-      logToAdvanced('Found ' + item + ' definition file');
-      window.definitions[item] = data;
-    }).fail( function() {
-      logToAdvanced('Could not find ' + item + ' definition file');
-      window.definitions[item] = null;
-    }).always( function() {
-      outstandingRequests--;
-      if (typeof callback === "function") {
-        callback(outstandingRequests);
-      }
-    });
-  });
-}
-
 function determineAppLocation() {
   logToAdvanced('Determining if application is local or remote...');
   window.appLocation ='';
@@ -88,7 +52,7 @@ function determineAppLocation() {
   }
 }
 
-function buildSkillsTable(selector) {
+/*function buildSkillsTable(selector) {
   //Build skills table
   for (var skillNum = 0; skillNum < window.definitions['skills'].length; skillNum++) {
     var skillKey = window.definitions['skills'][skillNum]['key'];
@@ -109,7 +73,7 @@ function buildSkillsTable(selector) {
     $(selector).append(html);
   }
   logToAdvanced('Skills table built');
-}
+}*/
 
 /*******************************************************************************
 **                                                                            **
