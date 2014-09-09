@@ -1,27 +1,27 @@
 $(document).ready( function() {
-  window.options = new Array();
-  window.options['showAdvanced'] = false;
+  window.options = [];
+  window.options.showAdvanced = false;
   $(function () { $("[data-toggle='tooltip']").tooltip(); });
   
   $('#generate-character').on('click', function() {
-    window.options['type'] = 'generate';
+    window.options.type = 'generate';
     fadeBetween('#page1', '#page2');
   });
   
   $('#progress-character').on('click', function() {
-    window.options['type'] = 'progress';
+    window.options.type = 'progress';
     fadeBetween('#page1', '#page2');
   });
   
   $('#advanced-off').on('click', function() {
-    window.options['showAdvanced'] = false;
+    window.options.showAdvanced = false;
     $('#advanced-off').removeClass('btn-default').addClass('btn-primary');
     $('#advanced-on').removeClass('btn-primary').addClass('btn-default');
     return false;
   });
   
   $('#advanced-on').on('click', function() {
-    window.options['showAdvanced'] = true;
+    window.options.showAdvanced = true;
     $('#advanced-on').removeClass('btn-default').addClass('btn-primary');
     $('#advanced-off').removeClass('btn-primary').addClass('btn-default');
     return false;
@@ -38,7 +38,7 @@ $(document).ready( function() {
   logToAdvanced('==Application Initialization==');
   determineAppLocation();
   logToAdvanced('Looking for data files...');
-  window.definitions = new Array();
+  window.definitions = [];
   //We can make these asynchronous, but we can't continue until they are all
   //  done.
   
@@ -71,7 +71,7 @@ function unweightedRandom(arrayOfData) {
 function determineAppLocation() {
   logToAdvanced('Determining if application is local or remote...');
   window.appLocation ='';
-  if (document.location['protocol'] == 'file:') {
+  if (document.location.protocol == 'file:') {
     window.appLocation = 'local';
   } else {
     window.appLocation = 'remote';
@@ -130,8 +130,8 @@ function packageFileList(location) {
     //We'll load all of the package file definitions asyncronously and
     //  store them in packageFile objects.  self.loadedPackages will end up
     //  populated with all of our package definitions
-    var promiseArray = new Array();
-    self.loadedPackages = new Array();
+    var promiseArray = [];
+    self.loadedPackages = [];
     data.forEach(function(item) {
       var currentPackage = new packageFile(item);
       promiseArray.push(currentPackage.loaded.done(function(thisPackage) {
@@ -163,7 +163,7 @@ function packageFileList(location) {
   //Returns a promise object that resolves once package list is loaded
   this.getLoadedPackages = function() {
     return self.listLoaded;
-  }
+  };
 }
 
 function packageFile(file) {
@@ -224,11 +224,11 @@ function packageFile(file) {
     //This function is lazy initialized, but does not return a promise
     //  it should execute fast enough to not need one unless the package is huge
     self.__defineGetter__("resources", function(){
-      if (self.resourcesList != null) {
+      if (self.resourcesList !== null) {
         return self.resourcesList;
       }
       
-      var dataFiles = new Array();
+      var dataFiles = [];
       self.data.resources.forEach(function (item) {
         dataFiles.push(new dataFile(item.name, self.file + "/" + item.path, item.format, item.type));
       });
@@ -255,7 +255,7 @@ function dataFile(name, path, format, type) {
   this.getData = function() {
     var deferredObject = new $.Deferred();
     
-    if (self.data != null) {
+    if (self.data !== null) {
       deferredObject.resolve(self.data);
       return deferredObject.promise();
     }
@@ -268,7 +268,7 @@ function dataFile(name, path, format, type) {
     });
     
     return deferredObject.promise();
-  }
+  };
 }
 
 /*******************************************************************************
@@ -307,15 +307,15 @@ dataStore.prototype.addDataFile = function(data, force) {
   }
   
   if ((data.type == self.dataType) || (force === true)) {
-    if (self.dataFiles == null) {
-      self.dataFiles = new Array();
+    if (self.dataFiles === null) {
+      self.dataFiles = [];
     }
     self.dataFiles.push(data);
     return true;
   } else {
     return false;
   }
-}
+};
 
 //Adds all valid datafiles from a package to the data store
 dataStore.prototype.addDataFilesFromPackage = function(packageObj) {
@@ -323,13 +323,13 @@ dataStore.prototype.addDataFilesFromPackage = function(packageObj) {
   packageObj.resources.forEach(function(item) {
     self.addDataFile(item);
   });
-}
+};
 
 //Returns arrays of the data from all data files.  Returns a promise.
 dataStore.prototype.getAllData = function() {
   var self = this;
-  var promiseArray = new Array();
-  var dataArray = new Array();
+  var promiseArray = [];
+  var dataArray = [];
   var deferredObj = new $.Deferred();
   
   self.dataFiles.forEach(function(item) {
@@ -343,7 +343,7 @@ dataStore.prototype.getAllData = function() {
   });
   
   return deferredObj.promise();
-}
+};
 
 //Possible TODO: Remove datafiles from data store if they fail to load.
 //Inherites from dataStore
@@ -376,7 +376,7 @@ function namesDataStore() {
     }
     
     self.getAllData().done(function(data) {
-      var maleNames = new Array();
+      var maleNames = [];
       data.forEach(function(item) {
         maleNames = maleNames.concat(item.Firstnames.Male);
       });
@@ -385,7 +385,7 @@ function namesDataStore() {
     });
     
     return deferredObj.promise();
-  }
+  };
 }
 
 function fadeBetween(outSelect, inSelect) {
