@@ -1,0 +1,27 @@
+{
+    "datapackage_version": "1.0-beta.10",
+    "name": "dnd-data-dndgen-standard-package",
+    "title": "Standard Packaged Data for D&D Generator",
+    "description": "This package includes all data required for the D&D Character Sheet Generator that doesn't fit well into another package.",
+    "homepage": "https://github.com/zellfaze/dnd-generator",
+    "version": "0.0.0",
+    "license": "CC0-1.0",
+    "creditline": "Created by Derric Atzrott and Vin. Released under the CC-0 license.",
+    "maintainers": [
+        {
+            "name": "Derric Atzrott",
+            "email": "zellfaze@zellfaze.org"
+        },
+        {
+            "name": "Vin"
+        }
+    ],
+    "resources": [
+        {
+            "name": "Random Names",
+            "path": "names.json",
+            "format": "json",
+            "type": "names"
+        }
+    ]
+}

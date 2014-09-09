@@ -1,0 +1,85 @@
+{
+    "datapackage_version": "1.0-beta.10",
+    "name": "dnd-data-players-handbook-3.5",
+    "title": "D&D 3.5 Players Handbook Data",
+    "description": "This package contains a machine readable copy of the OGL Licensed data from the Players Handbook",
+    "homepage": "https://github.com/zellfaze/dnd-generator",
+    "version": "0.0.0",
+    "licenses": [
+        {
+            "type": "Open Game License 1.0",
+            "url": "https://www.wizards.com/d20/files/OGLv1.0a.rtf"
+        }
+    ],
+    "creditline": "Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc.",
+    "sources": [
+        {
+            "name": "Dungeons & Dragons Player's Handbook: Core Rulebook 1, Vol. 3.5 (ISBN: 0786928867)"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Derric Atzrott",
+            "email": "zellfaze@zellfaze.org"
+        },
+        {
+            "name": "Vin"
+        }
+    ],
+    "resources": [
+        {
+            "name": "All Classes",
+            "path": "classes.json",
+            "format": "json",
+            "type": "classes"
+        },
+        {
+            "name": "All Feats",
+            "path": "feats.json",
+            "format": "json",
+            "type": "feats"
+        },
+        {
+            "name": "All Languages",
+            "path": "languages.json",
+            "format": "json",
+            "type": "languages"
+        },
+        {
+            "name": "All Magic Items",
+            "path": "magic_items.json",
+            "format": "json",
+            "type": "magic_items"
+        },
+        {
+            "name": "All Mundane Items",
+            "path": "mundane_items.json",
+            "format": "json",
+            "type": "mundane_items"
+        },
+        {
+            "name": "All Races",
+            "path": "races.json",
+            "format": "json",
+            "type": "races"
+        },
+        {
+            "name": "All Skills",
+            "path": "skills.json",
+            "format": "json",
+            "type": "skills"
+        },
+        {
+            "name": "All Spell Lists",
+            "path": "spell_list.json",
+            "format": "json",
+            "type": "spell_lists"
+        },
+        {
+            "name": "All Spells",
+            "path": "spells.json",
+            "format": "json",
+            "type": "spells"
+        }
+    ]
+}
