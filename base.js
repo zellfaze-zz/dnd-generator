@@ -133,29 +133,28 @@ function packageFileList(location) {
     //We'll load all of the package file definitions asyncronously and
     //  store them in packageFile objects.  self.loadedPackages will end up
     //  populated with all of our package definitions
+    var promiseArray = new Array();
     self.loadedPackages = new Array();
-    outstandingRequests = data.length;
     data.forEach(function(item) {
       var currentPackage = new packageFile(item);
-      currentPackage.loaded.done(function(thisPackage) {
+      promiseArray.push(currentPackage.loaded.done(function(thisPackage) {
         //Package loaded, add it to the list
         self.loadedPackages.push(thisPackage);
-      }).always(function() {
-        outstandingRequests--;
-        if (outstandingRequests == 0) {
-          //All packages have now loaded lets output some data and fulfill our
-          //  promise.
-          logToAdvanced('Loaded all available packages');
-          logToAdvanced('Loaded packages:');
-          self.loadedPackages.forEach(function(item) {
-            logToAdvanced(' '  + item.title);
-            logToAdvanced('  ' + item.description);
-            logToAdvanced('  ' + item.creditline);
-          });
-          
-          self.deferredObject.resolve(self.loadedPackages);
-        }
+      }));
+    });
+    
+    $.when.apply($, promiseArray).always(function() {
+      //All packages have now loaded lets output some data and fulfill our
+      //  promise.
+      logToAdvanced('Loaded all available packages');
+      logToAdvanced('Loaded packages:');
+      self.loadedPackages.forEach(function(item) {
+        logToAdvanced(' '  + item.title);
+        logToAdvanced('  ' + item.description);
+        logToAdvanced('  ' + item.creditline);
       });
+      
+      self.deferredObject.resolve(self.loadedPackages);
     });
     
   //This only executes if the load.json file wasn't present  
