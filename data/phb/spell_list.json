@@ -437,7 +437,7 @@
             "True Resurrection"
         ]
     },
-	{
+    {
         "Source": "Druid",
         "Type": "Divine",
         "Source Book": "PHB",
@@ -628,6 +628,128 @@
             "Storm of Vengeance",
             "Summon Nature's Ally IX",
             "Sympathy"
+        ]
+    },
+    {
+        "Source": "Paladin",
+        "Type": "Divine",
+        "Source Book": "PHB",
+        "Level 1": [
+            "Bless",
+            "Bless Water",
+            "Bless Weapon",
+            "Create Water",
+            "Cure Light Wounds",
+            "Detect Poison",
+            "Detect Undead",
+            "Divine Favor",
+            "Endure Elements",
+            "Magic Weapon",
+            "Protection from Chaos",
+            "Protection for Evil",
+            "Read Magic",
+            "Resistance",
+            "Restoration, Lesser",
+            "Virtue"
+        ],
+        "Level 2": [
+            "Bull's Strength",
+            "Delay Poison",
+            "Eagle's Splendor",
+            "Owl's Wisdom",
+            "Remove Paralysis",
+            "Resist Energy",
+            "Shield Other",
+            "Undetectable Alignment",
+            "Zone of Truth"
+        ],
+        "Level 3": [
+            "Cure Moderate Wounds",
+            "Daylight",
+            "Discern Lies",
+            "Dispel Magic",
+            "Heal Mount",
+            "Magic Circle against Chaos",
+            "Magic Circle against Evil",
+            "Magic Weapon, Greater",
+            "Prayer",
+            "Remove Blindness/Deafness",
+            "Remove Curse"
+        ],
+        "Level 4": [
+            "Break Enchantment",
+            "Cure Serious Wounds",
+            "Death Ward",
+            "Dispel Chaos",
+            "Dispel Evil",
+            "Holy Sword",
+            "Mark of Justice",
+            "Neutralize Poison",
+            "Restoration"
+        ]
+    },
+    {
+        "Source": "Ranger",
+        "Type": "Divine",
+        "Source Book": "PHB",
+        "Level 1": [
+            "Alarm",
+            "Animal Messenger",
+            "Calm Animals",
+            "Charm Animal",
+            "Delay Poison",
+            "Detect Animal or Plants",
+            "Detect Poison",
+            "Detect Snares and Pits",
+            "Endure Elements",
+            "Entangle",
+            "Hide from Animals",
+            "Jump",
+            "Longstrider",
+            "Magic Fang",
+            "Pass without Trace",
+            "Read Magic",
+            "Resist Energy",
+            "Speak with Animals",
+            "Summon Nature's Ally I"
+        ],
+        "Level 2": [
+            "Barkskin",
+            "Bear's Endurance",
+            "Cat's Grace",
+            "Cure Light Wounds",
+            "Hold Animal",
+            "Owl's Wisdom",
+            "Protection from Energy",
+            "Snare",
+            "Speak with Plants",
+            "Spike Growth",
+            "Summon Nature's Ally II",
+            "Wind Wall"
+        ],
+        "Level 3": [
+            "Command Plants",
+            "Cure Moderate Wounds",
+            "Darkvision",
+            "Diminish Plants",
+            "Magic Fang, Greater",
+            "Neutralize Poison",
+            "Plant Growth",
+            "Reduce Animal",
+            "Remove Disease",
+            "Repel Vermin",
+            "Summon Nature's Ally III",
+            "Tree Shape",
+            "Water Walk"
+        ],
+        "Level 4": [
+            "Animal Growth",
+            "Commune with Nature",
+            "Cure Serious Wounds",
+            "Freedom of Movement",
+            "Nondetection",
+            "Summon Nature's Ally IV",
+            "Tree Stride"
         ]
     },
     {
