@@ -2,7 +2,6 @@
     {
         "Source": "Bard",
         "Type": "Arcane",
-        "Source Book": "PHB",
         "Level 0": [
             "Dancing Lights",
             "Daze",
@@ -185,7 +184,6 @@
     {
         "Source": "Cleric",
         "Type": "Divine",
-        "Source Book": "PHB",
         "Level 0": [
             "Create Water",
             "Cure Minor Wounds",
@@ -440,7 +438,6 @@
     {
         "Source": "Druid",
         "Type": "Divine",
-        "Source Book": "PHB",
         "Level 0": [
             "Create Water",
             "Cure Minor Wounds",
@@ -633,7 +630,6 @@
     {
         "Source": "Paladin",
         "Type": "Divine",
-        "Source Book": "PHB",
         "Level 1": [
             "Bless",
             "Bless Water",
@@ -691,7 +687,6 @@
     {
         "Source": "Ranger",
         "Type": "Divine",
-        "Source Book": "PHB",
         "Level 1": [
             "Alarm",
             "Animal Messenger",
@@ -755,7 +750,6 @@
     {
         "Source": "Sorcerer/Wizard",
         "Type": "Arcane",
-        "Source Book": "PHB",
         "Level 0": [
             "Resistance",
             "Acid Splash",
@@ -1155,7 +1149,6 @@
     {
         "Source": "",
         "Type": "",
-        "Source Book": "",
         "Level 0": [],
         "Level 1": []
     }

@@ -22,8 +22,7 @@
         "Damage": "2d6 acid",
         "Short Text": "Fog deals acid damage",
         "Long Text": "Acid fog creates a billowing mass of misty vapors similar to that produced by a solid fog spell.  In addition to slowing creatures down and obscuring sight, this spell's vapors are highly acidic.  Each round on your turn, starting when you cast the spell, the fog deals 2d6 points of acid damage to each creature and object within it.",
-        "Material component": "A pinch of dried, powdered peas combined with powdered animal hoof",
-        "Book Source": "PHB"
+        "Material component": "A pinch of dried, powdered peas combined with powdered animal hoof"
     },
     {
         "Name": "",
@@ -41,7 +40,6 @@
         "Damage": "",
         "Short Text": "",
         "Long Text": "",
-        "Material component": "",
-        "Book Source": ""
+        "Material component": ""
     }
 ]
