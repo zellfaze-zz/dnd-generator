@@ -31,6 +31,38 @@ $(document).ready( function() {
     window.location.reload();
   });
   
+  $('#gender-random').on('click', function() {
+    var gender = ['Male', 'Female']
+    var selected = unweightedRandom(gender);
+    
+    switch (selected) {
+      case 'Male':
+        $('#gender-input1').prop('checked',true);
+        break;
+      case 'Female':
+        $('#gender-input2').prop('checked',true);
+        break;
+    }
+  });
+  
+  $('#name-random').on('click', function() {
+    var pronoun = $("input[type='radio'][name=gender-input]:checked").val();
+    var gender;
+    switch (pronoun) {
+      case 'he':
+        gender = 'male';
+        break;
+      case 'she':
+        gender = 'female';
+        break;
+      default:
+        gender = 'random';
+    }
+    window.dataStores.names.getFirstName(gender).done(function (name) {
+      $('#name-input').val(name);
+    });
+  });
+  
   
   //Reset advanced log
   $('#advancedOutput').val('');
@@ -48,6 +80,8 @@ $(document).ready( function() {
     packages.forEach(function(packageObj) {
       names.addDataFilesFromPackage(packageObj);
     });
+    window.dataStores = new Object();
+    window.dataStores.names = names;
   });
 });
 
@@ -56,7 +90,7 @@ function logToAdvanced(textToLog) {
   var oldText = $('#advancedOutput').val();
   var newText = oldText + textToLog + "\n";
   $('#advancedOutput').val(newText);
-  $('#advancedOutput').scrollTop($('#advancedOutput').get(0).scrollHeight);
+  //$('#advancedOutput').scrollTop($('#advancedOutput').get(0).scrollHeight);
 }
 
 //Given an array of items and their weights, selects a random item
@@ -381,7 +415,19 @@ function namesDataStore() {
         maleNames = maleNames.concat(item.Firstnames.Male);
       });
       
-      deferredObj.resolve(unweightedRandom(maleNames));
+      var femaleNames = [];
+      data.forEach(function(item) {
+        femaleNames = femaleNames.concat(item.Firstnames.Female);
+      });
+      
+      switch (gender) {
+        case 'male':
+          deferredObj.resolve(unweightedRandom(maleNames));
+          break;
+        case 'female':
+          deferredObj.resolve(unweightedRandom(femaleNames));
+          break;
+      }
     });
     
     return deferredObj.promise();
