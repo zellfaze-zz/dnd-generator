@@ -17,6 +17,7 @@ $(document).ready( function() {
     window.options.showAdvanced = false;
     $('#advanced-off').removeClass('btn-default').addClass('btn-primary');
     $('#advanced-on').removeClass('btn-primary').addClass('btn-default');
+    $('.advanced-options').css('display', 'none');
     return false;
   });
   
@@ -24,6 +25,7 @@ $(document).ready( function() {
     window.options.showAdvanced = true;
     $('#advanced-on').removeClass('btn-default').addClass('btn-primary');
     $('#advanced-off').removeClass('btn-primary').addClass('btn-default');
+    $('.advanced-options').css('display', 'initial');
     return false;
   });
   
@@ -58,11 +60,20 @@ $(document).ready( function() {
       default:
         gender = 'random';
     }
-    window.dataStores.names.getFirstName(gender).done(function (firstname) {
-      window.dataStores.names.getLastName().done(function (lastname) {
-        $('#name-input').val(firstname + " " + lastname);
+    
+    if ($('#adv-basic-lastname').prop('checked')) {
+      window.dataStores.names.getFirstName(gender).done(function (firstname) {
+        window.dataStores.names.getLastName().done(function (lastname) {
+          $('#name-input').val(firstname + " " + lastname);
+        });
       });
-    });
+    } else {
+      window.dataStores.names.getFirstName(gender).done(function (firstname) {
+        $('#name-input').val(firstname);
+      });
+    }
+    
+    
   });
   
   

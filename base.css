@@ -43,3 +43,7 @@ input.small {
 .random-btn {
   margin-top: 15px;
 }
+
+.advanced-options {
+  display: none;
+}
