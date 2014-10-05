@@ -58,8 +58,10 @@ $(document).ready( function() {
       default:
         gender = 'random';
     }
-    window.dataStores.names.getFirstName(gender).done(function (name) {
-      $('#name-input').val(name);
+    window.dataStores.names.getFirstName(gender).done(function (firstname) {
+      window.dataStores.names.getLastName().done(function (lastname) {
+        $('#name-input').val(firstname + " " + lastname);
+      });
     });
   });
   
@@ -432,6 +434,31 @@ function namesDataStore() {
     
     return deferredObj.promise();
   };
+  
+  //Gets a random last name, returns a promise
+  this.getLastName = function(gender) {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var firstNames = [];
+      data.forEach(function(item) {
+        firstNames = firstNames.concat(item.Lastnames.First);
+      });
+      
+      var secondNames = [];
+      data.forEach(function(item) {
+        secondNames = secondNames.concat(item.Lastnames.Second);
+      });
+      
+      var selectedFirst  = unweightedRandom(firstNames);
+      var selectedSecond = unweightedRandom(secondNames);
+      
+      deferredObj.resolve(selectedFirst + selectedSecond);
+    });
+    
+    return deferredObj.promise();
+  };
+  
 }
 
 function fadeBetween(outSelect, inSelect) {
