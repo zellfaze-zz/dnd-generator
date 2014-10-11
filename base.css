@@ -19,10 +19,31 @@ footer {
   overflow-y: scroll;
 }
 
+#lastPage {
+  display:none;
+}
+
+#page2 {
+  display: none;
+}
+
+.subtitle {
+  font-size: 1.75em;
+  margin-bottom: 1.75em;
+}
+
 input[type="number"] {
   width: 40px;
 }
 
 input.small {
   width: 40px;
+}
+
+.random-btn {
+  margin-top: 15px;
+}
+
+.advanced-options {
+  display: none;
 }
