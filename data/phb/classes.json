@@ -265,7 +265,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [],
         "Bonus languages": [
             "None"
@@ -769,7 +768,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [],
         "Bonus languages": [
             "None"
@@ -1673,7 +1671,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Language (Druidic)",
             "Animal companion"
@@ -1936,7 +1933,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [],
         "Bonus languages": [
             "None"
@@ -2331,7 +2327,6 @@
                 }
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Armor penalties",
             "Cross class leveling penalties"
@@ -2705,7 +2700,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Alignment penalties",
             "Cross class leveling penalties",
@@ -3082,7 +3076,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Combat style",
             "Animal Companion",
@@ -3384,7 +3377,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Special ability"
         ],
@@ -3900,7 +3892,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Familiar"
         ],
@@ -4330,7 +4321,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "PHB",
         "Misc": [
             "Familiar",
             "Specialization"
@@ -4389,7 +4379,6 @@
                 "Misc": {}
             }
         },
-        "BookSource": "",
         "Misc": [],
         "Bonus languages": [],
         "Weapon and armor proficiency": [],
