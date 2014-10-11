@@ -325,17 +325,17 @@ function dataFile(name, path, format, type) {
 *******************************************************************************/
 
 //Datastores
-//  classes
-//  feats
-//  languages
-//  magic_items
-//  mundane_items
-//  races
-//  skills
-//  spell_lists
-//  spells
-//  names
-//  dieties
+//  classes			*needs work*
+//  feats			
+//  languages		
+//  magic_items		*needs work*
+//  mundane_items	*needs work*
+//  races			
+//  skills			*needs work*
+//  spell_lists		*needs work*
+//  spells			*needs work*
+//  names			
+//  dieties			*needs work*
 
 
 //Defining the shell of the dataStore object
@@ -470,6 +470,292 @@ function namesDataStore() {
     return deferredObj.promise();
   };
   
+}
+
+//Languages data store, pulls all languages into the file
+//prototype off datastore
+
+/****************************************************************
+ Functions:
+getLanguages   : pulls the language data in
+sharedAlphabet : returns all languages that share an alphabet
+getLanguage    : returns a specific language (name and alphabet)
+****************************************************************/
+
+languagesDataStore.prototype = new dataStore();
+function languagesDataStore() {
+	var self = this;
+	this.dataType = 'langauges';
+	
+	//loads all languages
+	this.getLanguage = new function()
+	{
+		var deferredObj = new $.Deferred();
+		
+		self.getAllData().done(function(data) 
+		{	
+			deferredObj.resolve(data);
+			
+		});
+		return deferredObj.promise();
+	}
+	
+	//get all languages that share an alphabet
+	this.sharedAlphabet = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getLanguage().done(function(languages) 
+		{
+            var sharedLanguages = [];
+            
+            //add the data with matching alphabets to array
+			languages.forEach(function(item)
+			{
+                if (item.alphabet === shared)
+                {
+                    sharedLangauges.push(item);
+                }   				
+			});
+            //return array
+            deferredObj.resolve(sharedLanguages);			
+        });  
+        return deferredObj.promise();
+		
+    };
+	
+	//get a specific language
+	this.specificLanguage = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getLanguage().done(function(languages) 
+		{
+            var returnable = null;
+            
+            //loop through all languages
+			languages.forEach(function(item)
+			{
+				//if the item is the same
+                if (item.name === target)
+                {
+                    returnable = item;
+                }   				
+			});
+			
+			//if the language isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("Language not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();
+		
+    };
+	
+}
+
+//functions related to races
+/******************************************************************************
+ Functions:
+getRaces           : pulls the races out of the JSON files into JavaScript
+specificRace       : searches the array of races for specified race
+sharedLanguage     : searches for all races that have the shared language
+sharedAlignment    : searches for all races that have the shared alignment
+sharedFavoredClass : searches for all races that have the shared favored class
+sharedTrait        : searches for all races that have the specified trait
+******************************************************************************/
+
+racesDataStore.prototype = new dataStore();
+function racesDataStore() 
+{
+	var self = this;
+	this.dataType = 'races';
+
+	//loads all races
+	this.getRaces = new function()
+	{
+		var deferredObj = new $.Deferred();
+		
+		self.getAllData().done(function(data) 
+		{	
+			deferredObj.resolve(data);
+			
+		});	
+		return deferredObj.promise();
+	}	
+	
+	//loads a specific race
+	this.specificRace = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getRace().done(function(race) 
+		{
+            var returnable = null;
+            
+            //loop through all races
+			race.forEach(function(item)
+			{
+				//if the item is the same, set the item to that 
+                if (item.name === target)
+                {
+                    returnable = item;
+                }   				
+			});
+			
+			//if the race isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("Race not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns all races that share a common language
+	this.sharedLanguage = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getRaces().done(function(races) 
+		{
+            var sharedLanguages = [];
+            
+			//read through the array of languages in the race
+			races.forEach(function(race)
+			{
+				race.Languages.forEach(function(language)
+				{
+				//add the race to the shared array if the language is there
+					if(language === shared)
+					{
+						sharedLanguage.push(race);
+					}
+				});
+			});
+            //return array
+            deferredObj.resolve(sharedLanguages);			
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns all races that share a common alignment
+	this.sharedAlignment = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getRaces().done(function(races) 
+		{
+            var sharedAlignment = [];
+            
+			//read through each race
+			races.forEach(function(race)
+			{
+				//add the race to the shared array if their alignment is the same (or is any)
+				if((race.Alignment === shared) || (race.Alignment === "Any"))
+				{
+					sharedAlignment.push(race);
+				}
+			});
+            //return array
+            deferredObj.resolve(sharedAlignment);			
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns all races that share a common favored class
+	this.sharedFavoredClass = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getRaces().done(function(races) 
+		{
+            var sharedFavoredClass = [];
+            
+			//read through each race
+			races.forEach(function(race)
+			{
+				//add the race to the shared array if their alignment is the same
+				if((race["Favored Class"] === shared) || (race["Favored Class"] === "Any"))
+				{
+					sharedFavoredClass.push(race);
+				}
+			});
+            //return array
+            deferredObj.resolve(sharedFavoredClass);			
+        });  
+        return deferredObj.promise();
+    };
+	
+	//returns all races with a specific trait
+	this.sharedTrait = new function(shared, trait)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getRaces().done(function(races) 
+		{
+            var sharedTrait = [];
+            
+			//read through the switch statement
+			switch (trait) 
+			{
+				//case for Stats, Skills, and Misc that searches the select
+				//trait for the shared trait in question then adds that race
+				//to the shared trait array
+				case 'Stats':
+				case 'Skills':
+				case 'Misc':
+					races.forEach(function(race)
+					{
+						if(race[trait].hasOwnProperty(shared))
+						{
+							sharedTrait.push(race);
+						}
+					});
+					break;
+				
+				//case for spells and abilities that searches the select
+				//trait for the shared trait in question then adds that race
+				//to the shared trait array				
+				case 'Spells':
+				case 'Abilities':
+					races.forEach(function(race)
+					{
+						races[trait].forEach(function(item)
+						{
+							if(item === shared)
+							{
+								sharedTraits.push(race);
+							}
+						});	
+					});
+					break;
+				
+				//default case for trait types that do not exist
+				default:
+					deferredObj.reject("Invalid trait type");
+					break;
+					
+			}
+            //return array
+            deferredObj.resolve(sharedFavoredClass);			
+        });  
+        return deferredObj.promise();
+    };
 }
 
 function fadeBetween(outSelect, inSelect) {
