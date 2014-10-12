@@ -8,8 +8,10 @@
             "M/DF"
         ],
         "Cast Time": "1 Standard action",
-        "Range": "100ft + 10ft/level",
-        "Duration": "1 round/level",
+        "Range": 100,
+		"Additional Range": "10/level",
+		"Base Duration": "Concentration"
+        "Additional Duration": "1 round/level",
         "Saving throw": false,
         "Spell resistance": false,
         "Target": "Multiple",
@@ -18,30 +20,40 @@
             "Damage",
             "Acid"
         ],
-        "Size": "20ft radius, 20ft high",
-        "Damage": "2d6 acid",
+        "Size": {
+			"Radius": 20,
+			"Height": 20
+		},
+        "Damage": {
+			"Acid": "2d6"
+		},
         "Short Text": "Fog deals acid damage",
         "Long Text": "Acid fog creates a billowing mass of misty vapors similar to that produced by a solid fog spell.  In addition to slowing creatures down and obscuring sight, this spell's vapors are highly acidic.  Each round on your turn, starting when you cast the spell, the fog deals 2d6 points of acid damage to each creature and object within it.",
-        "Material component": "A pinch of dried, powdered peas combined with powdered animal hoof",
-        "Book Source": "PHB"
+        "Material component": "A pinch of dried, powdered peas combined with powdered animal hoof"
     },
     {
         "Name": "",
         "School": "",
         "Components": [],
         "Cast Time": "",
-        "Range": "",
-        "Duration": "",
+        "Range": 0,
+		"Additional Range": "",
+        "Base Duration": "",
+		"Additional Duration": "",
         "Saving throw": false,
         "Spell resistance": false,
         "Target": "",
         "Effect": "",
         "Type": [],
-        "Size": "",
-        "Damage": "",
+        "Size": {
+			"Radius": 0,
+			"Height": 0
+		},
+        "Damage": {
+			"Acid": ""
+		},
         "Short Text": "",
         "Long Text": "",
-        "Material component": "",
-        "Book Source": ""
+        "Material component": ""
     }
 ]

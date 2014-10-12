@@ -332,7 +332,7 @@ function dataFile(name, path, format, type) {
 //  mundane_items	*needs work*
 //  races			
 //  skills			
-//  spell_lists		*needs work*
+//  spell_lists		*may need rework*
 //  spells			*needs work*
 //  names			
 //  dieties			*needs work*
@@ -904,9 +904,9 @@ function skillsDataStore()
 
 /***********************************************************************************************
  Functions:
-getSpellBySource : returns spell list by source
-getSpellByType   : returns spell list by type
-getSpellByLevel  : returns spell list by level
+getSpellsBySource : returns spell list by source
+getSpellsByType   : returns spell list by type
+getSpellsByLevel  : returns spell list by level
 ***********************************************************************************************/
 
 spellListDataStore.prototype = new dataStore();
@@ -916,7 +916,7 @@ function spellListDataStore()
 	this.dataType = 'spell_lists';
 	
 	//returns spell list by source
-	this.getSpellBySource = new function(target)
+	this.getSpellsBySource = new function(target)
 	{
 		var deferredObj = new $.Deferred();
 		
@@ -947,8 +947,9 @@ function spellListDataStore()
 		});
 		return deferredObj.promise();
 	};
+	
 	//returns spell list by type
-	this.getSpellByType = new function(target)
+	this.getSpellsByType = new function(target)
 	{
 		var deferredObj = new $.Deferred();
 		
@@ -978,8 +979,9 @@ function spellListDataStore()
 		});
 		return deferredObj.promise();
 	};
+	
 	//returns spell list by level
-		this.getSpellByLevel = new function(source, target)
+	this.getSpellsByLevel = new function(source, target)
 	{
 		var deferredObj = new $.Deferred();
 		
@@ -1013,9 +1015,484 @@ function spellListDataStore()
 	};
 }
 
+//Spells data store, pulls all spell into the file
+//prototype off dataStore
+
+/***********************************************************************************************
+ Functions:
+getSpellByAttribute : get a spell by an specified attribute
+getMultipleSpells   : get a group of spells by same attribute
+getSpellsByRanges   : get spells by numeric ranges (use greater than, less than or equal to)
+***********************************************************************************************/
+
+spellsDataStore.prototype = new dataStore();
+function spellsDataStore() 
+{
+	var self = this;
+	this.dataType = 'spells';
+
+	//get a spell by an attribute
+		/*mostly usefully for finding by name*/
+	this.getSpellByAttribute = new function(attribute, target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spells) 
+		{
+			var returnable = null;
+			
+            //loop through all spells
+			spells.forEach(function(spell)
+			{
+				//if the spell attribute is the same its the returnable
+                if (spell[attribute] === target)
+                {
+                    returnable = spell;
+                }   				
+			});
+			
+			//if the language isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("No spell found with given parameters");
+			}
+			
+            //return the spell
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+	
+	//get a group of spells by same attribute
+	this.getMultipleSpells = new function(attribute, target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spells) 
+		{
+			var returnable = [];
+			
+            //loop through all spell lists
+			spells.forEach(function(spell)
+			{
+				switch(attribute)
+				{	
+					//these require no special processing
+					case 'School':
+					case 'Cast Time':
+					case 'Saving throw':
+					case 'Spell resistance':
+					case 'Target':
+						//process the above
+						if (spell[attribute] === target)
+						{
+							returnable.push(spell);
+						}  					
+						break;
+						
+					//these are arrays (some processing requires)
+					case 'Components':
+					case 'Type':
+						//process the above
+						spell[attribute].forEach(item)
+						{
+							if(spell[attribute] === target)
+							{
+								returnable.push(spell);
+							}
+						}
+						break;
+	
+					default:
+						deferredObj.reject("Spells not found with that attribute");
+						break;
+				}				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("No spells found with given parameters");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};	
+	
+	//get spells by numeric ranges (use greater than, less than or equal to)
+	this.getSpellsByRanges = new function(attribute, range, numeric)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spells) 
+		{
+			var returnable = [];
+
+			//process all spells
+			
+			spells.forEach(function(spell)
+			{
+				switch(attribute)
+				{
+					//*********************************************************
+					//by Range, uses base range
+					case 'Range':
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								if(numeric > spell.Range)
+								{
+									returnable.push(spell);
+								}
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								if(numeric < spell.Range)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								if(numeric === spell.Range)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					//by Duration, always evaluated in rounds
+					case 'Duration':
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								//will return true if the base duration is not a number
+								if( isNaN(spell["Base Duration"]) )
+								{
+									//then evaluate duration by additional duration
+									var spellDuration = computeDurationArray(parseDuration(spell["Additional Duration"]));
+									if(numeric > spellDuration)			//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else if( (!isNaN(spell["Base Duration"])) )
+								{
+									if(numeric > spell["Base Duration"])//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else
+								{
+									//well shit just happened
+									deferredObj.reject("too complex of a method");
+								}
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								//will return true if the base duration is not a number
+								if(isNaN(spell["Base Duration"]))
+								{
+									//then evaluate duration by additional duration
+									var spellDuration = computeDurationArray(parseDuration(spell["Additional Duration"]));
+									if(numeric < spellDuration)			//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else if( (!isNaN(spell["Base Duration"])) )
+								{
+									if(numeric < spell["Base Duration"])//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else
+								{
+									//well shit just happened
+									deferredObj.reject("too complex of a method");
+								}
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								//will return true if the base duration is not a number
+								if(isNaN(spell["Base Duration"]))
+								{
+									//then evaluate duration by additional duration
+									var spellDuration = computeDurationArray(parseDuration(spell["Additional Duration"]));
+									if(numeric === spellDuration)		//The actual testing of values
+									{
+										returnable.push(spell);	//The actual testing of values
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else if( (!isNaN(spell["Base Duration"])) )
+								{
+									if(numeric === spell["Base Duration"])//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else
+								{
+									//well shit just happened
+									deferredObj.reject("too complex of a method");
+								}
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					//by Size, will not process the "Additional sizes" in size
+					case 'Size':
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								spell.Size.forEach(function(item)
+								{
+									if( (!isNaN(item)) || (numeric > item) )
+									{
+										returnable.push(spell);
+									}
+								});
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								spell.Size.forEach(function(item)
+								{
+									if( (!isNaN(item)) || (numeric < item) )
+									{
+										returnable.push(spell);
+									}
+								});
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								spell.Size.forEach(function(item)
+								{
+									if( (!isNaN(item)) || (numeric === item) )
+									{
+										returnable.push(spell);
+									}
+								});
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					//by Damage (max damage)
+					case 'Damage':
+						
+						var max = 0;
+						
+						for(var item in spell.Damage)
+						{
+							max = maxRoll(spell.Damage[item]);
+						}
+					
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								if(numeric > max)
+								{
+									returnable.push(spell);
+								}
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								if(numeric < max)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								if(numeric === max)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					default:
+						deferredObj.reject("Spells not found with that attribute");
+						break;
+				}
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("No spells found with given parameters");
+			}
+		});
+		return deferredObj.promise();
+	}
+}
 
 function fadeBetween(outSelect, inSelect) {
   $(outSelect).fadeOut(400, function() {
     $(inSelect).fadeIn(400);
   });
+}
+
+//parses durations into an array, separating the numeric and time
+//product[0] is numeric value of duration
+//product[1] is normalised time unit
+//Returns false is the string is invalid
+function parseDurationString(parsed) {
+    var regularExp = /(\d+) (round|rounds|minute|minutes|hour|hours|day|days|week|weeks)/ig;
+    
+    //Parse the string
+    if (regularExp.test() == false) {
+        return false;
+    }
+    var product = regularExp.exec(parsed);
+    
+    //Normalise the string
+    product[1] = product[1].toLowerCase();
+    
+    switch (product[1]) {
+        case 'weeks':
+            product[1] = 'week';
+            break;
+        case 'day':
+            product[1] = 'day';
+            break;
+        case 'hours':
+            product[1] = 'hour';
+            break;
+        case 'minutes':
+            product[1] = 'minute';
+            break;
+        case 'rounds':
+            product[1] = 'round';
+            break;
+    }
+    
+    //Return it
+    return product;
+}
+
+//Accepts a durationArray produced by parseDurationString and converts it to rounds
+function computeDurationArray(durationArray) {
+    switch (durationArray[1]) {
+        case 'week':
+            durationArray[0] *= 7;
+        case 'day':
+            durationArray[0] *= 24;
+        case 'hour':
+            durationArray[0] *= 60;
+        case 'minute':
+            durationArray[0] *= 10;
+          break;
+    }
+    
+    return durationArray[0];
+}
+
+//parses dice rolls
+function parseDice(dice) {
+    var regularExp = /(\d+)d(\d+)(?: \+ )?(\d+)/;
+    
+    if (regularExp.text(dice) == false) {
+        return false;
+    }
+    
+    return regularExp.exec(dice);
+}
+
+function maxRoll(dice) {
+    var parsedArrray = parseDice(dice);
+    
+    if (parsedArray == false) { return false;}
+    
+    return ((parsedArray[0] * parsedArray[1]) + parsedArray[2]);
+}
+
+function minRoll(dice) {
+    var parsedArrray = parseDice(dice);
+    
+    if (parsedArray == false) { return false;}
+    
+    return (parsedArray[0] + parsedArray[2]);
+}
+
+function averageRoll(dice) {
+    var parsedArrray = parseDice(dice);
+    
+    if (parsedArray == false) { return false;}
+    
+    return (((parsedArray[0] * parsedArray[1])/2) + parsedArray[2]);
 }
