@@ -473,7 +473,7 @@ function namesDataStore() {
 }
 
 //Languages data store, pulls all languages into the file
-//prototype off datastore
+//prototype off dataStore
 
 /****************************************************************
  Functions:
@@ -560,8 +560,10 @@ function languagesDataStore() {
 	
 }
 
-//functions related to races
-/******************************************************************************
+//Races data store, pulls all Races into the file
+//prototype off dataStore
+
+/*********************************************************************************
  Functions:
 getRaces           : pulls the races out of the JSON files into JavaScript
 specificRace       : searches the array of races for specified race
@@ -569,7 +571,8 @@ sharedLanguage     : searches for all races that have the shared language
 sharedAlignment    : searches for all races that have the shared alignment
 sharedFavoredClass : searches for all races that have the shared favored class
 sharedTrait        : searches for all races that have the specified trait
-******************************************************************************/
+hasTrait	       : searches for all races that have entries in a specific trait
+*********************************************************************************/
 
 racesDataStore.prototype = new dataStore();
 function racesDataStore() 
@@ -756,8 +759,187 @@ function racesDataStore()
         });  
         return deferredObj.promise();
     };
+	
+	//returns all classes that have any items in a specific trait
+	this.hasTrait = new function(trait)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getRaces().done(function(races) 
+		{
+            var sharedTrait = [];
+            
+			//read through the switch statement
+			switch (trait) 
+			{
+				//case for Stats, Skills, and Misc that searches the select
+				//trait for races that have any traits in that trait.
+				case 'Stats':
+				case 'Skills':
+				case 'Misc':
+					races.forEach(function(race)
+					{
+						if(!($.isEmptyObject(race[trait])))
+						{
+							sharedTrait.push(race);
+						}
+					});
+					break;
+				
+				//case for spells and abilities that searches the select
+				//trait for races that have any traits in that trait.				
+				case 'Spells':
+				case 'Abilities':
+					races.forEach(function(race)
+					{
+						races[trait].forEach(function(item)
+						{
+							if(race[trait].length > 0)
+							{
+								sharedTraits.push(race);
+							}
+						});	
+					});
+					break;
+				
+				//default case for trait types that do not exist
+				default:
+					deferredObj.reject("Invalid trait type");
+					break;
+					
+			}
+            //return array
+            deferredObj.resolve(sharedFavoredClass);			
+        });  
+        return deferredObj.promise();
+    };
 }
 
+//Skills data store, pulls all skills into the file
+//prototype off dataStore
+
+/***********************************************************************************************
+ Functions:
+getSkills         : pulls the skills out of the JSON files into JavaScript
+specificSkill     : searches for a specific skill and returns it's stats
+getSkillSynergies : searches for a specific skill and returns it's synergies
+checkSkill        : searches for all skills that contain a specific entry with a specific value
+***********************************************************************************************/
+
+skillsDataStore.prototype = new dataStore();
+function skillsDataStore() 
+{
+	var self = this;
+	this.dataType = 'skills';
+
+	//loads all skills
+	this.getSkills = new function()
+	{
+		var deferredObj = new $.Deferred();
+		
+		self.getAllData().done(function(data) 
+		{	
+			deferredObj.resolve(data);
+			
+		});	
+		return deferredObj.promise();
+	}	
+	
+	//gets a specific skill
+	this.specificSkill = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getSkills().done(function(skills) 
+		{
+            var returnable = null;
+            
+            //loop through all races
+			skills.forEach(function(item)
+			{
+				//if the item is the same, set the item to that 
+                if (item.name === target)
+                {
+                    returnable = item;
+                }   				
+			});
+			
+			//if the race isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("Skill not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns a specific skill's synergies
+	this.getSkillSynergies = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getSkills().done(function(skills) 
+		{
+            var skillName = null;
+			var returnable = [];
+            
+            //loop through all races
+			skills.forEach(function(item)
+			{
+				//if the item is the same, set the item to that 
+                if (item.name === target)
+                {
+                    skillName = item;
+                }   				
+			});
+			
+			//if the race isn't found, reject it
+			if(typeof skillName === "null")
+			{
+				deferredObj.reject("Skill not found");
+			}
+			
+			//get all of the skills synergies and put them into returnable
+			returnable = skillName.synergy;
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//gets all skills that have desired entry set to the desired boolean
+	this.checkSkill = new function(entry, bool)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getSkills().done(function(skills) 
+		{
+            var returnable = [];
+			
+			//check each skill for the desired setting
+			skills.forEach(function(item)
+			{
+				//add them to the array if they are equal
+				if(item[entry] === bool)
+				{
+					returnable.push(item);	
+				}
+			});
+            //return array
+            deferredObj.resolve(returnable);			
+        });  
+        return deferredObj.promise();
+    };
+		
+}
 function fadeBetween(outSelect, inSelect) {
   $(outSelect).fadeOut(400, function() {
     $(inSelect).fadeIn(400);
