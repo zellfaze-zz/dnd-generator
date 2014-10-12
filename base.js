@@ -331,7 +331,7 @@ function dataFile(name, path, format, type) {
 //  magic_items		*needs work*
 //  mundane_items	*needs work*
 //  races			
-//  skills			*needs work*
+//  skills			
 //  spell_lists		*needs work*
 //  spells			*needs work*
 //  names			
@@ -477,7 +477,6 @@ function namesDataStore() {
 
 /****************************************************************
  Functions:
-getLanguages   : pulls the language data in
 sharedAlphabet : returns all languages that share an alphabet
 getLanguage    : returns a specific language (name and alphabet)
 ****************************************************************/
@@ -487,26 +486,13 @@ function languagesDataStore() {
 	var self = this;
 	this.dataType = 'langauges';
 	
-	//loads all languages
-	this.getLanguage = new function()
-	{
-		var deferredObj = new $.Deferred();
-		
-		self.getAllData().done(function(data) 
-		{	
-			deferredObj.resolve(data);
-			
-		});
-		return deferredObj.promise();
-	}
-	
 	//get all languages that share an alphabet
 	this.sharedAlphabet = new function(shared)
 	{
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getLanguage().done(function(languages) 
+        self.getAllData().done(function(languages) 
 		{
             var sharedLanguages = [];
             
@@ -531,7 +517,7 @@ function languagesDataStore() {
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getLanguage().done(function(languages) 
+        self.getAllData().done(function(languages) 
 		{
             var returnable = null;
             
@@ -565,7 +551,6 @@ function languagesDataStore() {
 
 /*********************************************************************************
  Functions:
-getRaces           : pulls the races out of the JSON files into JavaScript
 specificRace       : searches the array of races for specified race
 sharedLanguage     : searches for all races that have the shared language
 sharedAlignment    : searches for all races that have the shared alignment
@@ -579,19 +564,6 @@ function racesDataStore()
 {
 	var self = this;
 	this.dataType = 'races';
-
-	//loads all races
-	this.getRaces = new function()
-	{
-		var deferredObj = new $.Deferred();
-		
-		self.getAllData().done(function(data) 
-		{	
-			deferredObj.resolve(data);
-			
-		});	
-		return deferredObj.promise();
-	}	
 	
 	//loads a specific race
 	this.specificRace = new function(target)
@@ -599,7 +571,7 @@ function racesDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getRace().done(function(race) 
+        self.getAllData().done(function(race) 
 		{
             var returnable = null;
             
@@ -631,7 +603,7 @@ function racesDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getRaces().done(function(races) 
+        self.getAllData().done(function(races) 
 		{
             var sharedLanguages = [];
             
@@ -659,7 +631,7 @@ function racesDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getRaces().done(function(races) 
+        self.getAllData().done(function(races) 
 		{
             var sharedAlignment = [];
             
@@ -684,7 +656,7 @@ function racesDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getRaces().done(function(races) 
+        self.getAllData().done(function(races) 
 		{
             var sharedFavoredClass = [];
             
@@ -709,7 +681,7 @@ function racesDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getRaces().done(function(races) 
+        self.getAllData().done(function(races) 
 		{
             var sharedTrait = [];
             
@@ -766,7 +738,7 @@ function racesDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getRaces().done(function(races) 
+        self.getAllData().done(function(races) 
 		{
             var sharedTrait = [];
             
@@ -821,7 +793,6 @@ function racesDataStore()
 
 /***********************************************************************************************
  Functions:
-getSkills         : pulls the skills out of the JSON files into JavaScript
 specificSkill     : searches for a specific skill and returns it's stats
 getSkillSynergies : searches for a specific skill and returns it's synergies
 checkSkill        : searches for all skills that contain a specific entry with a specific value
@@ -832,19 +803,6 @@ function skillsDataStore()
 {
 	var self = this;
 	this.dataType = 'skills';
-
-	//loads all skills
-	this.getSkills = new function()
-	{
-		var deferredObj = new $.Deferred();
-		
-		self.getAllData().done(function(data) 
-		{	
-			deferredObj.resolve(data);
-			
-		});	
-		return deferredObj.promise();
-	}	
 	
 	//gets a specific skill
 	this.specificSkill = new function(target)
@@ -852,7 +810,7 @@ function skillsDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getSkills().done(function(skills) 
+        self.getAllData().done(function(skills) 
 		{
             var returnable = null;
             
@@ -884,7 +842,7 @@ function skillsDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getSkills().done(function(skills) 
+        self.getAllData().done(function(skills) 
 		{
             var skillName = null;
 			var returnable = [];
@@ -920,7 +878,7 @@ function skillsDataStore()
 		var deferredObj = new $.Deferred();
 		
 		//read the data
-        self.getSkills().done(function(skills) 
+        self.getAllData().done(function(skills) 
 		{
             var returnable = [];
 			
@@ -938,8 +896,124 @@ function skillsDataStore()
         });  
         return deferredObj.promise();
     };
-		
+	
 }
+//Spell list data store, pulls all spell lists into the file
+//prototype off dataStore
+//This can probably be used for powers too
+
+/***********************************************************************************************
+ Functions:
+getSpellBySource : returns spell list by source
+getSpellByType   : returns spell list by type
+getSpellByLevel  : returns spell list by level
+***********************************************************************************************/
+
+spellListDataStore.prototype = new dataStore();
+function spellListDataStore() 
+{
+	var self = this;
+	this.dataType = 'spell_lists';
+	
+	//returns spell list by source
+	this.getSpellBySource = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spell_list) 
+		{
+			var returnable = [];
+			
+            //loop through all spell lists
+			spell_list.forEach(function(item)
+			{
+				//if the item is the same, add the item to returnables
+                if (item.Source === target)
+                {
+                    returnable.push[item];
+                }   				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("Spell list by source not found");
+			}
+			
+            //return the items
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+	//returns spell list by type
+	this.getSpellByType = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spell_list) 
+		{
+			var returnable = [];
+			
+            //loop through all spell lists
+			spell_list.forEach(function(item)
+			{
+				//if the item is the same, add the item to returnables
+                if (item.Type === target)
+				{
+                    returnable.push[item];
+                }   				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("Spell list by type not found");
+			}
+            //return the items
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+	//returns spell list by level
+		this.getSpellByLevel = new function(source, target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spell_list) 
+		{
+			var returnable = [];
+			var stringTarget = "Level " + target.toString();
+			
+            //loop through all spell lists
+			spell_list.forEach(function(item)
+			{
+				//if the item is the same, add the item to the returnables
+                if (item.stringTarget === stringTarget)
+                {
+                    returnable.push[item];
+                }   				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("Spell list by level not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+}
+
+
 function fadeBetween(outSelect, inSelect) {
   $(outSelect).fadeOut(400, function() {
     $(inSelect).fadeIn(400);
