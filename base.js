@@ -472,6 +472,113 @@ function namesDataStore() {
   
 }
 
+//Inherites from dataStore
+featsDataStore.prototype = new dataStore();
+function featsDataStore() {
+  var self = this;
+  this.dataType = 'feats';
+  
+  this.getFeat = function(featname) {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var wantedFeat = data.forEach(function(item) {
+        if (featname == item.Name) {
+          return item;
+        }
+      });
+      
+      deferredObj.resolve(wantedFeat);
+    });
+    
+    return deferredObj.promise();
+  }
+  
+  this.getListOfFeats = function() {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var list = [];
+      data.forEach(function(item) {
+        list.push(item.Name);
+      });
+      
+      deferredObj.resolve(list);
+    });
+    
+    return deferredObj.promise();
+  }
+  
+  this.getFeatsWithType = function(type) {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var list = [];
+      data.forEach(function(item) {
+        if (item.Type == type) {
+          list.push(item.Name);
+        }
+      });
+      
+      deferredObj.resolve(list);
+    });
+    
+    return deferredObj.promise();
+  }
+  
+  this.getFeatsWithNoPrereqs = function() {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var list = [];
+      data.forEach(function(item) {
+        if (item.Prerequisites == "None") {
+          list.push(item.Name);
+        }
+      });
+      
+      deferredObj.resolve(list);
+    });
+    
+    return deferredObj.promise();
+  }
+  
+  this.getFeatsWithNoPrereqs = function() {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var list = [];
+      data.forEach(function(item) {
+        if (item.Prerequisites == "None") {
+          list.push(item.Name);
+        }
+      });
+      
+      deferredObj.resolve(list);
+    });
+    
+    return deferredObj.promise();
+  }
+  
+  //TODO: Make this detect bonuses of 0 and exclude them
+  this.getFeatsWithSkillBonus = function(skill) {
+    var deferredObj = new $.Deferred();
+    
+    self.getAllData().done(function(data) {
+      var list = [];
+      data.forEach(function(item) {
+        if (item.Benefits.Numeric.Skills.hasOwnProperty(skill)) {
+          list.push(item.Name);
+        }
+      });
+      
+      deferredObj.resolve(list);
+    });
+    
+    return deferredObj.promise();
+  }
+}
+
 function fadeBetween(outSelect, inSelect) {
   $(outSelect).fadeOut(400, function() {
     $(inSelect).fadeIn(400);
