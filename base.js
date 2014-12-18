@@ -325,17 +325,17 @@ function dataFile(name, path, format, type) {
 *******************************************************************************/
 
 //Datastores
-//  classes
-//  feats
-//  languages
-//  magic_items
-//  mundane_items
-//  races
-//  skills
-//  spell_lists
-//  spells
-//  names
-//  dieties
+//  classes			*needs work*
+//  feats			
+//  languages		
+//  magic_items		*needs work*
+//  mundane_items	*needs work*
+//  races			
+//  skills			
+//  spell_lists		*may need rework*
+//  spells			*needs work*
+//  names			
+//  dieties			*needs work*
 
 
 //Defining the shell of the dataStore object
@@ -472,6 +472,7 @@ function namesDataStore() {
   
 }
 
+
 //Inherites from dataStore
 featsDataStore.prototype = new dataStore();
 function featsDataStore() {
@@ -577,10 +578,1028 @@ function featsDataStore() {
     
     return deferredObj.promise();
   }
+
+//Languages data store, pulls all languages into the file
+//prototype off dataStore
+
+/****************************************************************
+ Functions:
+sharedAlphabet : returns all languages that share an alphabet
+getLanguage    : returns a specific language (name and alphabet)
+****************************************************************/
+
+languagesDataStore.prototype = new dataStore();
+function languagesDataStore() {
+	var self = this;
+	this.dataType = 'langauges';
+	
+	//get all languages that share an alphabet
+	this.sharedAlphabet = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(languages) 
+		{
+            var sharedLanguages = [];
+            
+            //add the data with matching alphabets to array
+			languages.forEach(function(item)
+			{
+                if (item.alphabet === shared)
+                {
+                    sharedLangauges.push(item);
+                }   				
+			});
+            //return array
+            deferredObj.resolve(sharedLanguages);			
+        });  
+        return deferredObj.promise();
+		
+    };
+	
+	//get a specific language
+	this.specificLanguage = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(languages) 
+		{
+            var returnable = null;
+            
+            //loop through all languages
+			languages.forEach(function(item)
+			{
+				//if the item is the same
+                if (item.name === target)
+                {
+                    returnable = item;
+                }   				
+			});
+			
+			//if the language isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("Language not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();
+		
+    };
+	
+}
+
+//Races data store, pulls all Races into the file
+//prototype off dataStore
+
+/*********************************************************************************
+ Functions:
+specificRace       : searches the array of races for specified race
+sharedLanguage     : searches for all races that have the shared language
+sharedAlignment    : searches for all races that have the shared alignment
+sharedFavoredClass : searches for all races that have the shared favored class
+sharedTrait        : searches for all races that have the specified trait
+hasTrait	       : searches for all races that have entries in a specific trait
+*********************************************************************************/
+
+racesDataStore.prototype = new dataStore();
+function racesDataStore() 
+{
+	var self = this;
+	this.dataType = 'races';
+	
+	//loads a specific race
+	this.specificRace = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(race) 
+		{
+            var returnable = null;
+            
+            //loop through all races
+			race.forEach(function(item)
+			{
+				//if the item is the same, set the item to that 
+                if (item.name === target)
+                {
+                    returnable = item;
+                }   				
+			});
+			
+			//if the race isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("Race not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns all races that share a common language
+	this.sharedLanguage = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(races) 
+		{
+            var sharedLanguages = [];
+            
+			//read through the array of languages in the race
+			races.forEach(function(race)
+			{
+				race.Languages.forEach(function(language)
+				{
+				//add the race to the shared array if the language is there
+					if(language === shared)
+					{
+						sharedLanguage.push(race);
+					}
+				});
+			});
+            //return array
+            deferredObj.resolve(sharedLanguages);			
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns all races that share a common alignment
+	this.sharedAlignment = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(races) 
+		{
+            var sharedAlignment = [];
+            
+			//read through each race
+			races.forEach(function(race)
+			{
+				//add the race to the shared array if their alignment is the same (or is any)
+				if((race.Alignment === shared) || (race.Alignment === "Any"))
+				{
+					sharedAlignment.push(race);
+				}
+			});
+            //return array
+            deferredObj.resolve(sharedAlignment);			
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns all races that share a common favored class
+	this.sharedFavoredClass = new function(shared)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(races) 
+		{
+            var sharedFavoredClass = [];
+            
+			//read through each race
+			races.forEach(function(race)
+			{
+				//add the race to the shared array if their alignment is the same
+				if((race["Favored Class"] === shared) || (race["Favored Class"] === "Any"))
+				{
+					sharedFavoredClass.push(race);
+				}
+			});
+            //return array
+            deferredObj.resolve(sharedFavoredClass);			
+        });  
+        return deferredObj.promise();
+    };
+	
+	//returns all races with a specific trait
+	this.sharedTrait = new function(shared, trait)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(races) 
+		{
+            var sharedTrait = [];
+            
+			//read through the switch statement
+			switch (trait) 
+			{
+				//case for Stats, Skills, and Misc that searches the select
+				//trait for the shared trait in question then adds that race
+				//to the shared trait array
+				case 'Stats':
+				case 'Skills':
+				case 'Misc':
+					races.forEach(function(race)
+					{
+						if(race[trait].hasOwnProperty(shared))
+						{
+							sharedTrait.push(race);
+						}
+					});
+					break;
+				
+				//case for spells and abilities that searches the select
+				//trait for the shared trait in question then adds that race
+				//to the shared trait array				
+				case 'Spells':
+				case 'Abilities':
+					races.forEach(function(race)
+					{
+						races[trait].forEach(function(item)
+						{
+							if(item === shared)
+							{
+								sharedTraits.push(race);
+							}
+						});	
+					});
+					break;
+				
+				//default case for trait types that do not exist
+				default:
+					deferredObj.reject("Invalid trait type");
+					break;
+					
+			}
+            //return array
+            deferredObj.resolve(sharedFavoredClass);			
+        });  
+        return deferredObj.promise();
+    };
+	
+	//returns all classes that have any items in a specific trait
+	this.hasTrait = new function(trait)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(races) 
+		{
+            var sharedTrait = [];
+            
+			//read through the switch statement
+			switch (trait) 
+			{
+				//case for Stats, Skills, and Misc that searches the select
+				//trait for races that have any traits in that trait.
+				case 'Stats':
+				case 'Skills':
+				case 'Misc':
+					races.forEach(function(race)
+					{
+						if(!($.isEmptyObject(race[trait])))
+						{
+							sharedTrait.push(race);
+						}
+					});
+					break;
+				
+				//case for spells and abilities that searches the select
+				//trait for races that have any traits in that trait.				
+				case 'Spells':
+				case 'Abilities':
+					races.forEach(function(race)
+					{
+						races[trait].forEach(function(item)
+						{
+							if(race[trait].length > 0)
+							{
+								sharedTraits.push(race);
+							}
+						});	
+					});
+					break;
+				
+				//default case for trait types that do not exist
+				default:
+					deferredObj.reject("Invalid trait type");
+					break;
+					
+			}
+            //return array
+            deferredObj.resolve(sharedFavoredClass);			
+        });  
+        return deferredObj.promise();
+    };
+}
+
+//Skills data store, pulls all skills into the file
+//prototype off dataStore
+
+/***********************************************************************************************
+ Functions:
+specificSkill     : searches for a specific skill and returns it's stats
+getSkillSynergies : searches for a specific skill and returns it's synergies
+checkSkill        : searches for all skills that contain a specific entry with a specific value
+***********************************************************************************************/
+
+skillsDataStore.prototype = new dataStore();
+function skillsDataStore() 
+{
+	var self = this;
+	this.dataType = 'skills';
+	
+	//gets a specific skill
+	this.specificSkill = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(skills) 
+		{
+            var returnable = null;
+            
+            //loop through all races
+			skills.forEach(function(item)
+			{
+				//if the item is the same, set the item to that 
+                if (item.name === target)
+                {
+                    returnable = item;
+                }   				
+			});
+			
+			//if the race isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("Skill not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//returns a specific skill's synergies
+	this.getSkillSynergies = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(skills) 
+		{
+            var skillName = null;
+			var returnable = [];
+            
+            //loop through all races
+			skills.forEach(function(item)
+			{
+				//if the item is the same, set the item to that 
+                if (item.name === target)
+                {
+                    skillName = item;
+                }   				
+			});
+			
+			//if the race isn't found, reject it
+			if(typeof skillName === "null")
+			{
+				deferredObj.reject("Skill not found");
+			}
+			
+			//get all of the skills synergies and put them into returnable
+			returnable = skillName.synergy;
+			
+            //return the item
+            deferredObj.resolve(returnable);	
+        });  
+        return deferredObj.promise();	
+    };
+	
+	//gets all skills that have desired entry set to the desired boolean
+	this.checkSkill = new function(entry, bool)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(skills) 
+		{
+            var returnable = [];
+			
+			//check each skill for the desired setting
+			skills.forEach(function(item)
+			{
+				//add them to the array if they are equal
+				if(item[entry] === bool)
+				{
+					returnable.push(item);	
+				}
+			});
+            //return array
+            deferredObj.resolve(returnable);			
+        });  
+        return deferredObj.promise();
+    };
+	
+}
+//Spell list data store, pulls all spell lists into the file
+//prototype off dataStore
+//This can probably be used for powers too
+
+/***********************************************************************************************
+ Functions:
+getSpellsBySource : returns spell list by source
+getSpellsByType   : returns spell list by type
+getSpellsByLevel  : returns spell list by level
+***********************************************************************************************/
+
+spellListDataStore.prototype = new dataStore();
+function spellListDataStore() 
+{
+	var self = this;
+	this.dataType = 'spell_lists';
+	
+	//returns spell list by source
+	this.getSpellsBySource = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spell_list) 
+		{
+			var returnable = [];
+			
+            //loop through all spell lists
+			spell_list.forEach(function(item)
+			{
+				//if the item is the same, add the item to returnables
+                if (item.Source === target)
+                {
+                    returnable.push[item];
+                }   				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("Spell list by source not found");
+			}
+			
+            //return the items
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+	
+	//returns spell list by type
+	this.getSpellsByType = new function(target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spell_list) 
+		{
+			var returnable = [];
+			
+            //loop through all spell lists
+			spell_list.forEach(function(item)
+			{
+				//if the item is the same, add the item to returnables
+                if (item.Type === target)
+				{
+                    returnable.push[item];
+                }   				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("Spell list by type not found");
+			}
+            //return the items
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+	
+	//returns spell list by level
+	this.getSpellsByLevel = new function(source, target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spell_list) 
+		{
+			var returnable = [];
+			var stringTarget = "Level " + target.toString();
+			
+            //loop through all spell lists
+			spell_list.forEach(function(item)
+			{
+				//if the item is the same, add the item to the returnables
+                if (item.stringTarget === stringTarget)
+                {
+                    returnable.push[item];
+                }   				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("Spell list by level not found");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+}
+
+//Spells data store, pulls all spell into the file
+//prototype off dataStore
+
+/***********************************************************************************************
+ Functions:
+getSpellByAttribute : get a spell by an specified attribute
+getMultipleSpells   : get a group of spells by same attribute
+getSpellsByRanges   : get spells by numeric ranges (use greater than, less than or equal to)
+***********************************************************************************************/
+
+spellsDataStore.prototype = new dataStore();
+function spellsDataStore() 
+{
+	var self = this;
+	this.dataType = 'spells';
+
+	//get a spell by an attribute
+		/*mostly usefully for finding by name*/
+	this.getSpellByAttribute = new function(attribute, target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spells) 
+		{
+			var returnable = null;
+			
+            //loop through all spells
+			spells.forEach(function(spell)
+			{
+				//if the spell attribute is the same its the returnable
+                if (spell[attribute] === target)
+                {
+                    returnable = spell;
+                }   				
+			});
+			
+			//if the language isn't found, reject it
+			if(typeof returnable === "null")
+			{
+				deferredObj.reject("No spell found with given parameters");
+			}
+			
+            //return the spell
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};
+	
+	//get a group of spells by same attribute
+	this.getMultipleSpells = new function(attribute, target)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spells) 
+		{
+			var returnable = [];
+			
+            //loop through all spell lists
+			spells.forEach(function(spell)
+			{
+				switch(attribute)
+				{	
+					//these require no special processing
+					case 'School':
+					case 'Cast Time':
+					case 'Saving throw':
+					case 'Spell resistance':
+					case 'Target':
+						//process the above
+						if (spell[attribute] === target)
+						{
+							returnable.push(spell);
+						}  					
+						break;
+						
+					//these are arrays (some processing requires)
+					case 'Components':
+					case 'Type':
+						//process the above
+						spell[attribute].forEach(item)
+						{
+							if(spell[attribute] === target)
+							{
+								returnable.push(spell);
+							}
+						}
+						break;
+	
+					default:
+						deferredObj.reject("Spells not found with that attribute");
+						break;
+				}				
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("No spells found with given parameters");
+			}
+			
+            //return the item
+            deferredObj.resolve(returnable);
+			
+		});
+		return deferredObj.promise();
+	};	
+	
+	//get spells by numeric ranges (use greater than, less than or equal to)
+	this.getSpellsByRanges = new function(attribute, range, numeric)
+	{
+		var deferredObj = new $.Deferred();
+		
+		//read the data
+        self.getAllData().done(function(spells) 
+		{
+			var returnable = [];
+
+			//process all spells
+			
+			spells.forEach(function(spell)
+			{
+				switch(attribute)
+				{
+					//*********************************************************
+					//by Range, uses base range
+					case 'Range':
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								if(numeric > spell.Range)
+								{
+									returnable.push(spell);
+								}
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								if(numeric < spell.Range)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								if(numeric === spell.Range)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					//by Duration, always evaluated in rounds
+					case 'Duration':
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								//will return true if the base duration is not a number
+								if( isNaN(spell["Base Duration"]) )
+								{
+									//then evaluate duration by additional duration
+									var spellDuration = computeDurationArray(parseDuration(spell["Additional Duration"]));
+									if(numeric > spellDuration)			//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else if( (!isNaN(spell["Base Duration"])) )
+								{
+									if(numeric > spell["Base Duration"])//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else
+								{
+									//well shit just happened
+									deferredObj.reject("too complex of a method");
+								}
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								//will return true if the base duration is not a number
+								if(isNaN(spell["Base Duration"]))
+								{
+									//then evaluate duration by additional duration
+									var spellDuration = computeDurationArray(parseDuration(spell["Additional Duration"]));
+									if(numeric < spellDuration)			//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else if( (!isNaN(spell["Base Duration"])) )
+								{
+									if(numeric < spell["Base Duration"])//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else
+								{
+									//well shit just happened
+									deferredObj.reject("too complex of a method");
+								}
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								//will return true if the base duration is not a number
+								if(isNaN(spell["Base Duration"]))
+								{
+									//then evaluate duration by additional duration
+									var spellDuration = computeDurationArray(parseDuration(spell["Additional Duration"]));
+									if(numeric === spellDuration)		//The actual testing of values
+									{
+										returnable.push(spell);	//The actual testing of values
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else if( (!isNaN(spell["Base Duration"])) )
+								{
+									if(numeric === spell["Base Duration"])//The actual testing of values
+									{
+										returnable.push(spell);
+									}
+									else
+									{
+										deferredObj.reject("reject at spellDuration");
+									}
+								}
+								else
+								{
+									//well shit just happened
+									deferredObj.reject("too complex of a method");
+								}
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					//by Size, will not process the "Additional sizes" in size
+					case 'Size':
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								spell.Size.forEach(function(item)
+								{
+									if( (!isNaN(item)) || (numeric > item) )
+									{
+										returnable.push(spell);
+									}
+								});
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								spell.Size.forEach(function(item)
+								{
+									if( (!isNaN(item)) || (numeric < item) )
+									{
+										returnable.push(spell);
+									}
+								});
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								spell.Size.forEach(function(item)
+								{
+									if( (!isNaN(item)) || (numeric === item) )
+									{
+										returnable.push(spell);
+									}
+								});
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					//by Damage (max damage)
+					case 'Damage':
+						
+						var max = 0;
+						
+						for(var item in spell.Damage)
+						{
+							max = maxRoll(spell.Damage[item]);
+						}
+					
+						switch(range)
+						{
+							case 'greater than':
+							case '>':
+								//process the above
+								if(numeric > max)
+								{
+									returnable.push(spell);
+								}
+								break;
+
+							case 'less than':
+							case '<':
+								//process the above
+								if(numeric < max)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							case 'equal to':
+							case '=':
+								//process the above
+								if(numeric === max)
+								{
+									returnable.push(spell);
+								}
+								break;
+							
+							default:
+								deferredObj.reject("Spells not found with that range");
+								break;
+						}
+						break;
+					//*********************************************************
+					default:
+						deferredObj.reject("Spells not found with that attribute");
+						break;
+				}
+			});
+			
+			//if the target isn't found, reject it
+			if(returnable.length === 0)
+			{
+				deferredObj.reject("No spells found with given parameters");
+			}
+		});
+		return deferredObj.promise();
+	}
 }
 
 function fadeBetween(outSelect, inSelect) {
   $(outSelect).fadeOut(400, function() {
     $(inSelect).fadeIn(400);
   });
+}
+
+//parses durations into an array, separating the numeric and time
+//product[0] is numeric value of duration
+//product[1] is normalised time unit
+//Returns false is the string is invalid
+function parseDurationString(parsed) {
+    var regularExp = /(\d+) (round|rounds|minute|minutes|hour|hours|day|days|week|weeks)/ig;
+    
+    //Parse the string
+    if (regularExp.test() == false) {
+        return false;
+    }
+    var product = regularExp.exec(parsed);
+    
+    //Normalise the string
+    product[1] = product[1].toLowerCase();
+    
+    switch (product[1]) {
+        case 'weeks':
+            product[1] = 'week';
+            break;
+        case 'day':
+            product[1] = 'day';
+            break;
+        case 'hours':
+            product[1] = 'hour';
+            break;
+        case 'minutes':
+            product[1] = 'minute';
+            break;
+        case 'rounds':
+            product[1] = 'round';
+            break;
+    }
+    
+    //Return it
+    return product;
+}
+
+//Accepts a durationArray produced by parseDurationString and converts it to rounds
+function computeDurationArray(durationArray) {
+    switch (durationArray[1]) {
+        case 'week':
+            durationArray[0] *= 7;
+        case 'day':
+            durationArray[0] *= 24;
+        case 'hour':
+            durationArray[0] *= 60;
+        case 'minute':
+            durationArray[0] *= 10;
+          break;
+    }
+    
+    return durationArray[0];
+}
+
+//parses dice rolls
+function parseDice(dice) {
+    var regularExp = /(\d+)d(\d+)(?: \+ )?(\d+)/;
+    
+    if (regularExp.text(dice) == false) {
+        return false;
+    }
+    
+    return regularExp.exec(dice);
+}
+
+function maxRoll(dice) {
+    var parsedArrray = parseDice(dice);
+    
+    if (parsedArray == false) { return false;}
+    
+    return ((parsedArray[0] * parsedArray[1]) + parsedArray[2]);
+}
+
+function minRoll(dice) {
+    var parsedArrray = parseDice(dice);
+    
+    if (parsedArray == false) { return false;}
+    
+    return (parsedArray[0] + parsedArray[2]);
+}
+
+function averageRoll(dice) {
+    var parsedArrray = parseDice(dice);
+    
+    if (parsedArray == false) { return false;}
+    
+    return (((parsedArray[0] * parsedArray[1])/2) + parsedArray[2]);
 }

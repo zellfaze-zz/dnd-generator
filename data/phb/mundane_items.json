@@ -5,8 +5,7 @@
         "Weight": 2,
         "Cost": "2 gp",
         "damage": "n/a",
-        "Text": "A backpack is a leather pack carried on the back, typically with straps to secure it.",
-        "Source Book": "PHB"
+        "Text": "A backpack is a leather pack carried on the back, typically with straps to secure it."
     },
     {
         "Name": "",
@@ -14,7 +13,6 @@
         "Weight": 1,
         "Cost": "",
         "Damage": "",
-        "Text": "",
-        "Source Book": ""
+        "Text": ""
     }
 ]
