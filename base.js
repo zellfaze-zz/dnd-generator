@@ -578,6 +578,7 @@ function featsDataStore() {
     
     return deferredObj.promise();
   }
+}
 
 //Languages data store, pulls all languages into the file
 //prototype off dataStore
