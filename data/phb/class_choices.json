@@ -1,0 +1,148 @@
+[
+	{
+		"Class": "Wizard",
+		"Option": "Specialization",
+		"Level": 1,
+		"recurrence": false,
+		"Choices":[
+			"Abjuration",
+			"Conjuration",
+			"Divination",
+			"Enchantment",
+			"Evocation",
+			"Illusion",
+			"Necromancy",
+			"Transmutation",
+			"None"
+		],
+		"Bonus":{
+			"Spell level":{
+				"Level 1": 1,
+				"Level 2": 1,
+				"Level 3": 1,
+				"Level 4": 1,
+				"Level 5": 1,
+				"Level 6": 1,
+				"Level 7": 1,
+				"Level 8": 1,
+				"Level 9": 1
+			},
+			"Limitations":{
+				"Spell level": "Cast-able",
+				"Spell slot spell": "Selected school"
+			}
+		},
+		"Cost":{
+			"Abjuration":{
+				"Pick": 2,
+				"Choices":[
+					"Conjuration",
+					"Enchantment",
+					"Evocation",
+					"Illusion",
+					"Necromancy",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Conjuration":{
+				"Pick": 2,
+				"Choices":[
+					"Abjuration",
+					"Enchantment",
+					"Evocation",
+					"Illusion",
+					"Necromancy",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Divination":{
+				"Pick": 1,
+				"Choices":[
+					"Abjuration",
+					"Conjuration",
+					"Enchantment",
+					"Evocation",
+					"Illusion",
+					"Necromancy",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Enchantment":{
+				"Pick": 2,
+				"Choices":[
+					"Abjuration",
+					"Conjuration",
+					"Evocation",
+					"Illusion",
+					"Necromancy",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Evocation":{
+				"Pick": 2,
+				"Choices":[
+					"Abjuration",
+					"Conjuration",
+					"Evocation",
+					"Illusion",
+					"Necromancy",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Illusion":{
+				"Pick": 2,
+				"Choices":[
+					"Abjuration",
+					"Conjuration",
+					"Enchantment",
+					"Evocation",
+					"Necromancy",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Necromancy":{
+				"Pick": 2,
+				"Choices":[
+					"Abjuration",
+					"Conjuration",
+					"Enchantment",
+					"Evocation",
+					"Illusion",
+					"Transmutation"
+				],
+				"Status": "Prohibited"
+			},
+			"Transmutation":{
+				"Pick": 2,
+				"Choices":[
+					"Abjuration",
+					"Conjuration",
+					"Enchantment",
+					"Evocation",
+					"Illusion",
+					"Necromancy"
+				],
+				"Status": "Prohibited"
+			}
+		}
+	},
+	{
+		"Class": "related class",
+		"Option": "choice name",
+		"Level": 1,
+		"recurrence": false,
+		"Choices":[
+		],
+		"Bonus":{
+		},
+		"Cost":{
+			
+		}
+	}
+]
