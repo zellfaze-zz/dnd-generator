@@ -1630,3 +1630,116 @@ function averageRoll(dice) {
     
     return (((parsedArray[0] * parsedArray[1])/2) + parsedArray[2]);
 }
+
+/*******************************************************************************
+**                                                                            **
+**                            Character Sheet                                 **
+**                                                                            **
+*******************************************************************************/
+//Holds the class that defines what a character sheet needs
+
+function CharacterSheet()
+{
+	//Stats and features of a character
+	var self = this;
+	
+	//the physical stats and appearance of a character
+	//for flavour and mechanic purposes
+	var DescriptionAttributes = {
+		"Race"     : "n/a",
+		"Name"     : "n/a",
+		"Sex"      : "n/a",
+		"Age"      : "n/a",
+		"Size"     : "n/a",
+		"Height"   : 0,
+		"Weight"   : 0,
+		"Speed"    : 0,
+		"Alignment": "n/a",
+		"Languages": [],
+	};
+	
+	//Character attributes
+	var Attributes = {
+		"Total_strength"    : 0,
+		"Total_dexterity"   : 0,
+		"Total_constitution": 0,
+		"Total_intelligence": 0,
+		"Total_wisdom"      : 0,
+		"Total_charisma"    : 0
+	};
+	//past attributes that determine the characters level
+	var AttributeHistory = {
+		"Strength_history"    : [],
+		"Dexterity_history"   : [],
+		"Constitution_history": [],
+		"Intelligence_history": [],
+		"Wisdom_history"      : [],
+		"Charisma_history"    : [],
+	};
+	
+	//Class and levels
+		//first array is for the class in question
+		//second array is for the number of levels in that class
+	var CharacterClasses = [[][]];
+	
+	//Skills and their ranks
+		//first array is for the skill in question
+		//second array is for their total ranks
+	var Skills = [[][]];
+	//Keeps track of the ranks and their history
+		//first array is for the skill in question
+		//second array is for their history
+			//the second array is made of  (array 1) the ranks
+			//							   (array 2) the level the ranks were added
+	var SkillHistory = [[][[][]]];
+	
+	//Feats and abilities data
+	var Feats        = [];
+	var TotalFeats   = 0;
+	var FeatsHistory = [[][]];
+	var ClassAbilities    = [];
+	
+	//Saving throws data
+	var Saves = {
+		"Total_fortitude": 0,
+		"Total_reflex"   : 0,
+		"Total_will"     : 0
+	};
+	var SavesHistory = {
+		"Fortitude_history" = [[][]],
+		"Reflex_history"    = [[][]],
+		"Will_history"      = [[][]],
+	};
+	
+	//BAB data
+	var BaseAttackBonus = 0;
+	var BaseAttackHistory = [[][]];
+	
+	//Hit point data
+	var HitPoints = 0;
+	var HitDiceHistory = [[][]];
+	
+	//Methods to determine the internal data
+	
+	//Methods used to access the data inside the Character Sheet
+
+		//set methods
+	function setName(name){
+		self.DescriptionAttributes.name = name;
+		$(self.DescriptionAttributes.name).trigger("change");
+	};
+	
+	function setSex(sex){
+		self.DescriptionAttributes.sex = sex);
+		$(self.DescriptionAttributes.sex).trigger("change");
+	}
+	
+		//get methods
+	function getName(){
+		return self.DescriptionAttributes.name;
+	}
+	
+	function getSex(){
+		return self.DescriptionAttributes.sex;
+	}
+}
