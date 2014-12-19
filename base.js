@@ -5,12 +5,17 @@ $(document).ready( function() {
   
   $('#generate-character').on('click', function() {
     window.options.type = 'generate';
-    fadeBetween('#page1', '#page2');
+    fadeBetween('#page1', '#lastPage');
   });
   
   $('#progress-character').on('click', function() {
     window.options.type = 'progress';
-    fadeBetween('#page1', '#page2');
+    fadeBetween('#page1', '#lastPage');
+  });
+  
+  $('[data-page-link]').click(function() {
+    switchPages('#' + $(this).attr('data-page-link'));
+    return false;
   });
   
   $('#advanced-off').on('click', function() {
@@ -96,6 +101,8 @@ $(document).ready( function() {
     window.dataStores = new Object();
     window.dataStores.names = names;
   });
+  
+  currentPage = '#page-basic';
 });
 
 //Logs information to the advanced section at the bottom of the page
@@ -1512,6 +1519,25 @@ function spellsDataStore()
 function fadeBetween(outSelect, inSelect) {
   $(outSelect).fadeOut(400, function() {
     $(inSelect).fadeIn(400);
+  });
+}
+
+var currentPage;
+function switchPages(newPage) {
+  
+  if (currentPage == newPage) {
+    return false;
+  }
+  
+  $(newPage).trigger("pageSwitch");
+  
+  $('[data-page-link="' + currentPage.substr(1) + '"]').removeClass("active");
+  $('[data-page-link="' + newPage.substr(1) + '"]').addClass("active");
+  
+  $(currentPage).fadeOut(400, function() {
+    $(newPage).fadeIn(400, function() {
+      currentPage = newPage;
+    });
   });
 }
 

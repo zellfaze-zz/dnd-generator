@@ -47,3 +47,19 @@ input.small {
 .advanced-options {
   display: none;
 }
+
+#page-ability {
+  display: none;
+}
+
+#page-race {
+  display: none;
+}
+
+#page-class {
+  display: none;
+}
+
+#page-feats {
+  display: none;
+}
