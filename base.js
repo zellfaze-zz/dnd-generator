@@ -1654,23 +1654,23 @@ function CharacterSheet()
 	//Class and levels
 		//first array is for the class in question
 		//second array is for the number of levels in that class
-	var CharacterClasses = [[][]];
+	var CharacterClasses = [[],[]];
 	
 	//Skills and their ranks
 		//first array is for the skill in question
 		//second array is for their total ranks
-	var Skills = [[][]];
+	var Skills = [[],[]];
 	//Keeps track of the ranks and their history
 		//first array is for the skill in question
 		//second array is for their history
 			//the second array is made of  (array 1) the ranks
 			//							   (array 2) the level the ranks were added
-	var SkillHistory = [[][[][]]];
+	var SkillHistory = [[],[[],[]]];
 	
 	//Feats and abilities data
 	var Feats        = [];
 	var TotalFeats   = 0;
-	var FeatsHistory = [[][]];
+	var FeatsHistory = [[],[]];
 	var ClassAbilities    = [];
 	
 	//Saving throws data
@@ -1680,40 +1680,154 @@ function CharacterSheet()
 		"Total_will"     : 0
 	};
 	var SavesHistory = {
-		"Fortitude_history" = [[][]],
-		"Reflex_history"    = [[][]],
-		"Will_history"      = [[][]],
+		"Fortitude_history" : [[],[]],
+		"Reflex_history"    : [[],[]],
+		"Will_history"      : [[],[]],
 	};
 	
 	//BAB data
 	var BaseAttackBonus = 0;
-	var BaseAttackHistory = [[][]];
+	var BaseAttackHistory = [[],[]];
 	
 	//Hit point data
 	var HitPoints = 0;
-	var HitDiceHistory = [[][]];
+	var HitDiceHistory = [[],[]];
+	
+	//Spells and Magic
+	var MagicandSpells = {
+		//basic data
+		"Class_name"  : [],
+		"Class_level" : [],
+		"Caster_level": [],
+		
+		//spell slots
+		"Spells"      : []
+	}
+	//Method to control how spells are organized
+	//only called when a new class is added that has spells
+	//that dont add to an existing class spells
+	function SpellData(){
+	
+		var type           = "n/a";
+	
+		// Slots
+		var SpellsperDay   = [];
+		var SpecialSpells  = [];
+		var BonusSpells    = [];
+		// known spells
+		var SpellsKnown    = [[],[]];
+		// prepared spells (not for spontaneous caster
+		var PreparedSpells = [[],[]];
+		
+		var Data = [type, SpellsperDay, SpecialSpells, BonusSpells, SpellsKnown, Prepared];
+		
+		return Data;
+	};
+	
+	 //Example syntax for accessing spells
+	//MagicandSpells.Spells[0].SpellsperDay[1];
+	//$(DescriptionAttributes.Sex).trigger("change");
 	
 	//Methods to determine the internal data
 	
 	//Methods used to access the data inside the Character Sheet
-
-		//set methods
-	function setName(name){
-		self.DescriptionAttributes.name = name;
-		$(self.DescriptionAttributes.name).trigger("change");
-	};
+		
+			//Accessor methods
+			
+		//Description Attributes
+	//Race property getters and setters
+	Object.defineProperty(this, "CRace", {
+		get: function() {
+			$(DescriptionAttributes.Race).trigger("change");
+			return DescriptionAttributes.Race;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Race).trigger("change");
+			DescriptionAttributes.Race = value;
+		}
+	});
 	
-	function setSex(sex){
-		self.DescriptionAttributes.sex = sex);
-		$(self.DescriptionAttributes.sex).trigger("change");
-	}
+		//Name property getters and setters
+	Object.defineProperty(this, "CName", {
+		get: function() {
+			$(DescriptionAttributes.Name).trigger("change");
+			return DescriptionAttributes.Name;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Name).trigger("change");
+			DescriptionAttributes.Name = value;
+		}
+	});
 	
-		//get methods
-	function getName(){
-		return self.DescriptionAttributes.name;
-	}
+		//Sex property getters and setters
+	Object.defineProperty(this, "CSex", {
+		get: function() {
+			$(DescriptionAttributes.Sex).trigger("change");
+			return DescriptionAttributes.Sex;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Sex).trigger("change");
+			DescriptionAttributes.Sex = value;
+		}
+	});
 	
-	function getSex(){
-		return self.DescriptionAttributes.sex;
-	}
+		//Age property getters and setters
+	Object.defineProperty(this, "CAge", {
+		get: function() {
+			$(DescriptionAttributes.Age).trigger("change");
+			return DescriptionAttributes.Age;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Age).trigger("change");
+			DescriptionAttributes.Age = value;
+		}
+	});
+	
+		//Size property getters and setters
+	Object.defineProperty(this, "CSize", {
+		get: function() {
+			$(DescriptionAttributes.Size).trigger("change");
+			return DescriptionAttributes.Size;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Size).trigger("change");
+			DescriptionAttributes.Size = value;
+		}
+	});
+	
+		//Height property getters and setters
+	Object.defineProperty(this, "CHeight", {
+		get: function() {
+			$(DescriptionAttributes.Height).trigger("change");
+			return DescriptionAttributes.Height;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Height).trigger("change");
+			DescriptionAttributes.Height = value;
+		}
+	});
+	
+		//Weight property getters and setters
+	Object.defineProperty(this, "CWeight", {
+		get: function() {
+			$(DescriptionAttributes.Weight).trigger("change");
+			return DescriptionAttributes.Weight;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Weight).trigger("change");
+			DescriptionAttributes.Weight = value;
+		}
+	});
+	
+		//Speed property getters and setters
+	Object.defineProperty(this, "CSpeed", {
+		get: function() {
+			$(DescriptionAttributes.Speed).trigger("change");
+			return DescriptionAttributes.Speed;
+		},
+		set: function(value) {
+			$(DescriptionAttributes.Speed).trigger("change");
+			DescriptionAttributes.Speed = value;
+		}
+	});
 }
