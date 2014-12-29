@@ -108,6 +108,212 @@
           
           <div class="col-sm-10" id="page-ability">
             <h2>Ability Scores</h2>
+            
+            <div class="row">
+              <div class="col-sm-6">
+            <form class="form-horizontal">
+              <div class="row">
+                <div class="col-sm-4 text-center">
+                  Base Ability Scores
+                </div>
+                <div class="col-sm-2 text-center">
+                  Modifier
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="str-input" class="control-label col-sm-1">Str:</label>
+                <div class="col-sm-2">
+                  <input type="text" name="str-input" id="str-input" class="form-control" placeholder="0-18" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="dex-input" class="control-label col-sm-1">Dex:</label>
+                <div class="col-sm-2">
+                  <input type="text" name="dex-input" id="dex-input" class="form-control" placeholder="0-18" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="con-input" class="control-label col-sm-1">Con:</label>
+                <div class="col-sm-2">
+                  <input type="text" name="con-input" id="con-input" class="form-control" placeholder="0-18" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="int-input" class="control-label col-sm-1">Int:</label>
+                <div class="col-sm-2">
+                  <input type="text" name="int-input" id="int-input" class="form-control" placeholder="0-18" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="wis-input" class="control-label col-sm-1">Wis:</label>
+                <div class="col-sm-2">
+                  <input type="text" name="wis-input" id="wis-input" class="form-control" placeholder="0-18" />
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="cha-input" class="control-label col-sm-1">Cha:</label>
+                <div class="col-sm-2">
+                  <input type="text" name="cha-input" id="cha-input" class="form-control" placeholder="0-18" />
+                </div>
+              </div>
+            </form>
+              </div>
+              <div class="col-sm-6">
+                Available Scores
+                <p><a class="btn btn-primary btn-sm random-btn" role="button" id="btn-roll-scores">Re-roll All</a></p>
+                <div class="well" style="height: 100%">
+                
+                  <div class="input-group">1 + 2 + 4 =
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">7</button>
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Str</a></li>
+                        <li><a href="#">Dex</a></li>
+                        <li><a href="#">Con</a></li>
+                        <li><a href="#">Int</a></li>
+                        <li><a href="#">Wis</a></li>
+                        <li><a href="#">Cha</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Re-roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="input-group">2 + 3 + 5 =
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">10</button>
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Str</a></li>
+                        <li><a href="#">Dex</a></li>
+                        <li><a href="#">Con</a></li>
+                        <li><a href="#">Int</a></li>
+                        <li><a href="#">Wis</a></li>
+                        <li><a href="#">Cha</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Re-roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <div class="input-group">2 + 3 + 4 =
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">9</button>
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Str</a></li>
+                        <li><a href="#">Dex</a></li>
+                        <li><a href="#">Con</a></li>
+                        <li><a href="#">Int</a></li>
+                        <li><a href="#">Wis</a></li>
+                        <li><a href="#">Cha</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Re-roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="input-group">1 + 3 + 6 =
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">10</button>
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Str</a></li>
+                        <li><a href="#">Dex</a></li>
+                        <li><a href="#">Con</a></li>
+                        <li><a href="#">Int</a></li>
+                        <li><a href="#">Wis</a></li>
+                        <li><a href="#">Cha</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Re-roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="input-group">1 + 4 + 5 =
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">10</button>
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Str</a></li>
+                        <li><a href="#">Dex</a></li>
+                        <li><a href="#">Con</a></li>
+                        <li><a href="#">Int</a></li>
+                        <li><a href="#">Wis</a></li>
+                        <li><a href="#">Cha</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Re-roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div class="input-group">1 + 2 + 4 =
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info">7</button>
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Str</a></li>
+                        <li><a href="#">Dex</a></li>
+                        <li><a href="#">Con</a></li>
+                        <li><a href="#">Int</a></li>
+                        <li><a href="#">Wis</a></li>
+                        <li><a href="#">Cha</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Re-roll</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <p><label for="rolling-method-input" class="control-label">Rolling Method:</label></p>
+                <label class="radio-inline">
+                  <input type="radio" name="rolling-method-input" id="rolling-method-input1" value="3d6" disabled="disabled"> 3d6
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="rolling-method-input" id="rolling-method-input2" value="4d6drop" disabled="disabled"> 4d6 Drop lowest
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="rolling-method-input" id="rolling-method-input3" value="4d6dropx7" disabled="disabled"> 4d6 Drop lowest 7 times dropping lowest
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="rolling-method-input" id="rolling-method-input4" value="manual" checked="checked"> Manual
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="rolling-method-input" id="rolling-method-input5" value="points" disabled="disabled"> Points
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="rolling-method-input" id="rolling-method-input6" value="base" disabled="disabled"> Base
+                </label>
+              </div>
+            </div>
           </div>
           
           <div class="col-sm-10" id="page-race">
